@@ -1,4 +1,4 @@
-# Rails Devs
+# LovinDevs
 
 The reverse job board for web developers.
 
