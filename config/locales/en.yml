@@ -485,7 +485,7 @@ en:
       title: Ready to start hiring?
     faq:
       annual:
-        a_html: Yes. Email the founder – that's me, Joe! – to set up annual billing at <a href='mailto:joe@railsdevs.com' class='underline'>joe@railsdevs.com</a>.
+        a_html: Yes. Email the founder – that's me, Joe! – to set up annual billing at <a href='mailto:joe@railsdevs.com' class='underline'>joe@railsdevs.com</a>.
         q: Can I pay annually or yearly?
       cancellation:
         a_html: Yes. You can cancel your subscription from the Billing link in the user drop-down. You will lose access to all paid features at the end of your billing period.
@@ -503,12 +503,12 @@ en:
         a: No. The monthly/annual fee grants you business access to railsdevs. You have to externally pay the developers for the work they do.
         q: Does the monthly/annual fee include the developer rate, too?
       support:
-        a_html: Email the founder – that's me, Joe! – with any questions. You can reach me at <a href='mailto:joe@railsdevs.com' class='underline'>joe@railsdevs.com</a>.
+        a_html: Email the founder – that's me, Joe! – with any questions. You can reach me at <a href='mailto:joe@railsdevs.com' class='underline'>joe@railsdevs.com</a>.
         q: Who can I contact for more specific questions?
       title: Frequently asked questions
     features:
       direct_communication:
-        description: Skip formal job postings and start messaging with candidates with one click.
+        description: Skip formal job postings and start messaging with candidates with one click.
         title: Talk directly to developers
       independent_developers:
         description: Directly hire independent Rails developers instead of going through a firm or agency.

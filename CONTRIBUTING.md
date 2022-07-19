@@ -6,7 +6,7 @@ Lots of developers first open source contribution was to railsdevs. Let me help 
 
 ## What to work on?
 
-[Unassigned issues labelled "help wanted"](https://github.com/joemasilotti/railsdevs.com/issues?q=is%3Aissue+is%3Aopen+no%3Aassignee+label%3A%22help+wanted%22) are ready to be worked on. Comment on one to "claim" it – I'll assign it to you to let others know.
+[Unassigned issues labelled "help wanted"](https://github.com/joemasilotti/railsdevs.com/issues?q=is%3Aissue+is%3Aopen+no%3Aassignee+label%3A%22help+wanted%22) are ready to be worked on. Comment on one to "claim" it – I'll assign it to you to let others know.
 
 To keep things moving, you'll have 2 weeks to submit a pull request. If you don't finish in time, no worries! Comment and let me know and we can work something out.
 
