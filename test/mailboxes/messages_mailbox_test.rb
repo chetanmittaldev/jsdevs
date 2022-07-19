@@ -22,7 +22,7 @@ class MessagesMailboxTest < ActionMailbox::TestCase
 
   test "only text in the actual sent email is used for the message body" do
     body = "Message content\n
-      On June 10, 2022, notifications@railsdevs.com wrote:\n
+      On June 10, 2022, notifications@lovindevs.com wrote:\n
       Previous message content"
 
     receive_inbound_email(body:, from: @conversation.business)

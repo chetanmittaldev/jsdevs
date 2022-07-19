@@ -42,7 +42,7 @@
 * May 26 - Strip HTML tags from developer bios - #446
 * May 21 - Accessibility updates - #436 and #440 @metamoni
 * May 9 - Send daily/weekly emails via broadcast stream - #421
-* May 8 - Send automated emails from `@railsdevs.com` -#414
+* May 8 - Send automated emails from `@lovindevs.com` -#414
 * May 8 - Stop business welcome email and clean up developer welcome email -#413
 * May 2 - Revamped business profiles - #397 @scottharvey
 
@@ -81,7 +81,7 @@
 * February 24 - Anonymized avatar filenames - #295
 * February 15 - Added event tracking via Fathom - #283
 * February 10 - Added Brazilian Portuguese (pt-BR) translations - #278 @gmmcal
-* February 2 - Added [open startup page](https://railsdevs.com/open) - #270
+* February 2 - Added [open startup page](https://lovindevs.com/open) - #270
 
 ### January
 
@@ -89,10 +89,10 @@
 * January 27 - Made links in messages clickable - #262 @djfpaagman
 * January 24 - Added role type filters - #251 @themudassarhassan
 * January 13 - Added email notifications of new developers - #212 @jacobdaddario
-* January 9 - Removed compensation from railsdevs - #231
+* January 9 - Removed compensation from lovindevs - #231
 * January 8 - Added hourly rate, salary, and time zone filters - #225
 * January 7 - Added sorting of developers (newest or available) - #177
 * January 3 - Added CTA for paywalled content - #206 and #193 @jacobdaddario
 * January 1 - Added `/notifications` - #182 @jayeclark
 
-> Changes before January 1, 2022 can be found by reading through [merged PRs](https://github.com/joemasilotti/railsdevs.com/pulls?q=is%3Apr+is%3Amerged).
+> Changes before January 1, 2022 can be found by reading through [merged PRs](https://github.com/joemasilotti/lovindevs.com/pulls?q=is%3Apr+is%3Amerged).
