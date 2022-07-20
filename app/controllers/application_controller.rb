@@ -4,7 +4,8 @@ class ApplicationController < ActionController::Base
   include Locales
   include Pundit::Authorization
   include StoredLocation
-
+  include HttpAuthConcern
+  
   rescue_from Pundit::NotAuthorizedError, with: :user_not_authorized
 
   around_action :set_locale
