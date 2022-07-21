@@ -60,7 +60,7 @@ representative at an online or offline event.
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be
 reported to the community leaders responsible for enforcement at
-[joe@lovindevs.com](mailto:joe@lovindevs.com). All complaints will be reviewed
+[contact@lovindevs.com](mailto:contact@lovindevs.com). All complaints will be reviewed
 and investigated promptly and fairly.
 
 All community leaders are obligated to respect the privacy and security of the

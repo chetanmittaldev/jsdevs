@@ -10,4 +10,4 @@ And job boards are rarely helpful for freelance and contract work. They're focus
 
 The site is open to all developers, regardless of race, color, national origin, religion, gender, age, disability, or skill level that follow the [code of conduct](/conduct).
 
-If something doesn't feel right, or you ever feel uncomfortable, please [send me an email](mailto:joe@lovindevs.com) right away.
+If something doesn't feel right, or you ever feel uncomfortable, please [send me an email](mailto:contact@lovindevs.com) right away.

@@ -485,7 +485,7 @@ en:
       title: Ready to start hiring?
     faq:
       annual:
-        a_html: Yes. Email the founder – that's me, David! – to set up annual billing at <a href='mailto:joe@lovindevs.com' class='underline'>joe@lovindevs.com</a>.
+        a_html: Yes. Email the founder – that's me, David! – to set up annual billing at <a href='mailto:contact@lovindevs.com' class='underline'>contact@lovindevs.com</a>.
         q: Can I pay annually or yearly?
       cancellation:
         a_html: Yes. You can cancel your subscription from the Billing link in the user drop-down. You will lose access to all paid features at the end of your billing period.
@@ -497,13 +497,13 @@ en:
         a: A business subscription allows you to reach out directly to developers on lovindevs. It also unhides information that is hidden from the public, like the real names of developers and their portfolio links.
         q: So what does the fee get me?
       fee:
-        a_html: You are required to pay lovindevs 10% of a developer's first year salary if you found them through lovindevs. This only applies to hiring full-time employees and not contract or freelance. Email the founder – that's me, David! – to coordinate payment at <a href='mailto:joe@lovindevs.com' class='underline'>joe@lovindevs.com</a>.
+        a_html: You are required to pay lovindevs 10% of a developer's first year salary if you found them through lovindevs. This only applies to hiring full-time employees and not contract or freelance. Email the founder – that's me, David! – to coordinate payment at <a href='mailto:contact@lovindevs.com' class='underline'>contact@lovindevs.com</a>.
         q: How does the 10% fee work for hiring a full-time developer?
       subscription:
         a: No. The monthly/annual fee grants you business access to lovindevs. You have to externally pay the developers for the work they do.
         q: Does the monthly/annual fee include the developer rate, too?
       support:
-        a_html: Email the founder – that's me, David! – with any questions. You can reach me at <a href='mailto:joe@lovindevs.com' class='underline'>joe@lovindevs.com</a>.
+        a_html: Email the founder – that's me, David! – with any questions. You can reach me at <a href='mailto:contact@lovindevs.com' class='underline'>contact@lovindevs.com</a>.
         q: Who can I contact for more specific questions?
       title: Frequently asked questions
     features:
@@ -561,7 +561,7 @@ en:
           a: No. lovindevs is free for developers.
           q: Does lovindevs cost anything for developers?
         '4':
-          a_html: Email me, David, with any questions. You can reach me at <a href='mailto:joe@lovindevs.com'>joe@lovindevs.com</a>.
+          a_html: Email me, David, with any questions. You can reach me at <a href='mailto:contact@lovindevs.com'>contact@lovindevs.com</a>.
           q: Who can I contact for more specific questions?
         title: Frequently asked questions
       feature:
