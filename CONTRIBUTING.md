@@ -1,6 +1,6 @@
 # Contributing to lovindevs
 
-Welcome to [lovindevs](https://lovindevs.com)! I'm Joe, the solo-founder, and I'd love for you to contribute to the project.
+Welcome to [lovindevs](https://lovindevs.com)! I'm David, the solo-founder, and I'd love for you to contribute to the project.
 
 Lots of developers first open source contribution was to lovindevs. Let me help you make it yours, too.
 
