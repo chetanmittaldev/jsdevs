@@ -1,6 +1,5 @@
 # Changelog
 
-
 ## 2022
 
 ### July
