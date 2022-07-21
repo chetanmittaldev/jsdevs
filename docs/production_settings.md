@@ -41,13 +41,6 @@ Transactional emails are sent via [Postmark](https://postmarkapp.com).
 postmark_api_token:
 ```
 
-Monitoring is provided by [Scout APM](https://scoutapm.com). Reach out to [support@scoutapm.com](mailto: support@scoutapm.com) for a free plan for open source apps.
-
-```
-scout:
-  key:
-```
-
 RevenueCat powers in-app purchases on the iOS app. Configuration requires a product identifier for each plan, API keys, and a webhook authorization. See below for more information on setting up RevenueCat.
 
 ```
