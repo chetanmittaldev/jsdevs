@@ -8,4 +8,7 @@ class Article < ApplicationRecord
 
   validates :image_url, allow_blank: true, format: { with: URI.regexp(%w[http https]), message: 'is not a valid URL' }
 
+  scope :published, -> { where.not(publication_date: nil).where('publication_date <= ?', Date.today) }
+  
+
 end
