@@ -6,7 +6,10 @@
 
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+
     <%= render_open_graph_tags %>
+    <link rel="canonical" href="https://<%= ENV['HOST'].to_s %><%= request&.path.to_s %>">
+
     <%= render "shared/favicon_tags" %>
     <%= render AlternateLinksComponent.new %>
 
