@@ -47,6 +47,8 @@ Rails.application.routes.draw do
     root to: "home#show"
   end
 
+  resources :blog, only: [:index, :show]
+
   namespace :admin do
     resources :articles
     resource :impersonate, only: [:create, :show, :destroy]
