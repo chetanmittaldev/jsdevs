@@ -34,4 +34,7 @@ SitemapGenerator::Sitemap.create do
   Developers::QueryPath.all.each do |path|
     add path, changefreq: "weekly", priority: 1
   end
+  Article.select(:slug).published.each do |article|
+    add blog_path(article.slug), changefreq: "monthly", priority: 0.8
+  end
 end

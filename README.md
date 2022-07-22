@@ -1,6 +1,5 @@
 # LovinDevs
 
-
 The reverse job board for web developers.
 
 ![lovindevs homepage](https://user-images.githubusercontent.com/2937888/179790007-f91b99f5-8256-4da7-a3ee-0b9fc0417c8c.png)

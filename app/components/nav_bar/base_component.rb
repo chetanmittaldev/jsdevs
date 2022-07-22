@@ -22,6 +22,7 @@ module NavBar
       links << Link.new(t(".developers"), developers_path)
       links << Link.new(t(".pricing"), pricing_path)
       links << Link.new(t(".about"), about_path)
+      links << Link.new("Blog", blog_index_path)
       links
     end
   end

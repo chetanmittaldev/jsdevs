@@ -47,11 +47,13 @@ Rails.application.routes.draw do
     root to: "home#show"
   end
 
+  resources :blog, only: [:index, :show]
+
   namespace :admin do
+    resources :articles
     resource :impersonate, only: [:create, :show, :destroy]
     resources :conversations, only: :index
     resources :transactions, except: :show
-
     namespace :conversations do
       resources :blocks, only: :index
     end

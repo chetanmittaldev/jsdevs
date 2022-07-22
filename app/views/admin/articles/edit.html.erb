@@ -1,0 +1,202 @@
+<% article = @article %>
+<% errors_h = @article.errors.to_hash %>
+<% triggered_validation = local_assigns[:triggered_validation] || params[:triggered_validation] %>
+<% invalid_css = "bg-red-50 border border-red-500 text-red-900 placeholder-red-700 text-sm rounded-lg focus:ring-red-500 focus:border-red-500 block w-full p-2.5 dark:bg-red-100 dark:border-red-400" %>
+<% valid_css = "bg-green-50 border border-green-500 text-green-900 placeholder-green-700 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5 dark:bg-green-100 dark:border-green-400" %>
+<% regular_css = "shadow-sm bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" %>
+
+
+
+<div>
+  <div class="grid grid-cols-1 px-4 pt-6 mb-4 xl:grid-cols-2 xl:gap-4 dark:bg-gray-900 dark:border-gray-700">
+    <div class="col-span-full mb-4 xl:mb-2">
+      <h1 class="text-xl font-semibold text-gray-900 sm:text-2xl dark:text-white">Edit Article #<%= article.id %></h1>
+      <%= link_to 'See all articles', admin_articles_path, class: 'underline'  %>
+    </div>
+  </div>
+  <div class="px-4">
+
+    <div class="p-4 mb-4 bg-white rounded-lg shadow sm:p-6 xl:p-8 dark:bg-gray-800">
+      <h3 class="mb-4 text-xl font-bold dark:text-white">Edit Metadata</h3>
+
+      <%= form_with(model: [:admin, article]) do |form| %>
+        <div class="grid grid-cols-1 gap-6 mb-2 md:grid-cols-3">
+          <div class="col-span-1">
+            <div class="mb-3">
+              <% is_valid_slug = triggered_validation && errors_h[:slug].blank? && @article.slug.present?  %>
+              <% is_invalid_slug = !!errors_h[:slug]  %>
+              <div>
+                  <%= form.label "slug-input", 'Slug *', class: "inline text-sm font-medium text-gray-900 dark:text-white" %>
+                  <label id="hint_id_slug" class="inline text-xs font-normal text-gray-500 dark:text-gray-400">
+                    Will appear after /blog in the URL, i.e. /blog/my-article
+                  </label>
+              </div>
+              <%= form.text_field 'slug', 
+                    value: @article.slug, 
+                    id: "slug-input", 
+                    placeholder: 'Example : my-article',
+                    class: "#{is_invalid_slug ? invalid_css : is_valid_slug ?  valid_css  : regular_css}", aria: ({ invalid: is_invalid_slug, describedby: "slug_message" } if triggered_validation) %> 
+              <% if is_invalid_slug %>
+                  <%= content_tag(:div, "<span class='font-medium'>Error: </span>#{errors_h[:slug][0]}".html_safe, class: "text-sm text-red-600 dark:text-red-500", id: "slug_message") %>
+              <% elsif is_valid_slug %>
+                  <%= content_tag(:div, 'looks good!', class: "text-sm text-green-600 dark:text-green-500 font-medium", id: "slug_message")  %>
+              <% else %>
+                  <%= content_tag(:div, "&nbsp;".html_safe, class: "text-sm font-medium", id: "slug_message")  %>
+              <% end %>
+            </div>
+            <div class="mb-2">
+              <% is_valid_title = triggered_validation && errors_h[:title].blank? && @article.title.present?  %>
+              <% is_invalid_title = !!errors_h[:title]  %>
+              <div>
+                  <%= form.label "title-input", 'Title *', class: "inline text-sm font-medium text-gray-900 dark:text-white" %>
+                  <label id="hint_id_title" class="inline text-xs font-normal text-gray-500 dark:text-gray-400">
+                    Will appear as tab title, SEO title, and H1 title
+                  </label>
+              </div>
+              <%= form.text_field 'title', 
+                    value: @article.title, 
+                    id: "title-input", 
+                    placeholder: 'Example : A Title',
+                    class: "#{is_invalid_title ? invalid_css : is_valid_title ?  valid_css  : regular_css}", aria: ({ invalid: is_invalid_title, describedby: "title_message" } if triggered_validation) %> 
+              <% if is_invalid_title %>
+                  <%= content_tag(:div, "<span class='font-medium'>Error: </span>#{errors_h[:title][0]}".html_safe, class: "text-sm text-red-600 dark:text-red-500", id: "title_message") %>
+              <% elsif is_valid_title %>
+                  <%= content_tag(:div, 'looks good!', class: "text-sm text-green-600 dark:text-green-500 font-medium", id: "title_message")  %>
+              <% else %>
+                  <%= content_tag(:div, "&nbsp;".html_safe, class: "text-sm font-medium", id: "title_message")  %>
+              <% end %>
+            </div>
+
+          </div>
+
+          <div class="col-span-1">
+
+            <div class="mb-2">
+              <div>
+                  <%= form.label "description-input", 'Description', class: "inline text-sm font-medium text-gray-900 dark:text-white" %>
+                  <label id="hint_id_description" class="inline text-xs font-normal text-gray-500 dark:text-gray-400">
+                    Will appear as SEO description, as well as introduction.
+                  </label>
+              </div>
+              <%= form.text_area 'description', 
+                    value: @article.description, 
+                    id: "description-input", 
+                    rows: 6,
+                    placeholder: 'This article is about paragraphs and sentences. Let\'s see how to write them.',
+                    class: regular_css %> 
+            </div>
+        </div>
+
+          <div class="col-span-1">
+
+            <div class="mb-3">
+              <% is_valid_image_url = triggered_validation && errors_h[:image_url].blank? && @article.image_url.present?  %>
+              <% is_invalid_image_url = !!errors_h[:image_url]  %>
+              <div>
+                  <%= form.label "image_url-input", 'Image URL', class: "inline text-sm font-medium text-gray-900 dark:text-white" %>
+                  <label id="hint_id_image_url" class="inline text-xs font-normal text-gray-500 dark:text-gray-400">
+                    Will appear as card on social medias. URL format only.
+                  </label>
+              </div>
+              <%= form.text_field 'image_url', 
+                    value: @article.image_url, 
+                    id: "image_url-input", 
+                    placeholder: 'Example : https://mysite.com/image.jpg',
+                    class: "#{is_invalid_image_url ? invalid_css : is_valid_image_url ?  valid_css  : regular_css}", aria: ({ invalid: is_invalid_image_url, describedby: "image_url_message" } if triggered_validation) %> 
+              <% if is_invalid_image_url %>
+                  <%= content_tag(:div, "<span class='font-medium'>Error: </span>#{errors_h[:image_url][0]}".html_safe, class: "text-sm text-red-600 dark:text-red-500", id: "image_url_message") %>
+              <% elsif is_valid_image_url %>
+                  <%= content_tag(:div, 'looks good!', class: "text-sm text-green-600 dark:text-green-500 font-medium", id: "image_url_message")  %>
+              <% else %>
+                  <%= content_tag(:div, "&nbsp;".html_safe, class: "text-sm font-medium", id: "image_url_message")  %>
+              <% end %>
+            </div>
+
+            <div class="mb-2">
+              <% is_valid_publication_date = triggered_validation && errors_h[:publication_date].blank? && @article.publication_date.present?  %>
+              <% is_invalid_publication_date = !!errors_h[:publication_date]  %>
+              <div>
+                  <%= form.label "publication_date-input", 'Publication date', class: "inline text-sm font-medium text-gray-900 dark:text-white" %>
+                  <label id="hint_id_publication_date" class="inline text-xs font-normal text-gray-500 dark:text-gray-400">
+                    for SEO purposes, and ordering.
+                  </label>
+              </div>
+              <%= form.text_field 'publication_date', 
+                    datepicker: "", 
+                    value: @article.publication_date.try(:strftime, "%m/%d/%Y"), 
+                    id: "publication_date-input", 
+                    placeholder: 'Example : 01/01/2022',
+                    class: "#{is_invalid_publication_date ? invalid_css : is_valid_publication_date ?  valid_css  : regular_css}", aria: ({ invalid: is_invalid_publication_date, describedby: "publication_date_message" } if triggered_validation) %> 
+              <% if is_invalid_publication_date %>
+                  <%= content_tag(:div, "<span class='font-medium'>Error: </span>#{errors_h[:publication_date][0]}".html_safe, class: "text-sm text-red-600 dark:text-red-500", id: "publication_date_message") %>
+              <% elsif is_valid_publication_date %>
+                  <%= content_tag(:div, 'looks good!', class: "text-sm text-green-600 dark:text-green-500 font-medium", id: "publication_date_message")  %>
+              <% else %>
+                  <%= content_tag(:div, "&nbsp;".html_safe, class: "text-sm font-medium", id: "publication_date_message")  %>
+              <% end %>
+            </div>
+
+          </div>
+
+
+        </div>
+        <%= form.button 'Update metadata', type: 'submit', name: 'meta', class: "text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" %>
+      <% end %>
+    </div>
+
+    <div class="p-4 mb-4 bg-white rounded-lg shadow sm:p-6 xl:p-8 dark:bg-gray-800">
+      <h3 id="edit-content" class="mb-4 text-xl font-bold dark:text-white">Edit Content </h3>
+
+      <%= form_with(model: [:admin, article]) do |form| %>
+        <div class="grid grid-cols-1 gap-6 mb-2">
+          <div class="col-span-1">
+            <div class="mb-4">
+              <%= form.label "kontent-input", 'Content', class: "block text-sm font-medium text-gray-900 dark:text-white" %>
+              <small id="hint_id_kontent" class="text-xs font-normal text-gray-500 dark:text-gray-400">
+                Actual content of the blog article. Markdown, HTML, or plain text are accepted.
+              </small>
+              <div id="editorSection"></div>
+              <%= form.text_field 'kontent', 
+                    value: @article.kontent, 
+                    id: "kontent-input", 
+                    placeholder: 'Example : my-article',
+                    class: "hidden" %> 
+            </div>
+          </div>
+        </div>
+        <%= form.button 'Update content', type: 'submit', class: "text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" %>
+      <% end %>
+    </div>
+
+
+  </div>
+</div>
+
+<% content_for :custom_javascript do %>
+  <script src="https://unpkg.com/flowbite@1.4.7/dist/datepicker.js"></script>
+<% end %>
+<% content_for :custom_stylesheet do %>
+  <link rel="stylesheet" href="https://uicdn.toast.com/editor/3.1.2/toastui-editor.min.css">
+<% end %>
+<% content_for :custom_javascript do %>
+  <script src="https://uicdn.toast.com/editor/3.1.2/toastui-editor-all.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function(event) { 
+      const Editor = toastui.Editor;
+      let initValue = "<%= escape_javascript @article.kontent.try(:html_safe) %>"
+      initValue = initValue.replace(/\\k/g,'\n');
+      window.kontent_editor = new Editor({
+        el: document.querySelector('#editorSection'),
+        initialEditType: 'markdown',
+        initialValue: initValue,
+        previewStyle: 'vertical',
+        height: '600px'
+      });
+      kontent_editor.on('change', () => {
+        document.getElementById('kontent-input').setAttribute('value', kontent_editor.getMarkdown().replace(/(?:\r\n|\r|\n)/g, '\\k'));
+      })
+    });
+  </script>
+<% end %>
+
+

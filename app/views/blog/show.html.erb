@@ -1,0 +1,31 @@
+<%= open_graph_tags title: @article[:title], description: @article[:description], image: @article[:image_url] %>
+
+<section class="py-8 lg:py-24">
+  <article class="px-4 mx-auto max-w-5xl lg:px-4">
+    <h1 class="mb-4 text-4xl font-extrabold leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+      <%== @article[:title] %>
+    </h1>
+    <p class="mb-10 text-lg text-gray-600 dark:text-gray-400 lg:text-lg">
+      <%== @article[:description] %>
+    </p>
+    <hr class="my-12 border-gray-200 dark:border-gray-800">
+    <div class="prose prose-zinc lg:prose-xl prose-img:rounded-xl prose-a:text-blue-600">
+      <%== @article[:parsed_content] %>
+    </div>
+  </article>
+</section>
+
+
+<% content_for :custom_stylesheet do %>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css">
+<% end %>
+<% content_for :custom_javascript do %>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+      document.querySelectorAll('pre code').forEach((el) => {
+        hljs.highlightElement(el);
+      });
+    });
+  </script>
+<% end %>

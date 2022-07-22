@@ -100,12 +100,6 @@ jobs:
       - name: Standardize
         run: bundle exec standardrb
 
-      - name: erb-lint
-        run: bundle exec erblint --lint-all
-
-      - name: i18n-tasks
-        run: bundle exec i18n-tasks health en
-
       - name: Run tests
         env:
           RAILS_ENV: test
