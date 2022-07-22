@@ -11,7 +11,7 @@ class BlogController < ApplicationController
   def show
     markdown = Redcarpet::Markdown.new(CustomRender, autolink: true, fenced_code_blocks: true, tables: true)
     article = Article.find_by!(slug: params[:id])
-    article_h = article.attributes.deep_symbolize_keys.slice(:title, :kontent, :description, :publication_date)
+    article_h = article.attributes.deep_symbolize_keys.slice(:title, :kontent, :description, :publication_date, :image_url)
     article_h[:parsed_content] = markdown.render(article_h[:kontent].gsub("\\k","\n"))
     if article_h[:publication_date].present?
       article_h[:publication_date] = article_h[:publication_date]
@@ -22,3 +22,5 @@ class BlogController < ApplicationController
   end
 
 end
+
+
