@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_07_12_221754) do
+ActiveRecord::Schema[7.0].define(version: 2022_07_12_221755) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -56,6 +56,17 @@ ActiveRecord::Schema[7.0].define(version: 2022_07_12_221754) do
     t.string "goal", null: false
     t.integer "value", default: 0, null: false
     t.datetime "tracked_at", precision: nil
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "articles", force: :cascade do |t|
+    t.string "slug"
+    t.text "kontent"
+    t.string "title"
+    t.text "description"
+    t.text "image_url"
+    t.datetime "publication_date"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

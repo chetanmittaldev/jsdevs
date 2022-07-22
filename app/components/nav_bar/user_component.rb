@@ -27,6 +27,7 @@ module NavBar
       @admin_links ||= [
         Link.new(t(".conversations"), admin_conversations_path),
         Link.new(t(".impersonate"), admin_impersonate_path),
+        Link.new(t(".articles"), admin_articles_path),
         Link.new(t(".transactions"), admin_transactions_path),
         Link.new(t(".blocked_conversations"), admin_conversations_blocks_path)
       ]

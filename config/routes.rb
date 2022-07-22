@@ -48,10 +48,10 @@ Rails.application.routes.draw do
   end
 
   namespace :admin do
+    resources :articles
     resource :impersonate, only: [:create, :show, :destroy]
     resources :conversations, only: :index
     resources :transactions, except: :show
-
     namespace :conversations do
       resources :blocks, only: :index
     end
