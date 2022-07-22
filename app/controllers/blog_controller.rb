@@ -1,13 +1,9 @@
 class BlogController < ApplicationController
   
   def index
-    @articles = Article.order('publication_date DESC').map do |article| 
+    @articles = Article.published.order('publication_date DESC').map do |article| 
       res = article.attributes.deep_symbolize_keys.slice(:slug, :publication_date, :title, :description)
-      if res[:publication_date].present? && res[:publication_date].before?(Date.today)
-        res[:publication_date] = res[:publication_date].strftime("%d %b %Y") # => example : 08 Jan 2022
-      else
-        res = {}
-      end
+      res[:publication_date] = res[:publication_date].strftime("%d %b %Y") # => example : 08 Jan 2022
       res
     end.compact_blank
   end
