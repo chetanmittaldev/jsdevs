@@ -482,7 +482,7 @@ en:
       title: You are subscribed to a legacy plan that is not listed on this page. Your price and features have not changed.
     cta:
       cta: Get started
-      subtitle: Find your next web developer today.
+      subtitle: Find your next JavaScript developers today.
       title: Ready to start hiring?
     faq:
       annual:
@@ -607,9 +607,9 @@ en:
   roles:
     new:
       hiring_developers: I'm hiring developers
-      hiring_developers_help_text: You're a business looking to hire a freelance, part-time, or full-time web developer.
+      hiring_developers_help_text: You're a business looking to hire a freelance, part-time, or full-time JavaScript developers.
       looking_for_work: I'm looking for work
-      looking_for_work_help_text: You're a web developer looking for your next gig.
+      looking_for_work_help_text: You're a JavaScript developers looking for your next gig.
       what_brings_you_here: What brings you to lovindevs?
   sessions:
     sign_in: Sign in
