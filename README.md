@@ -1,10 +1,10 @@
 # LovinDevs
 
-The reverse job board for web developers.
+The reverse job board for JavaScript developers.
 
 ![lovindevs homepage](https://user-images.githubusercontent.com/2937888/179790007-f91b99f5-8256-4da7-a3ee-0b9fc0417c8c.png)
 
-`lovindevs` empowers independent developers available for their next gig. It is being built around [three core values](https://lovindevs.com/about):
+`lovindevs` empowers independent JS developers available for their next gig. It is being built around [three core values](https://lovindevs.com/about):
 
 1. Empowering the independent developer
 1. Doing everything in public

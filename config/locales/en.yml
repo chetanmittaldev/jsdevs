@@ -3,7 +3,7 @@ en:
   about:
     show:
       caption_html: founder of <code class="text-gray-900 font-semibold">lovindevs</code>
-      description: I'm David Boureau. I'm building lovindevs to make it easier for web developers to find their next gig.
+      description: I'm David Boureau. I'm building lovindevs to make it easier for JavaScript developers to find their next gig.
       readtime: 1 minute read
       title: About
       title_og: About lovindevs
@@ -273,16 +273,16 @@ en:
       empty_state:
         body: Try changing or clearing your filters.
         title: No developers found
-      title: web developers
+      title: JavaScript developers
     invisible_banner_component:
       cta: Edit my profile
       title: Your developer profile is invisible – only you can see it.
     meta:
-      description: "%{count}+ web developers looking for their next gig. Juniors to seniors and everyone in between, you'll find them all here."
+      description: "%{count}+ JavaScript developers looking for their next gig. Juniors to seniors and everyone in between, you'll find them all here."
       freelance: freelance
       hire: Hire
       in_country: in %{country}
-      ruby_on_rails_developers: web developers
+      ruby_on_rails_developers: JavaScript developers
     new_field_component:
       new: New!
     new_fields_component:
@@ -342,16 +342,16 @@ en:
   home:
     show:
       available_developers: Developers available now
-      description_og: lovindevs empowers independent developers available for their next gig. Stop scouring job boards and sit back as companies reach out to you first.
+      description_og: lovindevs empowers independent JS developers available for their next gig. Stop scouring job boards and sit back as companies reach out to you first.
       get_started: Get started
       learn_more: Learn more
       more: See more developers
       subtitle_1: lovindevs
-      subtitle_2: empowers independent developers available for their next gig.
+      subtitle_2: empowers independent JS developers available for their next gig.
       subtitle_3: Stop scouring job boards and sit back as companies reach out to you first.
       title_1: The reverse job board for
-      title_2: web developers
-      title_og: The reverse job board for web developers
+      title_2: JavaScript developers
+      title_og: The reverse job board for JavaScript developers
       turbo_native_title: lovindevs
   impersonating_banner_component:
     cta: Sign out
@@ -512,15 +512,15 @@ en:
         description: Skip formal job postings and start messaging with candidates with one click.
         title: Talk directly to developers
       independent_developers:
-        description: Directly hire independent web developers instead of going through a firm or agency.
+        description: Directly hire independent JavaScript developers instead of going through a firm or agency.
         title: Support independent developers
       notifications:
         description: Daily or weekly email notifications of new developer profiles.
         title: New candidate notifications
       profiles:
-        description: Hundreds of web developers looking for freelance, contract, and full-time work.
+        description: Hundreds of JavaScript developers looking for freelance, contract, and full-time work.
         title: Highly targeted profiles
-      subtitle: Message hundreds of web developers with a lovindevs subscription. Save time by reaching out to the perfect candidates directly.
+      subtitle: Message hundreds of JavaScript developers with a lovindevs subscription. Save time by reaching out to the perfect candidates directly.
       support:
         description: Email the founder – that's me, David! – whenever you need help.
         title: Support from the founder
@@ -544,7 +544,7 @@ en:
       month: month
       part_time:
         fees: "+ $0 additional fees"
-        subtitle: Hire freelance or contract web developers.
+        subtitle: Hire freelance or contract JavaScript developers.
         title: Hire freelancers and contractors
       title: Pricing plans
     purchase_button:
@@ -576,15 +576,15 @@ en:
         '8': Support open source development.
         subtitle: Browse developer profiles who can start working ASAP or when you need help. Save time by reaching out to the perfect candidates.
         title: Hire at your own pace
-      subtitle: Connect with independent, freelance web developers who are available for work now.
-      title_1: Hire web developers for
+      subtitle: Connect with independent, freelance JavaScript developers who are available for work now.
+      title_1: Hire JavaScript developers for
       title_2: "$99 a month"
       title_og: Pricing
     v2:
-      description: Subscribe to lovindevs and directly connect with hundreds of web developers who are looking for freelance, contract, and full-time work.
-      title: Hire web developers
+      description: Subscribe to lovindevs and directly connect with hundreds of JavaScript developers who are looking for freelance, contract, and full-time work.
+      title: Hire JavaScript developers
       title_og: Pricing
-      turbo_native_title: Hire web developers
+      turbo_native_title: Hire JavaScript developers
   read_notifications:
     create:
       notice: All notifications marked as read.

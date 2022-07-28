@@ -3,35 +3,35 @@ require "test_helper"
 class Developers::MetaTest < ActiveSupport::TestCase
   test "displays role level when one is selected" do
     title = build_title(role_levels: [:junior])
-    assert_equal title, "Hire junior web developers"
+    assert_equal title, "Hire junior JavaScript developers"
 
     title = build_title(role_levels: [:junior, :senior])
-    assert_equal title, "Hire web developers"
+    assert_equal title, "Hire JavaScript developers"
 
     title = build_title(role_levels: [])
-    assert_equal title, "Hire web developers"
+    assert_equal title, "Hire JavaScript developers"
   end
 
   test "displays 'freelance' when only both contract role types are selected" do
     title = build_title(role_types: [:part_time_contract, :full_time_contract])
-    assert_equal title, "Hire freelance web developers"
+    assert_equal title, "Hire freelance JavaScript developers"
 
     title = build_title(role_types: [:part_time_contract, :full_time_contract, :full_time_employment])
-    assert_equal title, "Hire web developers"
+    assert_equal title, "Hire JavaScript developers"
 
     title = build_title(role_types: [:part_time_contract])
-    assert_equal title, "Hire web developers"
+    assert_equal title, "Hire JavaScript developers"
   end
 
   test "displays country if one is selected" do
     title = build_title(countries: ["United States"])
-    assert_equal title, "Hire web developers in United States"
+    assert_equal title, "Hire JavaScript developers in United States"
 
     title = build_title(countries: ["United States", "Canada"])
-    assert_equal title, "Hire web developers"
+    assert_equal title, "Hire JavaScript developers"
 
     title = build_title(countries: [])
-    assert_equal title, "Hire web developers"
+    assert_equal title, "Hire JavaScript developers"
   end
 
   test "role level comes before freelance (and country at the end)" do
@@ -40,7 +40,7 @@ class Developers::MetaTest < ActiveSupport::TestCase
       role_types: [:part_time_contract, :full_time_contract],
       countries: ["United States"]
     )
-    assert_equal title, "Hire senior freelance web developers in United States"
+    assert_equal title, "Hire senior freelance JavaScript developers in United States"
   end
 
   def build_title(query_options = {})

@@ -1,15 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="357px" height="245px" viewBox="0 0 357 245" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd" font-family="LeagueSpartan-Bold, League Spartan" font-size="144" font-weight="bold" letter-spacing="-10">
-        <g id="thelogo" transform="translate(-8.000000, -42.000000)">
-            <text>
-                <tspan x="53.484" y="284">dev</tspan>
-                <tspan x="298.668" y="284">s</tspan>
-            </text>
-            <text>
-                <tspan x="0.188" y="166">lovi</tspan>
-                <tspan x="231.628" y="166">n</tspan>
-            </text>
+<svg width="497px" height="272px" viewBox="0 0 497 272" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
+        <g id="logolovindevs" transform="translate(-6.000000, -42.000000)">
+            <g id="Group" transform="translate(0.000000, 150.000000)">
+                <rect id="Rectangle" fill="#4A90E2" x="6" y="21" width="159" height="143" rx="8"></rect>
+                <text id="JS" transform="translate(85.500000, 93.000000) rotate(-28.000000) translate(-85.500000, -93.000000) " font-family="LeagueSpartan-Bold, League Spartan" font-size="100" font-weight="bold">
+                    <tspan x="29" y="133">JS</tspan>
+                </text>
+            </g>
+            <g id="Group" transform="translate(165.000000, 118.000000)" font-family="LeagueSpartan-Bold, League Spartan" font-size="144" font-weight="bold">
+                <text id="devs">
+                    <tspan x="0.484" y="166">devs</tspan>
+                </text>
+            </g>
+            <g id="Group" transform="translate(96.000000, 0.000000)" font-family="LeagueSpartan-Bold, League Spartan" font-size="144" font-weight="bold">
+                <text id="lovin">
+                    <tspan x="0.188" y="166">lovin</tspan>
+                </text>
+            </g>
         </g>
     </g>
 </svg>

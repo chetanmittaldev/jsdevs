@@ -19,7 +19,7 @@ class DevelopersTest < ActionDispatch::IntegrationTest
 
   test "custom meta tags are rendered" do
     get developers_path
-    assert_title_contains "Hire web developers"
+    assert_title_contains "Hire JavaScript developers"
     assert_description_contains "looking for their"
   end
 
