@@ -5,13 +5,11 @@
 <% valid_css = "bg-green-50 border border-green-500 text-green-900 placeholder-green-700 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5 dark:bg-green-100 dark:border-green-400" %>
 <% regular_css = "shadow-sm bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" %>
 
-
-
 <div>
   <div class="grid grid-cols-1 px-4 pt-6 mb-4 xl:grid-cols-2 xl:gap-4 dark:bg-gray-900 dark:border-gray-700">
     <div class="col-span-full mb-4 xl:mb-2">
       <h1 class="text-xl font-semibold text-gray-900 sm:text-2xl dark:text-white">Create new Article</h1>
-      <%= link_to 'See all articles', admin_articles_path, class: 'underline'  %>
+      <%= link_to "See all articles", admin_articles_path, class: "underline" %>
     </div>
   </div>
   <div class="px-4">
@@ -23,18 +21,18 @@
           <div class="col-span-1">
             <div class="mb-3">
               <% is_valid_slug = triggered_validation && errors_h[:slug].blank? && @article.slug.present?  %>
-              <% is_invalid_slug = !!errors_h[:slug]  %>
+              <% is_invalid_slug = !!errors_h[:slug] %>
               <div>
-                  <%= form.label "slug-input", 'Slug *', class: "inline text-sm font-medium text-gray-900 dark:text-white" %>
+                  <%= form.label "slug-input", "Slug *", class: "inline text-sm font-medium text-gray-900 dark:text-white" %>
                   <label id="hint_id_slug" class="inline text-xs font-normal text-gray-500 dark:text-gray-400">
                     Will appear after /blog in the URL, i.e. /blog/my-article
                   </label>
               </div>
-              <%= form.text_field 'slug', 
-                    value: @article.slug, 
-                    id: "slug-input", 
-                    placeholder: 'Example : my-article',
-                    class: "#{is_invalid_slug ? invalid_css : is_valid_slug ?  valid_css  : regular_css}", aria: ({ invalid: is_invalid_slug, describedby: "slug_message" } if triggered_validation) %> 
+              <%= form.text_field "slug",
+                    value: @article.slug,
+                    id: "slug-input",
+                    placeholder: "Example : my-article",
+                    class: helpers.validity_classes(is_valid_slug, is_invalid_slug), aria: ({invalid: is_invalid_slug, describedby: "slug_message"} if triggered_validation) %>
               <% if is_invalid_slug %>
                   <%= content_tag(:div, "<span class='font-medium'>Error: </span>#{errors_h[:slug][0]}".html_safe, class: "text-sm text-red-600 dark:text-red-500", id: "slug_message") %>
               <% elsif is_valid_slug %>
@@ -45,17 +43,17 @@
             </div>
             <div>
               <% is_valid_title = triggered_validation && errors_h[:title].blank? && @article.title.present?  %>
-              <% is_invalid_title = !!errors_h[:title]  %>
+              <% is_invalid_title = !!errors_h[:title] %>
               <div>
-                  <%= form.label "title-input", 'Title *', class: "inline text-sm font-medium text-gray-900 dark:text-white" %>
+                  <%= form.label "title-input", "Title *", class: "inline text-sm font-medium text-gray-900 dark:text-white" %>
                   <label id="hint_id_title" class="inline text-xs font-normal text-gray-500 dark:text-gray-400">
                     Will appear as tab title, SEO title, and H1 title
                   </label>
               </div>
-              <%= form.text_field 'title', 
-                    value: @article.title, 
-                    id: "title-input", 
-                    placeholder: 'Example : A Title',
+              <%= form.text_field "title",
+                    value: @article.title,
+                    id: "title-input",
+                    placeholder: "Example : A Title",
                     class: "#{is_invalid_title ? invalid_css : is_valid_title ?  valid_css  : regular_css}", aria: ({ invalid: is_invalid_title, describedby: "title_message" } if triggered_validation) %> 
               <% if is_invalid_title %>
                   <%= content_tag(:div, "<span class='font-medium'>Error: </span>#{errors_h[:title][0]}".html_safe, class: "text-sm text-red-600 dark:text-red-500", id: "title_message") %>
