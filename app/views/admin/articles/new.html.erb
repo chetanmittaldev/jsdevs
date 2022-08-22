@@ -36,7 +36,7 @@
               <% if is_invalid_slug %>
                   <%= content_tag(:div, "<span class='font-medium'>Error: </span>#{errors_h[:slug][0]}".html_safe, class: "text-sm text-red-600 dark:text-red-500", id: "slug_message") %>
               <% elsif is_valid_slug %>
-                  <%= content_tag(:div, 'looks good!', class: "text-sm text-green-600 dark:text-green-500 font-medium", id: "slug_message")  %>
+                  <%= content_tag(:div, "looks good!", class: "text-sm text-green-600 dark:text-green-500 font-medium", id: "slug_message")  %>
               <% else %>
                   <%= content_tag(:div, "&nbsp;".html_safe, class: "text-sm font-medium", id: "slug_message")  %>
               <% end %>
