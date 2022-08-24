@@ -4,6 +4,7 @@
 
 ### August
 
+* August 24 - bug cleaning
 * August 24 - terms and conditions
 * August 22 - fixed CI problems
 
