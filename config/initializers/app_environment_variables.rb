@@ -1,4 +1,3 @@
 if Rails.env.development?
-  ENV['HOST'] = 'localhost'
+  ENV["HOST"] = "localhost"
 end
-
