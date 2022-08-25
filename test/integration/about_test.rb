@@ -4,8 +4,7 @@ class AboutTest < ActionDispatch::IntegrationTest
   test "renders both sections of markdown" do
     get about_path
 
-    assert_select "h3", "Empowering the developer"
-    assert_select "li", "Empowering the independent developer"
+    assert_select "h2", "The story"
   end
 
   # TODO : fix test
@@ -16,11 +15,9 @@ class AboutTest < ActionDispatch::IntegrationTest
   #   assert_select "li", "Empoderar desenvolvedores independentes"
   # end
 
-  # TODO : fix test
-  # test "defaults to English translation" do
-  #   get about_path(locale: "zh-TW")
+  test "defaults to English translation" do
+    get about_path(locale: "zh-TW")
 
-  #   assert_select "h3", "Empowering the developer"
-  #   assert_select "li", "Empowering the independent developer"
-  # end
+    assert_select "h2", "The story"
+  end
 end
