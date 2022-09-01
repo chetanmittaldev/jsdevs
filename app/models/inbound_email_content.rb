@@ -6,7 +6,7 @@ class InboundEmailContent
   end
 
   def content
-    body.split(/^.*@lovindevs\.com>? wrote:$/).first.squish
+    body.split(/^.*@jsdevs\.com>? wrote:$/).first.squish
   end
 
   private

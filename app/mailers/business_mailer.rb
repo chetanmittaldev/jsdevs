@@ -5,7 +5,7 @@ class BusinessMailer < ApplicationMailer
   def developer_profiles
     @business = params[:business]
     @developers = params[:developers]
-    subject = "#{pluralize(@developers.count, "new developer profile")} added to lovindevs"
+    subject = "#{pluralize(@developers.count, "new developer profile")} added to jsdevs"
 
     mail(to: @business.user.email, subject:)
   end

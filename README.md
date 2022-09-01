@@ -1,10 +1,10 @@
-# LovinDevs
+# jsdevs.co
 
 The reverse job board for JavaScript developers.
 
-![lovindevs homepage](https://user-images.githubusercontent.com/2937888/179790007-f91b99f5-8256-4da7-a3ee-0b9fc0417c8c.png)
+![jsdevs homepage](https://user-images.githubusercontent.com/2937888/179790007-f91b99f5-8256-4da7-a3ee-0b9fc0417c8c.png)
 
-`lovindevs` empowers independent JS developers available for their next gig. It is being built around [three core values](https://lovindevs.com/about):
+`jsdevs` empowers independent JS developers available for their next gig. It is being built around [three core values](https://jsdevs.com/about):
 
 1. Empowering the independent developer
 1. Doing everything in public
@@ -112,6 +112,6 @@ Significant changes and product updates are documented in the [changelog](CHANGE
 
 ## Open source support
 
-lovindevs uses a free or discounted open source plan from the following companies. Thank you for the support!
+jsdevs uses a free or discounted open source plan from the following companies. Thank you for the support!
 
 

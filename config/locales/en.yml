@@ -2,11 +2,11 @@
 en:
   about:
     show:
-      caption_html: founder of <code class="text-gray-900 font-semibold">lovindevs</code>
-      description: I'm David Boureau. I'm building lovindevs to make it easier for JavaScript developers to find their next gig.
+      caption_html: founder of <code class="text-gray-900 font-semibold">jsdevs</code>
+      description: I'm David Boureau. I'm building jsdevs to make it easier for JavaScript developers to find their next gig.
       readtime: 1 minute read
       title: About
-      title_og: About lovindevs
+      title_og: About jsdevs
   activerecord:
     attributes:
       business:
@@ -130,7 +130,7 @@ en:
       change_avatar: Upload
       creating: Creating...
       developer_notifications:
-        help_text: Receive daily or weekly email notifications when new developers add their profile to lovindevs.
+        help_text: Receive daily or weekly email notifications when new developers add their profile to jsdevs.
         legend: Developer notifications
         values:
           daily: Daily
@@ -139,16 +139,16 @@ en:
       notifications:
         title: Email notifications
       personal:
-        help: Information about you, the contact point for your business on lovindevs.
+        help: Information about you, the contact point for your business on jsdevs.
         title: Personal details
       save: Save
       something_went_wrong: Something went wrong uploading your image, please try again.
       updating: Updating...
       your_business_profile: Your business profile
     hiring_fee_component:
-      body: 'Hi David, I hired %{developer} via lovindevs and would like to coordinate paying the fee. Their starting salary is: '
+      body: 'Hi David, I hired %{developer} via jsdevs and would like to coordinate paying the fee. Their starting salary is: '
       cta: Pay hiring fee
-      subject: I hired a developer via lovindevs
+      subject: I hired a developer via jsdevs
       title: Have you hired %{developer}?
     primary_action_component:
       edit: Edit
@@ -199,7 +199,7 @@ en:
       month_year: "%B %Y"
   developer_mailer:
     first_message:
-      subject: Tips on responding to your first message on lovindevs
+      subject: Tips on responding to your first message on jsdevs
   developers:
     admin_component:
       copy: Copy
@@ -235,7 +235,7 @@ en:
         title: Online presence
       preferred_compensation:
         description: From my experience as a freelancer, compensation should be discussed only after the details of a project or job are known.
-        subtitle: Preferred compensation removed from lovindevs
+        subtitle: Preferred compensation removed from jsdevs
         title: Preferred compensation
       profile:
         avatar: Avatar
@@ -342,24 +342,24 @@ en:
   home:
     show:
       available_developers: Developers available now
-      description_og: lovindevs empowers independent JS developers available for their next gig. Stop scouring job boards and sit back as companies reach out to you first.
+      description_og: jsdevs empowers independent JS developers available for their next gig. Stop scouring job boards and sit back as companies reach out to you first.
       get_started: Get started
       learn_more: Learn more
       more: See more developers
-      subtitle_1: lovindevs
+      subtitle_1: jsdevs
       subtitle_2: empowers independent JS developers available for their next gig.
       subtitle_3: Stop scouring job boards and sit back as companies reach out to you first.
       title_1: The reverse job board for
       title_2: JavaScript developers
       title_og: The reverse job board for JavaScript developers
-      turbo_native_title: lovindevs
+      turbo_native_title: jsdevs
   impersonating_banner_component:
     cta: Sign out
     title: Signed in as %{email}
   messages:
     form:
       help: Add your message
-      hiring_fee_agreement: I agree to pay lovindevs the 10% hiring fee if I hire this developer for a full-time role.
+      hiring_fee_agreement: I agree to pay jsdevs the 10% hiring fee if I hire this developer for a full-time role.
       hiring_fee_cta: Questions?
       sending: Sending...
       submit: Send
@@ -408,15 +408,15 @@ en:
         title: "%{developer} may have been hired"
     businesses:
       invisiblize_notification:
-        title: Your profile on lovindevs was flagged
+        title: Your profile on jsdevs was flagged
     developers:
       invisiblize_notification:
-        title: Your profile on lovindevs was flagged
+        title: Your profile on jsdevs was flagged
       profile_reminder_notification:
-        email_subject: Is your lovindevs profile up to date?
+        email_subject: Is your jsdevs profile up to date?
         title: Is your developer profile up to date?
       welcome_notification:
-        title: Welcome to lovindevs!
+        title: Welcome to jsdevs!
     index:
       cta: View history
       empty_state:
@@ -425,7 +425,7 @@ en:
       mark_all_as_read: Mark all as read
       title: New notifications
     new_message_notification:
-      email_subject: "%{sender} sent you a message on lovindevs"
+      email_subject: "%{sender} sent you a message on jsdevs"
       title: "%{sender} sent you a message"
     show:
       notice: Notification marked as read.
@@ -435,17 +435,17 @@ en:
         amount: Amount
         contributions: Contributions
         date: Date
-        description: lovindevs contributes 10% of profits to women-focused communities and 2% of revenue to CO₂ removal.
+        description: jsdevs contributes 10% of profits to women-focused communities and 2% of revenue to CO₂ removal.
         open_startup: Open startup
         recipient: Recipient
-        title: lovindevs contributions
+        title: jsdevs contributions
         to_co2_removal: to CO₂ removal
         to_communities: to communities
     dashboard:
       show:
         contributions: Contributions
         date: Date
-        description: lovindevs is an open startup with public metrics.
+        description: jsdevs is an open startup with public metrics.
         expenses: Expenses
         mrr: MRR
         profit: Profit
@@ -456,20 +456,20 @@ en:
       index:
         amount: Amount
         date: Date
-        description: All monetary transactions associated with lovindevs, like hosting, fees, and purchases.
+        description: All monetary transactions associated with jsdevs, like hosting, fees, and purchases.
         expenses: Expenses
         open_startup: Open startup
         source: Source
-        title: lovindevs expenses
+        title: jsdevs expenses
     revenue:
       index:
         amount: Amount
         date: Date
-        description: All revenue lovindevs has generated since launching in November, 2021.
+        description: All revenue jsdevs has generated since launching in November, 2021.
         open_startup: Open startup
         revenue: Revenue
         source: Source
-        title: lovindevs revenue
+        title: jsdevs revenue
   policies:
     privacy:
       show:
@@ -486,25 +486,25 @@ en:
       title: Ready to start hiring?
     faq:
       annual:
-        a_html: Yes. Email the founder – that's me, David! – to set up annual billing at <a href='mailto:contact@lovindevs.com' class='underline'>contact@lovindevs.com</a>.
+        a_html: Yes. Email the founder – that's me, David! – to set up annual billing at <a href='mailto:contact@jsdevs.com' class='underline'>contact@jsdevs.com</a>.
         q: Can I pay annually or yearly?
       cancellation:
         a_html: Yes. You can cancel your subscription from the Billing link in the user drop-down. You will lose access to all paid features at the end of your billing period.
         q: Can I cancel my subscription at any time?
       developers:
-        a: No. lovindevs is free for developers.
-        q: Does lovindevs cost anything for developers?
+        a: No. jsdevs is free for developers.
+        q: Does jsdevs cost anything for developers?
       features:
-        a: A business subscription allows you to reach out directly to developers on lovindevs. It also unhides information that is hidden from the public, like the real names of developers and their portfolio links.
+        a: A business subscription allows you to reach out directly to developers on jsdevs. It also unhides information that is hidden from the public, like the real names of developers and their portfolio links.
         q: So what does the fee get me?
       fee:
-        a_html: You are required to pay lovindevs 10% of a developer's first year salary if you found them through lovindevs. This only applies to hiring full-time employees and not contract or freelance. Email the founder – that's me, David! – to coordinate payment at <a href='mailto:contact@lovindevs.com' class='underline'>contact@lovindevs.com</a>.
+        a_html: You are required to pay jsdevs 10% of a developer's first year salary if you found them through jsdevs. This only applies to hiring full-time employees and not contract or freelance. Email the founder – that's me, David! – to coordinate payment at <a href='mailto:contact@jsdevs.com' class='underline'>contact@jsdevs.com</a>.
         q: How does the 10% fee work for hiring a full-time developer?
       subscription:
-        a: No. The monthly/annual fee grants you business access to lovindevs. You have to externally pay the developers for the work they do.
+        a: No. The monthly/annual fee grants you business access to jsdevs. You have to externally pay the developers for the work they do.
         q: Does the monthly/annual fee include the developer rate, too?
       support:
-        a_html: Email the founder – that's me, David! – with any questions. You can reach me at <a href='mailto:contact@lovindevs.com' class='underline'>contact@lovindevs.com</a>.
+        a_html: Email the founder – that's me, David! – with any questions. You can reach me at <a href='mailto:contact@jsdevs.com' class='underline'>contact@jsdevs.com</a>.
         q: Who can I contact for more specific questions?
       title: Frequently asked questions
     features:
@@ -520,11 +520,11 @@ en:
       profiles:
         description: Hundreds of JavaScript developers looking for freelance, contract, and full-time work.
         title: Highly targeted profiles
-      subtitle: Message hundreds of JavaScript developers with a lovindevs subscription. Save time by reaching out to the perfect candidates directly.
+      subtitle: Message hundreds of JavaScript developers with a jsdevs subscription. Save time by reaching out to the perfect candidates directly.
       support:
         description: Email the founder – that's me, David! – whenever you need help.
         title: Support from the founder
-      title: Level up your hiring with lovindevs
+      title: Level up your hiring with jsdevs
       unlock:
         description: View hidden information, like the real names of developers and their portfolio links.
         title: Unlock full profiles
@@ -553,16 +553,16 @@ en:
       cta: Get started today
       faq:
         '1':
-          a: No. $99 a month grants you business access to lovindevs. You have to externally pay the developers for the work they do.
+          a: No. $99 a month grants you business access to jsdevs. You have to externally pay the developers for the work they do.
           q: Does $99 a month include the developer rate, too?
         '2':
-          a: A business subscription allows you to reach out directly to developers on lovindevs. It also unhides information that is hidden from the public, like the real names of developers and their portfolio links.
+          a: A business subscription allows you to reach out directly to developers on jsdevs. It also unhides information that is hidden from the public, like the real names of developers and their portfolio links.
           q: So what does $99 a month get me?
         '3':
-          a: No. lovindevs is free for developers.
-          q: Does lovindevs cost anything for developers?
+          a: No. jsdevs is free for developers.
+          q: Does jsdevs cost anything for developers?
         '4':
-          a_html: Email me, David, with any questions. You can reach me at <a href='mailto:contact@lovindevs.com'>contact@lovindevs.com</a>.
+          a_html: Email me, David, with any questions. You can reach me at <a href='mailto:contact@jsdevs.com'>contact@jsdevs.com</a>.
           q: Who can I contact for more specific questions?
         title: Frequently asked questions
       feature:
@@ -581,7 +581,7 @@ en:
       title_2: "$99 a month"
       title_og: Pricing
     v2:
-      description: Subscribe to lovindevs and directly connect with hundreds of JavaScript developers who are looking for freelance, contract, and full-time work.
+      description: Subscribe to jsdevs and directly connect with hundreds of JavaScript developers who are looking for freelance, contract, and full-time work.
       title: Hire JavaScript developers
       title_og: Pricing
       turbo_native_title: Hire JavaScript developers
@@ -610,7 +610,7 @@ en:
       hiring_developers_help_text: You're a business looking to hire a freelance, part-time, or full-time JavaScript developers.
       looking_for_work: I'm looking for work
       looking_for_work_help_text: You're a JavaScript developers looking for your next gig.
-      what_brings_you_here: What brings you to lovindevs?
+      what_brings_you_here: What brings you to jsdevs?
   sessions:
     sign_in: Sign in
     sign_in_hero: Sign in to your account
