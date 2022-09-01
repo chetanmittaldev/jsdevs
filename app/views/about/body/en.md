@@ -6,6 +6,3 @@ And job boards are rarely helpful for freelance and contract work. They're focus
 
 `jsdevs` strives to give power back to the independent developer. Instead of companies posting their jobs, developers post their profiles. That way, the power dynamic is reversed as companies have to reach out to developers first.
 
-## Behind the name
-
-`jsdevs` could be understood as "loving developers", or "loving developments", reflecting the double-sided marketplace of the platform.
