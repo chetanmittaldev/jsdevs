@@ -83,4 +83,4 @@ production:
   <<: *default
   database: jsdevs_production
   username: jsdevs
-  password: <%= ENV["LOVINDEVS_DATABASE_PASSWORD"] %>
+  password: <%= ENV["JSDEVS_DATABASE_PASSWORD"] %>
