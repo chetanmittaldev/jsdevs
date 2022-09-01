@@ -4,7 +4,7 @@ The reverse job board for JavaScript developers.
 
 ![jsdevs homepage](https://user-images.githubusercontent.com/2937888/179790007-f91b99f5-8256-4da7-a3ee-0b9fc0417c8c.png)
 
-`jsdevs` empowers independent JS developers available for their next gig. It is being built around [three core values](https://jsdevs.com/about):
+`jsdevs` empowers independent JS developers available for their next gig. It is being built around [three core values](https://jsdevs.co/about):
 
 1. Empowering the independent developer
 1. Doing everything in public

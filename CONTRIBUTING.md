@@ -1,12 +1,12 @@
 # Contributing to jsdevs
 
-Welcome to [jsdevs](https://jsdevs.com)! I'm David, the solo-founder, and I'd love for you to contribute to the project.
+Welcome to [jsdevs](https://jsdevs.co)! I'm David, the solo-founder, and I'd love for you to contribute to the project.
 
 Lots of developers first open source contribution was to jsdevs. Let me help you make it yours, too.
 
 ## What to work on?
 
-[Unassigned issues labelled "help wanted"](https://github.com/joemasilotti/jsdevs.com/issues?q=is%3Aissue+is%3Aopen+no%3Aassignee+label%3A%22help+wanted%22) are ready to be worked on. Comment on one to "claim" it – I'll assign it to you to let others know.
+[Unassigned issues labelled "help wanted"](https://github.com/joemasilotti/jsdevs.co/issues?q=is%3Aissue+is%3Aopen+no%3Aassignee+label%3A%22help+wanted%22) are ready to be worked on. Comment on one to "claim" it – I'll assign it to you to let others know.
 
 To keep things moving, you'll have 2 weeks to submit a pull request. If you don't finish in time, no worries! Comment and let me know and we can work something out.
 

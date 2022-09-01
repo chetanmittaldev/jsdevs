@@ -486,7 +486,7 @@ en:
       title: Ready to start hiring?
     faq:
       annual:
-        a_html: Yes. Email the founder – that's me, David! – to set up annual billing at <a href='mailto:contact@jsdevs.com' class='underline'>contact@jsdevs.com</a>.
+        a_html: Yes. Email the founder – that's me, David! – to set up annual billing at <a href='mailto:contact@jsdevs.co' class='underline'>contact@jsdevs.co</a>.
         q: Can I pay annually or yearly?
       cancellation:
         a_html: Yes. You can cancel your subscription from the Billing link in the user drop-down. You will lose access to all paid features at the end of your billing period.
@@ -498,13 +498,13 @@ en:
         a: A business subscription allows you to reach out directly to developers on jsdevs. It also unhides information that is hidden from the public, like the real names of developers and their portfolio links.
         q: So what does the fee get me?
       fee:
-        a_html: You are required to pay jsdevs 10% of a developer's first year salary if you found them through jsdevs. This only applies to hiring full-time employees and not contract or freelance. Email the founder – that's me, David! – to coordinate payment at <a href='mailto:contact@jsdevs.com' class='underline'>contact@jsdevs.com</a>.
+        a_html: You are required to pay jsdevs 10% of a developer's first year salary if you found them through jsdevs. This only applies to hiring full-time employees and not contract or freelance. Email the founder – that's me, David! – to coordinate payment at <a href='mailto:contact@jsdevs.co' class='underline'>contact@jsdevs.co</a>.
         q: How does the 10% fee work for hiring a full-time developer?
       subscription:
         a: No. The monthly/annual fee grants you business access to jsdevs. You have to externally pay the developers for the work they do.
         q: Does the monthly/annual fee include the developer rate, too?
       support:
-        a_html: Email the founder – that's me, David! – with any questions. You can reach me at <a href='mailto:contact@jsdevs.com' class='underline'>contact@jsdevs.com</a>.
+        a_html: Email the founder – that's me, David! – with any questions. You can reach me at <a href='mailto:contact@jsdevs.co' class='underline'>contact@jsdevs.co</a>.
         q: Who can I contact for more specific questions?
       title: Frequently asked questions
     features:
@@ -562,7 +562,7 @@ en:
           a: No. jsdevs is free for developers.
           q: Does jsdevs cost anything for developers?
         '4':
-          a_html: Email me, David, with any questions. You can reach me at <a href='mailto:contact@jsdevs.com'>contact@jsdevs.com</a>.
+          a_html: Email me, David, with any questions. You can reach me at <a href='mailto:contact@jsdevs.co'>contact@jsdevs.co</a>.
           q: Who can I contact for more specific questions?
         title: Frequently asked questions
       feature:
