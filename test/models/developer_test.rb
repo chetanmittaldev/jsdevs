@@ -146,9 +146,9 @@ class DeveloperTest < ActiveSupport::TestCase
 
   test "normalizes social media profile input" do
     developer = Developer.new(developer_attributes)
-    developer.github = "https://github.com/joemasilotti"
+    developer.github = "https://github.com/bdavidxyz"
     developer.save!
-    assert_equal developer.github, "joemasilotti"
+    assert_equal developer.github, "bdavidxyz"
   end
 
   test "missing fields when search status is blank" do
