@@ -24,58 +24,58 @@ class HasSocialProfilesTest < ActiveSupport::TestCase
   end
 
   test "normalizes GitHub handle" do
-    @model.github = "joemasilotti"
+    @model.github = "bdavidxyz"
     save_and_assert_normalized_handle(:github)
 
-    @model.github = "http://github.com/joemasilotti"
+    @model.github = "http://github.com/bdavidxyz"
     save_and_assert_normalized_handle(:github)
 
-    @model.github = "https://github.com/joemasilotti"
+    @model.github = "https://github.com/bdavidxyz"
     save_and_assert_normalized_handle(:github)
 
-    @model.github = "http://www.github.com/joemasilotti"
+    @model.github = "http://www.github.com/bdavidxyz"
     save_and_assert_normalized_handle(:github)
 
-    @model.github = "https://www.github.com/joemasilotti"
+    @model.github = "https://www.github.com/bdavidxyz"
     save_and_assert_normalized_handle(:github)
   end
 
   test "normalizes Twitter handle" do
-    @model.twitter = "joemasilotti"
+    @model.twitter = "bdavidxyz"
     save_and_assert_normalized_handle(:twitter)
 
-    @model.twitter = "http://twitter.com/joemasilotti"
+    @model.twitter = "http://twitter.com/bdavidxyz"
     save_and_assert_normalized_handle(:twitter)
 
-    @model.twitter = "https://twitter.com/joemasilotti"
+    @model.twitter = "https://twitter.com/bdavidxyz"
     save_and_assert_normalized_handle(:twitter)
 
-    @model.twitter = "http://www.twitter.com/joemasilotti"
+    @model.twitter = "http://www.twitter.com/bdavidxyz"
     save_and_assert_normalized_handle(:twitter)
 
-    @model.twitter = "https://www.twitter.com/joemasilotti"
+    @model.twitter = "https://www.twitter.com/bdavidxyz"
     save_and_assert_normalized_handle(:twitter)
   end
 
   test "normalizes LinkedIn handle" do
-    @model.linkedin = "joemasilotti"
+    @model.linkedin = "bdavidxyz"
     save_and_assert_normalized_handle(:linkedin)
 
-    @model.linkedin = "http://linkedin.com/in/joemasilotti"
+    @model.linkedin = "http://linkedin.com/in/bdavidxyz"
     save_and_assert_normalized_handle(:linkedin)
 
-    @model.linkedin = "https://linkedin.com/in/joemasilotti"
+    @model.linkedin = "https://linkedin.com/in/bdavidxyz"
     save_and_assert_normalized_handle(:linkedin)
 
-    @model.linkedin = "http://www.linkedin.com/in/joemasilotti"
+    @model.linkedin = "http://www.linkedin.com/in/bdavidxyz"
     save_and_assert_normalized_handle(:linkedin)
 
-    @model.linkedin = "https://www.linkedin.com/in/joemasilotti"
+    @model.linkedin = "https://www.linkedin.com/in/bdavidxyz"
     save_and_assert_normalized_handle(:linkedin)
   end
 
   def save_and_assert_normalized_handle(platform)
     @model.save
-    assert_equal @model.send(platform), "joemasilotti"
+    assert_equal @model.send(platform), "bdavidxyz"
   end
 end

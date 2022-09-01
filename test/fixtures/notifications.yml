@@ -6,9 +6,9 @@ message_to_business:
       - message
       - conversation
     message:
-      _aj_globalid: gid://lovindevs/Message/<%= ActiveRecord::FixtureSet.identify(:from_developer) %>
+      _aj_globalid: gid://jsdevs/Message/<%= ActiveRecord::FixtureSet.identify(:from_developer) %>
     conversation:
-      _aj_globalid: gid://lovindevs/Conversation/<%= ActiveRecord::FixtureSet.identify(:one) %>
+      _aj_globalid: gid://jsdevs/Conversation/<%= ActiveRecord::FixtureSet.identify(:one) %>
 
 message_to_developer:
   type: NewMessageNotification
@@ -18,6 +18,6 @@ message_to_developer:
       - message
       - conversation
     message:
-      _aj_globalid: gid://lovindevs/Message/<%= ActiveRecord::FixtureSet.identify(:from_business) %>
+      _aj_globalid: gid://jsdevs/Message/<%= ActiveRecord::FixtureSet.identify(:from_business) %>
     conversation:
-      _aj_globalid: gid://lovindevs/Conversation/<%= ActiveRecord::FixtureSet.identify(:one) %>
+      _aj_globalid: gid://jsdevs/Conversation/<%= ActiveRecord::FixtureSet.identify(:one) %>

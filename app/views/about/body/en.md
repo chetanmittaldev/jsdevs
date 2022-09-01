@@ -4,8 +4,5 @@ I've been an independent developer for the past five years. And leads are rarely
 
 And job boards are rarely helpful for freelance and contract work. They're focused on full-time roles.
 
-`lovindevs` strives to give power back to the independent developer. Instead of companies posting their jobs, developers post their profiles. That way, the power dynamic is reversed as companies have to reach out to developers first.
+`jsdevs` strives to give power back to the independent developer. Instead of companies posting their jobs, developers post their profiles. That way, the power dynamic is reversed as companies have to reach out to developers first.
 
-## Behind the name
-
-`lovindevs` could be understood as "loving developers", or "loving developments", reflecting the double-sided marketplace of the platform.

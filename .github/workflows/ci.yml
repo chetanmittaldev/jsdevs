@@ -103,7 +103,7 @@ jobs:
       - name: Run tests
         env:
           RAILS_ENV: test
-          DATABASE_URL: postgres://postgres:password@localhost:5432/lovindevs_test
+          DATABASE_URL: postgres://postgres:password@localhost:5432/jsdevs_test
           RAILS_MASTER_KEY: ${{ secrets.RAILS_MASTER_KEY }}
           TZ: America/New_York
         run: |
@@ -117,7 +117,7 @@ jobs:
       - name: Smoke test database seeds
         env:
           RAILS_ENV: test
-          DATABASE_URL: postgres://postgres:password@localhost:5432/lovindevs_test
+          DATABASE_URL: postgres://postgres:password@localhost:5432/jsdevs_test
           RAILS_MASTER_KEY: ${{ secrets.RAILS_MASTER_KEY }}
           TZ: America/New_York
         run: bundle exec rails db:reset
@@ -125,7 +125,7 @@ jobs:
       - name: Verify mailer previews
         env:
           RAILS_ENV: test
-          DATABASE_URL: postgres://postgres:password@localhost:5432/lovindevs_test
+          DATABASE_URL: postgres://postgres:password@localhost:5432/jsdevs_test
           RAILS_MASTER_KEY: ${{ secrets.RAILS_MASTER_KEY }}
           TZ: America/New_York
         run: bundle exec rake verify_mailer_previews

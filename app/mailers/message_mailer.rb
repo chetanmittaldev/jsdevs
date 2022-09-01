@@ -15,7 +15,7 @@ class MessageMailer < ApplicationMailer
     mail(
       to: @recipient.email,
       subject: @notification.email_subject,
-      reply_to: "message-#{conversation_token}@inbound.lovindevs.com"
+      reply_to: "message-#{conversation_token}@inbound.jsdevs.co"
     )
   end
 end
