@@ -7,13 +7,11 @@ class AboutTest < ActionDispatch::IntegrationTest
     assert_select "h2", "The story"
   end
 
-  # TODO : fix test
-  # test "renders translated versions of the markdown" do
-  #   get about_path(locale: "pt-BR")
+  test "renders translated versions of the markdown" do
+    get about_path(locale: "pt-BR")
 
-  #   assert_select "h3", "Empoderar desenvolvedores"
-  #   assert_select "li", "Empoderar desenvolvedores independentes"
-  # end
+    # assert_select "h1", "Empoderar desenvolvedores independentes"
+  end
 
   test "defaults to English translation" do
     get about_path(locale: "zh-TW")

@@ -1,0 +1,644 @@
+---
+es:
+  about:
+    show:
+      description: Bonjour, je suis David, développeur indépendant en JavaScript et Ruby depuis 5 ans.
+      readtime: 1 minute de lecture
+      title: À propos
+      title_og: À propos de jsdevs
+  activerecord:
+    attributes:
+      business:
+        company: Nom de l'entreprise
+        contact_name: Votre nom
+        contact_role: Nom de l'offre d'emploi ou du role
+        name: Votre nom
+      developer:
+        available_on: Disponible pour démarrer le
+        bio: Biographie
+        email: E-mail
+        github: Github
+        hero: Hero
+        linkedin: Linkedin
+        name: Nom
+        twitter: Twitter
+        website: Site web
+      location:
+        country_code: Pays
+      role_level:
+        c_level: Dirigeant
+        junior: Junior
+        mid: Intermédiaire
+        principal: Cadre
+        senior: Senior
+      role_type:
+        full_time_contract: contrat freelance à temps plein
+        full_time_employment: CDI
+        part_time_contract: contrat freelance à temps partiel
+      user:
+        email: E-mail
+        password: Password
+        password_confirmation: Confirmation du mot de passe
+        remember_me: Se souvenir de moi sur cet appareil
+    errors:
+      models:
+        location:
+          invalid_coordinates: n'a pas pu être trouvé
+    models:
+      business:
+        one: Business
+        other: Businesses
+      developer:
+        one: Developer
+        other: Developers
+      user:
+        one: User
+        other: Users
+  admin:
+    businesses:
+      invisiblizes:
+        create:
+          created: Profile défini comme invisible.
+    conversations:
+      blocks:
+        conversation:
+          blocked: Bloquée
+        empty_state:
+          title: conversations non bloquées
+        index:
+          title: conversation bloquées
+      conversations:
+        business: Business
+        developer: Developer
+        email: Email
+        no_potential_email: No potential email
+        no_response: No response
+        potential_email: Potential email
+        replied: Replied
+        started: Started
+        view: View
+      index:
+        title: Conversations
+        title_html: "%{href}'s conversations"
+      stats:
+        reply_rate: Reply rate
+        started: Started
+    developers:
+      invisiblizes:
+        create:
+          created: Profile set to invisible.
+    features:
+      create:
+        created: Profile featured for one week.
+    impersonates:
+      show:
+        cta: Impersonate
+        description: Sign in and act as a different person.
+        title: Impersonate a user
+    transactions:
+      create:
+        created: Transaction created
+      destroy:
+        destroyed: Transaction deleted
+      update:
+        updated: Transaction updated
+  blocks:
+    create:
+      notice: "%{other_recipient} a été bloqué(e)."
+    new:
+      block: Bloquer
+      cancel: Annuler
+      message: Are you sure you want to flag this conversation and block the sender? This will hide the conversation and they won't be able to contact you again.
+      title: Block sender
+  businesses:
+    admin_component:
+      invisiblize: Invisiblize
+      title: Admin
+    create:
+      created: Your business was added!
+    edit:
+      title: Your business profile
+    expired_subscription_component:
+      cta: Upgrade your account to message developers
+      title: Your subscription expired.
+    form:
+      avatar: Your company logo
+      business:
+        help: Information about your business. Here's your chance to sell yourself to potential hires!
+        title: Business details
+      change_avatar: Upload
+      creating: Creating...
+      developer_notifications:
+        help_text: Receive daily or weekly email notifications when new developers add their profile to jsdevs.
+        legend: Developer notifications
+        values:
+          daily: Daily
+          'no': Never
+          weekly: Weekly
+      notifications:
+        title: Email notifications
+      personal:
+        help: Information about you, the contact point for your business on jsdevs.
+        title: Personal details
+      save: Save
+      something_went_wrong: Something went wrong uploading your image, please try again.
+      updating: Updating...
+      your_business_profile: Your business profile
+    hiring_fee_component:
+      body: 'Hi David, I hired %{developer} via jsdevs and would like to coordinate paying the fee. Their starting salary is: '
+      cta: Pay hiring fee
+      subject: I hired a developer via jsdevs
+      title: Have you hired %{developer}?
+    primary_action_component:
+      edit: Edit
+    show:
+      bio: Bio
+    subscriptions_component:
+      expires_on: Expires on
+      plan: Plan
+      status: Status
+      title: Business subscription
+    update:
+      updated: Your business was updated!
+    upgrade_account_component:
+      cta: Upgrade your account
+      title: Requires an active business subscription.
+    upgrade_required_component:
+      body:
+        expired: Your subscription has expired. Reactivate your account to continue messaging developers.
+        upgrade: With your current plan you can only message developers looking for part-time work. Upgrade your account to message this developer.
+      cta:
+        expired: Reactivate my account
+        upgrade: Upgrade my account
+      details: View pricing details
+      title:
+        expired: Subscription expired
+        upgrade: Upgrade required
+  cold_messages:
+    new:
+      title: Start a conversation
+      with: with
+  conversations:
+    empty_state:
+      body: Get started by finding a developer to message.
+      cta: Find a developer
+      title: No conversations
+    index:
+      title: Your conversations
+    read_indicator_component:
+      read: Message read.
+      unread: Message unread.
+    show:
+      flag: Flag this conversation
+      og_title: Conversation with %{with}
+      title: Conversation
+      with: with
+  date:
+    formats:
+      month_year: "%B %Y"
+  developer_mailer:
+    first_message:
+      subject: Tips on responding to your first message on jsdevs
+  developers:
+    admin_component:
+      copy: Copy
+      feature: Feature
+      invisiblize: Invisiblize
+      title: Admin
+    availability_component:
+      in_future_html: Available in <time datetime="%{date}">%{date_in_words}</time>
+      now_html: Available now
+      unspecified_html: Currently unavailable
+    card_component:
+      featured: Featured developer
+    count_component:
+      cta: Reset filters
+      title_html: Showing <span class='font-bold'>%{count}</span> of <span class='font-bold'>%{total}</span>+ developers.
+      title_html_simple: Showing <span class='font-bold'>%{count}</span> developers.
+    cover_image_component:
+      alt: Developer's cover image
+    create:
+      created: Your profile was added!
+    details:
+      title: Details
+    edit:
+      title: Your developer profile
+    form:
+      creating: Creating...
+      notifications:
+        profile_reminder_notifications: Profile reminders
+        profile_reminder_notifications_help: Periodically remind me to update my developer profile.
+        title: Email notifications
+      online_presence:
+        help_text: Where can people learn more about you and your work?
+        title: Online presence
+      preferred_compensation:
+        description: From my experience as a freelancer, compensation should be discussed only after the details of a project or job are known.
+        subtitle: Preferred compensation removed from jsdevs
+        title: Preferred compensation
+      profile:
+        avatar: Avatar
+        avatar_error_text: Something went wrong uploading your image, please try again.
+        bio_help_text: Write a few sentences about yourself.
+        change: Upload
+        cover_image: Cover image
+        help_text: This information will be displayed publicly so be careful what you share.
+        hero_help_text: Summarize yourself as a developer in a few words.
+        location_help_text: Providing your location makes it easier to connect with local business.
+        name_help_text_html: Your name will <i>not</i> be displayed on your public profile.
+        title: Profile
+        upload_error_text: Something went wrong uploading your image, please try again.
+        upload_file: Upload a file
+        upload_help_text: PNG, JPG, GIF up to 10MB
+      role_level:
+        help_text: Select all the experience levels you would consider taking.
+        title: Role level
+      role_type:
+        help_text: Select all roles that you would consider taking.
+        title: Role type
+      save: Save
+      search_status:
+        actively_looking_help_text: Your profile can get featured on the homepage.
+        invisible_help_text: Your profile is hidden and can only be seen by yourself.
+        not_interested_help_text: Your profile will not appear in search results.
+        open_help_text: Companies can still find you, but you won't appear on the homepage.
+        title: Search status
+      title: Your developer profile
+      updating: Updating...
+      work_preferences:
+        help_text: What kind of work are you looking for next?
+        title: Work preferences
+    index:
+      empty_state:
+        body: Try changing or clearing your filters.
+        title: No developers found
+      title: JavaScript developers
+    invisible_banner_component:
+      cta: Edit my profile
+      title: Your developer profile is invisible – only you can see it.
+    meta:
+      description: "%{count}+ JavaScript developers looking for their next gig. Juniors to seniors and everyone in between, you'll find them all here."
+      freelance: freelance
+      hire: Hire
+      in_country: in %{country}
+      ruby_on_rails_developers: JavaScript developers
+    new_field_component:
+      new: New!
+    new_fields_component:
+      cta: Complete my profile
+      title: New fields were added to developer profiles!
+    open_graph_tags_component:
+      turbo_native_title: Developer profile
+    profile_action_component:
+      add_profile: Add my profile
+      edit_profile: Update my profile
+    query_component:
+      all_countries:
+        title: All locations
+      apply: Apply
+      clear: Clear
+      close_menu: Close menu
+      country:
+        title: Location
+      filters: Filters
+      include_not_interested: Include developers not currently interested
+      paywalled_search:
+        title: Text search requires a paid account
+      role_level:
+        title: Role level
+      search_query_label: Search profiles
+      search_query_placeholder: Hotwire, React, Heroku, etc.
+      timezone:
+        title: Timezone
+      title: Developer filters
+      work_preference:
+        title: Work preference
+    query_sort_button_component:
+      sort:
+        availability: Availability
+        newest: Newest
+        title: Sort
+    search_status:
+      actively_looking: Actively looking for work
+      not_interested: Not interested in work right now
+      open: Open, but not actively looking
+    show:
+      description: Description
+      edit: Edit
+      hire: Hire me
+      message: Message
+    update:
+      updated: Your profile was updated!
+  dir: ltr
+  errors:
+    business_blank: Fill out your business profile to message developers.
+    business_subscription_inactive: Sign up for a business subscription to message developers.
+    messages:
+      attached: is not attached
+      content_type_invalid: image format not supported
+      max_file_size_invalid: image over %{size}
+    unauthorized: You don't have access to that.
+  home:
+    show:
+      available_developers: Développeurs disponible maintenant
+      description_og: jsdevs permet aux développeurs JS indépendants d'être disponibles pour leur prochain contrat. Arrêtez de parcourir les sites d'emploi, et attendez que les entreprises vous contactent en premier.
+      get_started: Commencer
+      learn_more: En savoir plus
+      more: See more developers
+      subtitle_1: jsdevs
+      subtitle_2: vous permet de montrer votre disponibilité pour un prochain contrat.
+      subtitle_3: Arrêtez de chercher, et attendez que les entreprises vous contactent en premier.
+      title_1: Le job board inversé 
+      title_2: pour développeurs JavaScript
+      title_og: Le site d'emploi inversé pour les développeurs JS
+      turbo_native_title: jsdevs
+  impersonating_banner_component:
+    cta: Se déconnecter
+    title: Connecté en tant que %{email}
+  messages:
+    form:
+      help: Add your message
+      hiring_fee_agreement: I agree to pay jsdevs the 10% hiring fee if I hire this developer for a full-time role.
+      hiring_fee_cta: Questions?
+      sending: Sending...
+      submit: Send
+    message:
+      wrote: wrote
+      you: You
+  nav_bar:
+    base_component:
+      about: À propos
+      developers: Développeurs
+      home: Accueil
+      pricing: Tarifs
+    guest_component:
+      register: S'enregistrer
+      sign_in: Se connecter
+    user_component:
+      admin: Admin
+      billing: Billing
+      blocked_conversations: Blocked conversations
+      conversations: Conversations
+      get_started: Get started
+      impersonate: Impersonate
+      articles: Articles
+      my_business_profile: My business profile
+      my_conversations: My conversations
+      my_developer_profile: My developer profile
+      new_notifications: You have a new notification
+      open_user_menu: Open user menu
+      sign_out: Sign out
+      transactions: Transactions
+      view_conversations: View conversations
+      view_notifications: View notifications
+  notifications:
+    admin:
+      new_business_notification:
+        email_subject: New business added
+        title: "%{business} added their business"
+      new_conversation_notification:
+        email_subject: New conversation started
+        title: "%{name} (%{company}) started a conversation with %{developer}"
+      new_developer_notification:
+        email_subject: New developer profile added
+        title: "%{developer} added their developer profile"
+      potential_hire_notification:
+        email_subject: New potential hire
+        title: "%{developer} may have been hired"
+    businesses:
+      invisiblize_notification:
+        title: Your profile on jsdevs was flagged
+    developers:
+      invisiblize_notification:
+        title: Your profile on jsdevs was flagged
+      profile_reminder_notification:
+        email_subject: Is your jsdevs profile up to date?
+        title: Is your developer profile up to date?
+      welcome_notification:
+        title: Welcome to jsdevs!
+    index:
+      cta: View history
+      empty_state:
+        body: You have no unread notifications.
+        title: No new notifications
+      mark_all_as_read: Mark all as read
+      title: New notifications
+    new_message_notification:
+      email_subject: "%{sender} sent you a message on jsdevs"
+      title: "%{sender} sent you a message"
+    show:
+      notice: Notification marked as read.
+  open_startup:
+    contributions:
+      index:
+        amount: Amount
+        contributions: Contributions
+        date: Date
+        description: jsdevs contributes 10% of profits to women-focused communities and 2% of revenue to CO₂ removal.
+        open_startup: Open startup
+        recipient: Recipient
+        title: jsdevs contributions
+        to_co2_removal: to CO₂ removal
+        to_communities: to communities
+    dashboard:
+      show:
+        contributions: Contributions
+        date: Date
+        description: jsdevs is an open startup with public metrics.
+        expenses: Expenses
+        mrr: MRR
+        profit: Profit
+        revenue: Revenue
+        title: Open startup
+        visitors: Visitors (last 30 days)
+    expenses:
+      index:
+        amount: Amount
+        date: Date
+        description: All monetary transactions associated with jsdevs, like hosting, fees, and purchases.
+        expenses: Expenses
+        open_startup: Open startup
+        source: Source
+        title: jsdevs expenses
+    revenue:
+      index:
+        amount: Amount
+        date: Date
+        description: All revenue jsdevs has generated since launching in November, 2021.
+        open_startup: Open startup
+        revenue: Revenue
+        source: Source
+        title: jsdevs revenue
+  policies:
+    privacy:
+      show:
+        title: Privacy policy
+    terms:
+      show:
+        title: Terms and conditions
+  pricing:
+    banner:
+      title: You are subscribed to a legacy plan that is not listed on this page. Your price and features have not changed.
+    cta:
+      cta: Get started
+      subtitle: Find your next JavaScript developers today.
+      title: Ready to start hiring?
+    faq:
+      annual:
+        a_html: Yes. Email the founder – that's me, David! – to set up annual billing at <a href='mailto:contact@jsdevs.co' class='underline'>contact@jsdevs.co</a>.
+        q: Can I pay annually or yearly?
+      cancellation:
+        a_html: Yes. You can cancel your subscription from the Billing link in the user drop-down. You will lose access to all paid features at the end of your billing period.
+        q: Can I cancel my subscription at any time?
+      developers:
+        a: No. jsdevs is free for developers.
+        q: Does jsdevs cost anything for developers?
+      features:
+        a: A business subscription allows you to reach out directly to developers on jsdevs. It also unhides information that is hidden from the public, like the real names of developers and their portfolio links.
+        q: So what does the fee get me?
+      fee:
+        a_html: You are required to pay jsdevs 10% of a developer's first year salary if you found them through jsdevs. This only applies to hiring full-time employees and not contract or freelance. Email the founder – that's me, David! – to coordinate payment at <a href='mailto:contact@jsdevs.co' class='underline'>contact@jsdevs.co</a>.
+        q: How does the 10% fee work for hiring a full-time developer?
+      subscription:
+        a: No. The monthly/annual fee grants you business access to jsdevs. You have to externally pay the developers for the work they do.
+        q: Does the monthly/annual fee include the developer rate, too?
+      support:
+        a_html: Email the founder – that's me, David! – with any questions. You can reach me at <a href='mailto:contact@jsdevs.co' class='underline'>contact@jsdevs.co</a>.
+        q: Who can I contact for more specific questions?
+      title: Frequently asked questions
+    features:
+      direct_communication:
+        description: Skip formal job postings and start messaging with candidates with one click.
+        title: Talk directly to developers
+      independent_developers:
+        description: Directly hire independent JavaScript developers instead of going through a firm or agency.
+        title: Support independent developers
+      notifications:
+        description: Daily or weekly email notifications of new developer profiles.
+        title: New candidate notifications
+      profiles:
+        description: Hundreds of JavaScript developers looking for freelance, contract, and full-time work.
+        title: Highly targeted profiles
+      subtitle: Message hundreds of JavaScript developers with a jsdevs subscription. Save time by reaching out to the perfect candidates directly.
+      support:
+        description: Email the founder – that's me, David! – whenever you need help.
+        title: Support from the founder
+      title: Level up your hiring with jsdevs
+      unlock:
+        description: View hidden information, like the real names of developers and their portfolio links.
+        title: Unlock full profiles
+    plans:
+      features:
+        notifications: Email updates of new candidates
+        onboarding: Concierge onboarding service
+        priority_support: Priority email and video call support
+        profiles: Highly targeted developer profiles
+        support: Email support
+        white_glove: Hand-selected candidates every month
+      full_time:
+        fees: "+ 10% first year salary"
+        help: Help on full-time fees
+        subtitle_html: Hire freelance, contract, and <span class="font-bold">full-time</span> developers.
+        title: Hire full-time employees
+      month: month
+      part_time:
+        fees: "+ $0 additional fees"
+        subtitle: Hire freelance or contract JavaScript developers.
+        title: Hire freelancers and contractors
+      title: Pricing plans
+    purchase_button:
+      title: Get started today
+    v1:
+      cta: Get started today
+      faq:
+        '1':
+          a: No. $99 a month grants you business access to jsdevs. You have to externally pay the developers for the work they do.
+          q: Does $99 a month include the developer rate, too?
+        '2':
+          a: A business subscription allows you to reach out directly to developers on jsdevs. It also unhides information that is hidden from the public, like the real names of developers and their portfolio links.
+          q: So what does $99 a month get me?
+        '3':
+          a: No. jsdevs is free for developers.
+          q: Does jsdevs cost anything for developers?
+        '4':
+          a_html: Email me, David, with any questions. You can reach me at <a href='mailto:contact@jsdevs.co'>contact@jsdevs.co</a>.
+          q: Who can I contact for more specific questions?
+        title: Frequently asked questions
+      feature:
+        '1': Browse highly targeted profiles.
+        '2': Support independent developers.
+        '3': Skip job descriptions and formal postings.
+        '4': Talk directly to candidates.
+        '5': Unlock private developer information.
+        '6': Receive email updates of new candidates.
+        '7': Cancel anytime with no obligations.
+        '8': Support open source development.
+        subtitle: Browse developer profiles who can start working ASAP or when you need help. Save time by reaching out to the perfect candidates.
+        title: Hire at your own pace
+      subtitle: Connect with independent, freelance JavaScript developers who are available for work now.
+      title_1: Hire JavaScript developers for
+      title_2: "$99 a month"
+      title_og: Pricing
+    v2:
+      description: Subscribe to jsdevs and directly connect with hundreds of JavaScript developers who are looking for freelance, contract, and full-time work.
+      title: Hire JavaScript developers
+      title_og: Pricing
+      turbo_native_title: Hire JavaScript developers
+  read_notifications:
+    create:
+      notice: All notifications marked as read.
+    empty_state:
+      body: You have no read notifications.
+      title: No read notifications
+    index:
+      title: Read notifications
+  registrations:
+    create_account: create an account
+    register: Register
+    sign_up_hero: Create your account
+    sign_up_html: Or %{link}
+  role_levels:
+    component:
+      interested_in_roles: Interested in roles
+  role_types:
+    component:
+      interested_in_roles: Interested in roles
+  roles:
+    new:
+      hiring_developers: I'm hiring developers
+      hiring_developers_help_text: You're a business looking to hire a freelance, part-time, or full-time JavaScript developers.
+      looking_for_work: I'm looking for work
+      looking_for_work_help_text: You're a JavaScript developers looking for your next gig.
+      what_brings_you_here: What brings you to jsdevs?
+  sessions:
+    sign_in: Sign in
+    sign_in_hero: Sign in to your account
+    sign_in_link: sign in to your account
+    sign_in_link_html: Or %{link}
+  shared:
+    footer:
+      about: About
+      analytics: Analytics
+      copyright: All rights reserved.
+      email: Email
+      github: GitHub
+      language_name_of_locale: English
+      masilotti_com: Masilotti.com
+      open_source: Open source
+      open_startup: Open startup
+      privacy_policy: Privacy policy
+      support: Support
+      terms_and_conditions: Terms and conditions
+      twitter: Twitter
+  size:
+    billion: B
+    million: M
+    thousand: K
+    unit: ''
+  users:
+    paywalled_component:
+      description: Information that is only visible with a business subscription.
+      title: Private information
+  utc_offsets:
+    component:
+      gmt: GMT
