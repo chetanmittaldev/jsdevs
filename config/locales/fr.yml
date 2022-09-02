@@ -340,7 +340,7 @@ es:
     unauthorized: You don't have access to that.
   home:
     show:
-      available_developers: Développeurs disponible maintenant
+      available_developers: Développeurs/ses disponible maintenant
       description_og: jsdevs permet aux développeurs JS indépendants d'être disponibles pour leur prochain contrat. Arrêtez de parcourir les sites d'emploi, et attendez que les entreprises vous contactent en premier.
       get_started: Commencer
       learn_more: En savoir plus
@@ -349,7 +349,7 @@ es:
       subtitle_2: vous permet de montrer votre disponibilité pour un prochain contrat.
       subtitle_3: Arrêtez de chercher, et attendez que les entreprises vous contactent en premier.
       title_1: Le job board inversé 
-      title_2: pour développeurs JavaScript
+      title_2: pour les devs JavaScript
       title_og: Le site d'emploi inversé pour les développeurs JS
       turbo_native_title: jsdevs
   impersonating_banner_component:
@@ -368,7 +368,7 @@ es:
   nav_bar:
     base_component:
       about: À propos
-      developers: Développeurs
+      developers: Développeurs/ses
       home: Accueil
       pricing: Tarifs
     guest_component:
@@ -605,11 +605,11 @@ es:
       interested_in_roles: Interested in roles
   roles:
     new:
-      hiring_developers: I'm hiring developers
-      hiring_developers_help_text: You're a business looking to hire a freelance, part-time, or full-time JavaScript developers.
-      looking_for_work: I'm looking for work
-      looking_for_work_help_text: You're a JavaScript developers looking for your next gig.
-      what_brings_you_here: What brings you to jsdevs?
+      hiring_developers: Je recrute
+      hiring_developers_help_text: Vous êtes un cabinet ou une entreprise qui recrute, vous cherchez à recrutez un freelance JavaScript, à temps plein ou temps partiel.
+      looking_for_work: Je cherche du travail
+      looking_for_work_help_text: Vous êtes un/une dev JavaScript, et vous chercher soit à devenir freelance, soit à trouver un nouveau contrat.
+      what_brings_you_here: Que recherchez-vous ?
   sessions:
     sign_in: Sign in
     sign_in_hero: Sign in to your account
