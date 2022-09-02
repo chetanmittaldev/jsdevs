@@ -1,5 +1,5 @@
 ---
-es:
+fr:
   about:
     show:
       description: Bonjour, je suis David, développeur indépendant en JavaScript et Ruby depuis 5 ans.
@@ -346,10 +346,10 @@ es:
       learn_more: En savoir plus
       more: See more developers
       subtitle_1: jsdevs
-      subtitle_2: vous permet de montrer votre disponibilité pour un prochain contrat.
+      subtitle_2: vous permet d'afficher votre disponibilité pour un prochain contrat.
       subtitle_3: Arrêtez de chercher, et attendez que les entreprises vous contactent en premier.
       title_1: Le job board inversé 
-      title_2: pour les devs JavaScript
+      title_2: des devs JavaScript
       title_og: Le site d'emploi inversé pour les développeurs JS
       turbo_native_title: jsdevs
   impersonating_banner_component:
