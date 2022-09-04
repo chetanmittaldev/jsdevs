@@ -277,11 +277,12 @@ fr:
       cta: Edit my profile
       title: Your developer profile is invisible – only you can see it.
     meta:
-      description: "%{count}+ JavaScript developers looking for their next gig. Juniors to seniors and everyone in between, you'll find them all here."
+      description_en: "%{count}+ JavaScript developers looking for their next gig. Juniors to seniors and everyone in between, you'll find them all here."
+      description: "%{count}+ développeur/se/s JavaScript cherchent leur prochain contrat. Des juniors aux seniors en passant par les tous les niveaux, vous les trouverez tous ici."
       freelance: freelance
-      hire: Hire
+      hire: Embauchez
       in_country: in %{country}
-      ruby_on_rails_developers: JavaScript developers
+      ruby_on_rails_developers: des devs JavaScript
     new_field_component:
       new: New!
     new_fields_component:
@@ -348,8 +349,8 @@ fr:
       subtitle_1: jsdevs
       subtitle_2: vous permet d'afficher votre disponibilité pour un prochain contrat.
       subtitle_3: Arrêtez de chercher, et attendez que les entreprises vous contactent en premier.
-      title_1: Le job board inversé 
-      title_2: des devs JavaScript
+      title_1: Le job board inversé pour
+      title_2: développeur.se.s JavaScript
       title_og: Le site d'emploi inversé pour les développeurs JS
       turbo_native_title: jsdevs
   impersonating_banner_component:
@@ -491,7 +492,7 @@ fr:
         a_html: Yes. You can cancel your subscription from the Billing link in the user drop-down. You will lose access to all paid features at the end of your billing period.
         q: Can I cancel my subscription at any time?
       developers:
-        a: No. jsdevs is free for developers.
+        a: Non. jsdevs est gratuit pour les développeurs.
         q: Does jsdevs cost anything for developers?
       features:
         a: A business subscription allows you to reach out directly to developers on jsdevs. It also unhides information that is hidden from the public, like the real names of developers and their portfolio links.
@@ -508,43 +509,48 @@ fr:
       title: Frequently asked questions
     features:
       direct_communication:
-        description: Skip formal job postings and start messaging with candidates with one click.
-        title: Talk directly to developers
+        description: Oubliez l'annonce d'emploi à l'ancienne, et commencez à envoyer des messages aux candidats d'un simple clic.
+        title: Parlez directement aux développeurs
       independent_developers:
-        description: Directly hire independent JavaScript developers instead of going through a firm or agency.
-        title: Support independent developers
+        description_en: Directly hire independent JavaScript developers instead of going through a firm or agency.
+        description: Embauchez directement des devs JavaScript au lieu de passer par un intermédiaire ou une agence.
+        title: Soutenez l'indépendance des devs
       notifications:
-        description: Daily or weekly email notifications of new developer profiles.
-        title: New candidate notifications
+        description_en: Daily or weekly email notifications of new developer profiles.
+        description: Notifications par e-mail quotidienne ou hebdomadaire concernant l'arrivée de nouveaux profils sur la plateforme.
+        title: Notifications d'arrivée de nouveaux candidats
       profiles:
-        description: Hundreds of JavaScript developers looking for freelance, contract, and full-time work.
-        title: Highly targeted profiles
-      subtitle: Message hundreds of JavaScript developers with a jsdevs subscription. Save time by reaching out to the perfect candidates directly.
+        description: Des centaines de développeurs JavaScript qui cherchent des contrats freelance ou CDI.
+        title: Profils hautement ciblés
+      subtitle_en: Message hundreds of JavaScript developers with a jsdevs subscription. Save time by reaching out to the perfect candidates directly.
+      subtitle: Envoyez des messages à des centaines de candidat(e)s JavaScript grâce à un abonnement à jsdevs. Gagnez du temps en contactant le/la "candidat(e) parfait(e)" directement.
       support:
-        description: Email the founder – that's me, David! – whenever you need help.
-        title: Support from the founder
-      title: Level up your hiring with jsdevs
+        description_en: Email the founder – that's me, David! – whenever you need help.
+        description: Envoyez un e-mail directement au fondateur - c'est moi, David! - si jamais vous avez besoin d'aide.
+        title: Support du fondateur
+      title: Embauchez plus facilement grâce à jsdevs
       unlock:
-        description: View hidden information, like the real names of developers and their portfolio links.
-        title: Unlock full profiles
+        description_en: View hidden information, like the real names of developers and their portfolio links.
+        description: Affichez les informations cachées, comme le nom réel des devs, et le lien vers leur portfolio.
+        title: Débloquez les profils complets
     plans:
       features:
-        notifications: Email updates of new candidates
-        onboarding: Concierge onboarding service
-        priority_support: Priority email and video call support
-        profiles: Highly targeted developer profiles
-        support: Email support
-        white_glove: Hand-selected candidates every month
+        profiles: Des profils de développeurs très ciblés
+        notifications: Notification par e-mail de l'arrivée de nouveaux candidats
+        onboarding: Découverte du service par visio
+        priority_support: Service client prioritaire, par visio et e-mail
+        support: Service client par e-mail
+        white_glove: Candidats choisis manuellement pour vous tous les mois
       full_time:
-        fees: "+ 10% first year salary"
-        help: Help on full-time fees
-        subtitle_html: Hire freelance, contract, and <span class="font-bold">full-time</span> developers.
-        title: Hire full-time employees
-      month: month
+        fees: "+ 10% de la première année de salaire"
+        help: A propos des les frais d'embauche en CDI
+        subtitle_html: Embauchez des devs freelances <span class="font-bold">temps plein</span>.
+        title: Embauchez en CDI
+      month: mois
       part_time:
-        fees: "+ $0 additional fees"
-        subtitle: Hire freelance or contract JavaScript developers.
-        title: Hire freelancers and contractors
+        fees: "+ 0€ de frais annexes"
+        subtitle: Embauchez des devs JavaScript indépendants
+        title: Embauchez des indépendants
       title: Pricing plans
     purchase_button:
       title: Get started today
@@ -552,23 +558,23 @@ fr:
       cta: Get started today
       faq:
         '1':
-          a: No. $99 a month grants you business access to jsdevs. You have to externally pay the developers for the work they do.
-          q: Does $99 a month include the developer rate, too?
+          a: No. 99 € a month grants you business access to jsdevs. You have to externally pay the developers for the work they do.
+          q: Does 99 € a month include the developer rate, too?
         '2':
           a: A business subscription allows you to reach out directly to developers on jsdevs. It also unhides information that is hidden from the public, like the real names of developers and their portfolio links.
-          q: So what does $99 a month get me?
+          q: So what does 99 € a month get me?
         '3':
           a: No. jsdevs is free for developers.
           q: Does jsdevs cost anything for developers?
         '4':
           a_html: Email me, David, with any questions. You can reach me at <a href='mailto:contact@jsdevs.co'>contact@jsdevs.co</a>.
           q: Who can I contact for more specific questions?
-        title: Frequently asked questions
+        title: Foire aux questions
       feature:
         '1': Browse highly targeted profiles.
         '2': Support independent developers.
         '3': Skip job descriptions and formal postings.
-        '4': Talk directly to candidates.
+        '4': Parlez directement aux candidats.
         '5': Unlock private developer information.
         '6': Receive email updates of new candidates.
         '7': Cancel anytime with no obligations.
@@ -576,14 +582,14 @@ fr:
         subtitle: Browse developer profiles who can start working ASAP or when you need help. Save time by reaching out to the perfect candidates.
         title: Hire at your own pace
       subtitle: Connect with independent, freelance JavaScript developers who are available for work now.
-      title_1: Hire JavaScript developers for
-      title_2: "$99 a month"
+      title_1: Embauchez des développeurs/ses JavaScript pour
+      title_2: "99 € a month"
       title_og: Pricing
     v2:
-      description: Subscribe to jsdevs and directly connect with hundreds of JavaScript developers who are looking for freelance, contract, and full-time work.
-      title: Hire JavaScript developers
-      title_og: Pricing
-      turbo_native_title: Hire JavaScript developers
+      description: Abonnez-vous à jsdevs, et connectez vous directement à des centaines de développeurs qui cherchent des contrats freelance ou CDI.
+      title: Embauchez des devs JavaScript
+      title_og: Tarifs
+      turbo_native_title: Embauchez des développeurs JavaScript
   read_notifications:
     create:
       notice: All notifications marked as read.
@@ -622,7 +628,7 @@ fr:
       copyright: All rights reserved.
       email: Email
       github: GitHub
-      language_name_of_locale: English
+      language_name_of_locale: French
       masilotti_com: Masilotti.com
       open_source: Open source
       open_startup: Open startup

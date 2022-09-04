@@ -553,11 +553,11 @@ en:
       cta: Get started today
       faq:
         '1':
-          a: No. $99 a month grants you business access to jsdevs. You have to externally pay the developers for the work they do.
-          q: Does $99 a month include the developer rate, too?
+          a: No. 99 € a month grants you business access to jsdevs. You have to externally pay the developers for the work they do.
+          q: Does 99 € a month include the developer rate, too?
         '2':
           a: A business subscription allows you to reach out directly to developers on jsdevs. It also unhides information that is hidden from the public, like the real names of developers and their portfolio links.
-          q: So what does $99 a month get me?
+          q: So what does 99 € a month get me?
         '3':
           a: No. jsdevs is free for developers.
           q: Does jsdevs cost anything for developers?
@@ -578,7 +578,7 @@ en:
         title: Hire at your own pace
       subtitle: Connect with independent, freelance JavaScript developers who are available for work now.
       title_1: Hire JavaScript developers for
-      title_2: "$99 a month"
+      title_2: "99 € a month"
       title_og: Pricing
     v2:
       description: Subscribe to jsdevs and directly connect with hundreds of JavaScript developers who are looking for freelance, contract, and full-time work.
