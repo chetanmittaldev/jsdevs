@@ -29,12 +29,12 @@ fr:
         c_level: Dirigeant
         junior: Junior
         mid: Intermédiaire
-        principal: Cadre
+        principal: Lead dev
         senior: Senior
       role_type:
-        full_time_contract: contrat freelance à temps plein
+        full_time_contract: Freelance à temps plein
         full_time_employment: CDI
-        part_time_contract: contrat freelance à temps partiel
+        part_time_contract: Freelance à temps partiel
       user:
         email: E-mail
         password: Password
@@ -212,8 +212,9 @@ fr:
     card_component:
       featured: Featured developer
     count_component:
-      cta: Reset filters
-      title_html: Showing <span class='font-bold'>%{count}</span> of <span class='font-bold'>%{total}</span>+ developers.
+      cta: Réinitialiser les filtres
+      title_html_en: Showing <span class='font-bold'>%{count}</span> of <span class='font-bold'>%{total}</span>+ developers.
+      title_html: Affichage de <span class='font-bold'>%{count}</span> parmis <span class='font-bold'>%{total}</span>+ développeur·se·s.
       title_html_simple: Showing <span class='font-bold'>%{count}</span> developers.
     cover_image_component:
       alt: Developer's cover image
@@ -251,8 +252,8 @@ fr:
         upload_file: Upload a file
         upload_help_text: PNG, JPG, GIF up to 10MB
       role_level:
-        help_text: Select all the experience levels you would consider taking.
-        title: Role level
+        help_text: Sélectionnez tous les niveaux d'expérience qui vous intéressent
+        title: Niveau de responsabilité
       role_type:
         help_text: Select all roles that you would consider taking.
         title: Role type
@@ -278,7 +279,7 @@ fr:
       title: Your developer profile is invisible – only you can see it.
     meta:
       description_en: "%{count}+ JavaScript developers looking for their next gig. Juniors to seniors and everyone in between, you'll find them all here."
-      description: "%{count}+ développeur/se/s JavaScript cherchent leur prochain contrat. Des juniors aux seniors en passant par les tous les niveaux, vous les trouverez tous ici."
+      description: "%{count}+ développeur·se·s JavaScript cherchent leur prochain contrat. Des juniors aux cadres en passant par les tous les niveaux, vous les trouverez tous ici."
       freelance: freelance
       hire: Embauchez
       in_country: in %{country}
@@ -291,7 +292,7 @@ fr:
     open_graph_tags_component:
       turbo_native_title: Developer profile
     profile_action_component:
-      add_profile: Add my profile
+      add_profile: Ajouter mon profil
       edit_profile: Update my profile
     query_component:
       all_countries:
@@ -300,25 +301,25 @@ fr:
       clear: Clear
       close_menu: Close menu
       country:
-        title: Location
+        title: Localisation
       filters: Filters
-      include_not_interested: Include developers not currently interested
+      include_not_interested: Include les profils non intéressés pour l'instant.
       paywalled_search:
-        title: Text search requires a paid account
+        title: La recherche est reservée aux abonné·e·s
       role_level:
-        title: Role level
-      search_query_label: Search profiles
+        title: Rôle
+      search_query_label: Cherchez des profils
       search_query_placeholder: Hotwire, React, Heroku, etc.
       timezone:
         title: Timezone
       title: Developer filters
       work_preference:
-        title: Work preference
+        title: Préférence 
     query_sort_button_component:
       sort:
-        availability: Availability
-        newest: Newest
-        title: Sort
+        availability: Disponibilité
+        newest: Date d'inscription
+        title: Trier selon
     search_status:
       actively_looking: Actively looking for work
       not_interested: Not interested in work right now
@@ -341,7 +342,7 @@ fr:
     unauthorized: You don't have access to that.
   home:
     show:
-      available_developers: Développeurs/ses disponible maintenant
+      available_developers: Développeur·se·s disponible maintenant
       description_og: jsdevs permet aux développeurs JS indépendants d'être disponibles pour leur prochain contrat. Arrêtez de parcourir les sites d'emploi, et attendez que les entreprises vous contactent en premier.
       get_started: Commencer
       learn_more: En savoir plus
@@ -369,7 +370,7 @@ fr:
   nav_bar:
     base_component:
       about: À propos
-      developers: Développeurs/ses
+      developers: Développeur·se·s
       home: Accueil
       pricing: Tarifs
     guest_component:
@@ -492,7 +493,7 @@ fr:
         a_html: Yes. You can cancel your subscription from the Billing link in the user drop-down. You will lose access to all paid features at the end of your billing period.
         q: Can I cancel my subscription at any time?
       developers:
-        a: Non. jsdevs est gratuit pour les développeurs.
+        a: No. jsdevs is free for developers.
         q: Does jsdevs cost anything for developers?
       features:
         a: A business subscription allows you to reach out directly to developers on jsdevs. It also unhides information that is hidden from the public, like the real names of developers and their portfolio links.
