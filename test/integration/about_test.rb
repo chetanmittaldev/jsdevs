@@ -4,20 +4,18 @@ class AboutTest < ActionDispatch::IntegrationTest
   test "renders both sections of markdown" do
     get about_path
 
-    assert_select "h2", "The story"
+    assert_select "h1", "About"
   end
 
-  # TODO : fix test
-  # test "renders translated versions of the markdown" do
-  #   get about_path(locale: "pt-BR")
+  test "renders translated versions of the markdown" do
+    get about_path(locale: "fr")
 
-  #   assert_select "h3", "Empoderar desenvolvedores"
-  #   assert_select "li", "Empoderar desenvolvedores independentes"
-  # end
+    assert_select "h1", "À propos"
+  end
 
   test "defaults to English translation" do
-    get about_path(locale: "zh-TW")
+    get about_path(locale: "es")
 
-    assert_select "h2", "The story"
+    assert_select "h1", "About"
   end
 end

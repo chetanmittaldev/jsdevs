@@ -2,8 +2,8 @@
 es:
   about:
     show:
-      description: Soy David Boureau. Estoy creando jsdevs para que desarrolladores de Ruby on Rails puedan encontrar su próximo trabajo.
-      title_og: Acerca de jsdevs
+      description: Soy David Boureau. Estoy creando JsDevs para que desarrolladores de JavaScript puedan encontrar su próximo trabajo.
+      title_og: Acerca de JsDevs
   activerecord:
     attributes:
       business:
@@ -47,10 +47,6 @@ es:
   admin:
     conversations:
       blocks:
-        conversation:
-          blocked: Bloqueada
-        empty_state:
-          title: Ninguna conversación bloqueada
         index:
           title: Conversaciones bloqueadas
   blocks:
@@ -69,7 +65,7 @@ es:
       change_avatar: Subir
       creating: Creando...
       developer_notifications:
-        help_text: Recibe notificaciones por correo electrónico cuando nuevos desarrolladores agreguen su perfil a jsdevs.
+        help_text: Recibe notificaciones por correo electrónico cuando nuevos desarrolladores agreguen su perfil a JsDevs.
         legend: Notificaciones de desarrolladores
         values:
           daily: Diario
@@ -77,7 +73,6 @@ es:
           weekly: Semanal
       notifications:
         title: Notificaciones por correo electrónico
-      save: Guardar
       something_went_wrong: Algo falló al subir tu imagen. Por favor intenta de nuevo.
       updating: Actualizando...
       your_business_profile: Perfil de tu empresa
@@ -91,11 +86,11 @@ es:
       title: Empieza una conversación
       with: con
   conversations:
-    empty_state:
-      body: Comienza encontrando a desarrolladores para contactar.
-      cta: Encuentra a algún desarrollador
-      title: Sin conversaciones
     index:
+      empty_state:
+        body: Comienza encontrando a desarrolladores para contactar.
+        cta: Encuentra a algún desarrollador
+        title: Sin conversaciones
       title: Tus conversaciones
     show:
       flag: Marcar esta conversación
@@ -120,7 +115,7 @@ es:
       preferred_compensation:
         description: Desde mi experiencia como freelancer, la remuneración debe de ser discutida después de conocer los detalles del proyecto o trabajo.
         more_info: Más información sobre esta decisión
-        subtitle: Remuneración preferida eliminada de jsdevs
+        subtitle: Remuneración preferida eliminada de JsDevs
         title: Remuneración preferida
       profile:
         avatar: Avatar
@@ -141,7 +136,6 @@ es:
       role_type:
         help_text: Selecciona todos los roles que considerarías aceptar.
         title: Tipo de rol
-      save: Guardar
       search_status:
         actively_looking_help_text: Tu perfil puede aparecer como destacado en la página de inicio.
         not_interested_help_text: Tu perfil estará claramente marcado de que no estás buscando trabajo.
@@ -186,11 +180,11 @@ es:
       get_started: Empezar
       learn_more: Aprender más
       more: Ver más desarrolladores
-      subtitle_1: jsdevs
+      subtitle_1: JsDevs
       subtitle_2: empodera a los desarrolladores independientes disponibles para su próximo trabajo.
       subtitle_3: Deja de buscar en las bolsas de trabajo y relájate mientras las empresas se comunican contigo.
       title_1: La bolsa de trabajo inversa para
-      title_2: desarrolladores de Rails
+      title_2: desarrolladores de JavaScript
   messages:
     form:
       help: Agrega tu mensaje
@@ -242,10 +236,9 @@ es:
         format: "%u%n"
         unit: "$"
   read_notifications:
-    empty_state:
-      body: No tienes notificaciones leídas.
-      title: Sin noticaciones leídas
     index:
+      empty_state_body: No tienes notificaciones leídas.
+      empty_state_title: Sin noticaciones leídas
       title: Ver notificaciones
   role_levels:
     component:
@@ -256,10 +249,10 @@ es:
   roles:
     new:
       hiring_developers: Estoy contratando desarrolladores
-      hiring_developers_help_text: Eres una empresa en búsqueda de desarrolladores freelance, medio tiempo o tiempo completo de Ruby on Rails.
+      hiring_developers_help_text: Eres una empresa en búsqueda de desarrolladores freelance, medio tiempo o tiempo completo de JavaScript.
       looking_for_work: Estoy en búsqueda de trabajo
-      looking_for_work_help_text: Eres un desarrollador de Ruby on Rails en búsqueda de tu próximo trabajo.
-      what_brings_you_here: "¿Qué te trae a jsdevs?"
+      looking_for_work_help_text: Eres un desarrollador de JavaScript en búsqueda de tu próximo trabajo.
+      what_brings_you_here: "¿Qué te trae a JsDevs?"
   shared:
     footer:
       about: Acerca de
@@ -268,7 +261,7 @@ es:
       email: Correo Electrónico
       github: GitHub
       language_name_of_locale: Español
-      masilotti_com: Masilotti.com
+      masilotti_com: bdavidxyz.com
       open_source: Código abierto
       support: Soporte
       twitter: Twitter

@@ -1,50 +1,49 @@
 ---
-en:
+fr:
   about:
     show:
-      caption_html: founder of <code class="text-gray-900 font-semibold">jsdevs</code>
-      description: I'm David Boureau. I'm building jsdevs to make it easier for JavaScript developers to find their next gig.
-      readtime: 1 minute read
-      title: About
-      title_og: About jsdevs
+      description: Bonjour, je suis David, développeur indépendant en JavaScript et Ruby depuis 5 ans.
+      readtime: 1 minute de lecture
+      title: À propos
+      title_og: À propos de jsdevs
   activerecord:
     attributes:
       business:
-        company: Company name
-        contact_name: Your name
-        contact_role: Your job title or role
-        name: Your name
+        company: Nom de l'entreprise
+        contact_name: Votre nom
+        contact_role: Nom de l'offre d'emploi ou du role
+        name: Votre nom
       developer:
-        available_on: Available to start on
-        bio: Bio
+        available_on: Disponible pour démarrer le
+        bio: Biographie
         email: E-mail
         github: Github
         hero: Hero
         linkedin: Linkedin
-        name: Name
+        name: Nom
         twitter: Twitter
-        website: Website
+        website: Site web
       location:
-        country_code: Country
+        country_code: Pays
       role_level:
-        c_level: C-level
+        c_level: Dirigeant
         junior: Junior
-        mid: Mid-level
-        principal: Principal / staff
+        mid: Intermédiaire
+        principal: Lead dev
         senior: Senior
       role_type:
-        full_time_contract: Full-time contract
-        full_time_employment: Full-time employment
-        part_time_contract: Part-time contract
+        full_time_contract: Freelance à temps plein
+        full_time_employment: CDI
+        part_time_contract: Freelance à temps partiel
       user:
         email: E-mail
         password: Password
-        password_confirmation: Password Confirmation
-        remember_me: Remember me
+        password_confirmation: Confirmation du mot de passe
+        remember_me: Se souvenir de moi sur cet appareil
     errors:
       models:
         location:
-          invalid_coordinates: can't be found
+          invalid_coordinates: n'a pas pu être trouvé
     models:
       business:
         one: Business
@@ -59,15 +58,15 @@ en:
     businesses:
       invisiblizes:
         create:
-          created: Profile set to invisible.
+          created: Profile défini comme invisible.
     conversations:
       blocks:
         conversation:
-          blocked: Blocked
+          blocked: Bloquée
         empty_state:
-          title: No blocked conversations
+          title: conversations non bloquées
         index:
-          title: Blocked conversations
+          title: conversation bloquées
       conversations:
         business: Business
         developer: Developer
@@ -105,10 +104,10 @@ en:
         updated: Transaction updated
   blocks:
     create:
-      notice: "%{other_recipient} was blocked."
+      notice: "%{other_recipient} a été bloqué(e)."
     new:
-      block: Block
-      cancel: Cancel
+      block: Bloquer
+      cancel: Annuler
       message: Are you sure you want to flag this conversation and block the sender? This will hide the conversation and they won't be able to contact you again.
       title: Block sender
   businesses:
@@ -213,8 +212,9 @@ en:
     card_component:
       featured: Featured developer
     count_component:
-      cta: Reset filters
-      title_html: Showing <span class='font-bold'>%{count}</span> of <span class='font-bold'>%{total}</span>+ developers.
+      cta: Réinitialiser les filtres
+      title_html_en: Showing <span class='font-bold'>%{count}</span> of <span class='font-bold'>%{total}</span>+ developers.
+      title_html: Affichage de <span class='font-bold'>%{count}</span> parmis <span class='font-bold'>%{total}</span>+ développeur·se·s.
       title_html_simple: Showing <span class='font-bold'>%{count}</span> developers.
     cover_image_component:
       alt: Developer's cover image
@@ -252,8 +252,8 @@ en:
         upload_file: Upload a file
         upload_help_text: PNG, JPG, GIF up to 10MB
       role_level:
-        help_text: Select all the experience levels you would consider taking.
-        title: Role level
+        help_text: Sélectionnez tous les niveaux d'expérience qui vous intéressent
+        title: Niveau de responsabilité
       role_type:
         help_text: Select all roles that you would consider taking.
         title: Role type
@@ -278,11 +278,12 @@ en:
       cta: Edit my profile
       title: Your developer profile is invisible – only you can see it.
     meta:
-      description: "%{count}+ JavaScript developers looking for their next gig. Juniors to seniors and everyone in between, you'll find them all here."
+      description_en: "%{count}+ JavaScript developers looking for their next gig. Juniors to seniors and everyone in between, you'll find them all here."
+      description: "%{count}+ développeur·se·s JavaScript cherchent leur prochain contrat. Des juniors aux cadres en passant par les tous les niveaux, vous les trouverez tous ici."
       freelance: freelance
-      hire: Hire
+      hire: Embauchez
       in_country: in %{country}
-      ruby_on_rails_developers: JavaScript developers
+      ruby_on_rails_developers: des devs JavaScript
     new_field_component:
       new: New!
     new_fields_component:
@@ -291,7 +292,7 @@ en:
     open_graph_tags_component:
       turbo_native_title: Developer profile
     profile_action_component:
-      add_profile: Add my profile
+      add_profile: Ajouter mon profil
       edit_profile: Update my profile
     query_component:
       all_countries:
@@ -300,25 +301,25 @@ en:
       clear: Clear
       close_menu: Close menu
       country:
-        title: Location
+        title: Localisation
       filters: Filters
-      include_not_interested: Include developers not currently interested
+      include_not_interested: Include les profils non intéressés pour l'instant.
       paywalled_search:
-        title: Text search requires a paid account
+        title: La recherche est reservée aux abonné·e·s
       role_level:
-        title: Role level
-      search_query_label: Search profiles
+        title: Rôle
+      search_query_label: Cherchez des profils
       search_query_placeholder: Hotwire, React, Heroku, etc.
       timezone:
         title: Timezone
       title: Developer filters
       work_preference:
-        title: Work preference
+        title: Préférence 
     query_sort_button_component:
       sort:
-        availability: Availability
-        newest: Newest
-        title: Sort
+        availability: Disponibilité
+        newest: Date d'inscription
+        title: Trier selon
     search_status:
       actively_looking: Actively looking for work
       not_interested: Not interested in work right now
@@ -341,21 +342,21 @@ en:
     unauthorized: You don't have access to that.
   home:
     show:
-      available_developers: Developers available now
-      description_og: jsdevs empowers independent JS developers available for their next gig. Stop scouring job boards and sit back as companies reach out to you first.
-      get_started: Get started
-      learn_more: Learn more
+      available_developers: Développeur·se·s disponible maintenant
+      description_og: jsdevs permet aux développeurs JS indépendants d'être disponibles pour leur prochain contrat. Arrêtez de parcourir les sites d'emploi, et attendez que les entreprises vous contactent en premier.
+      get_started: Commencer
+      learn_more: En savoir plus
       more: See more developers
       subtitle_1: jsdevs
-      subtitle_2: empowers independent JS developers available for their next gig.
-      subtitle_3: Stop scouring job boards and sit back as companies reach out to you first.
-      title_1: The reverse job board for
-      title_2: JavaScript developers
-      title_og: The reverse job board for JavaScript developers
+      subtitle_2: vous permet d'afficher votre disponibilité pour un prochain contrat.
+      subtitle_3: Arrêtez de chercher, et attendez que les entreprises vous contactent en premier.
+      title_1: Le job board inversé pour
+      title_2: développeur·se·s JavaScript
+      title_og: Le site d'emploi inversé pour les développeurs JS
       turbo_native_title: jsdevs
   impersonating_banner_component:
-    cta: Sign out
-    title: Signed in as %{email}
+    cta: Se déconnecter
+    title: Connecté en tant que %{email}
   messages:
     form:
       help: Add your message
@@ -368,13 +369,13 @@ en:
       you: You
   nav_bar:
     base_component:
-      about: About
-      developers: Developers
-      home: Home
-      pricing: Pricing
+      about: À propos
+      developers: Développeur·se·s
+      home: Accueil
+      pricing: Tarifs
     guest_component:
-      register: Register
-      sign_in: Sign in
+      register: S'enregistrer
+      sign_in: Se connecter
     user_component:
       admin: Admin
       billing: Billing
@@ -509,43 +510,48 @@ en:
       title: Frequently asked questions
     features:
       direct_communication:
-        description: Skip formal job postings and start messaging with candidates with one click.
-        title: Talk directly to developers
+        description: Oubliez l'annonce d'emploi à l'ancienne, et commencez à envoyer des messages aux candidats d'un simple clic.
+        title: Parlez directement aux développeurs
       independent_developers:
-        description: Directly hire independent JavaScript developers instead of going through a firm or agency.
-        title: Support independent developers
+        description_en: Directly hire independent JavaScript developers instead of going through a firm or agency.
+        description: Embauchez directement des devs JavaScript au lieu de passer par un intermédiaire ou une agence.
+        title: Soutenez l'indépendance des devs
       notifications:
-        description: Daily or weekly email notifications of new developer profiles.
-        title: New candidate notifications
+        description_en: Daily or weekly email notifications of new developer profiles.
+        description: Notifications par e-mail quotidienne ou hebdomadaire concernant l'arrivée de nouveaux profils sur la plateforme.
+        title: Notifications d'arrivée de nouveaux candidats
       profiles:
-        description: Hundreds of JavaScript developers looking for freelance, contract, and full-time work.
-        title: Highly targeted profiles
-      subtitle: Message hundreds of JavaScript developers with a jsdevs subscription. Save time by reaching out to the perfect candidates directly.
+        description: Des centaines de développeurs JavaScript qui cherchent des contrats freelance ou CDI.
+        title: Profils hautement ciblés
+      subtitle_en: Message hundreds of JavaScript developers with a jsdevs subscription. Save time by reaching out to the perfect candidates directly.
+      subtitle: Envoyez des messages à des centaines de candidat(e)s JavaScript grâce à un abonnement à jsdevs. Gagnez du temps en contactant le/la "candidat(e) parfait(e)" directement.
       support:
-        description: Email the founder – that's me, David! – whenever you need help.
-        title: Support from the founder
-      title: Level up your hiring with jsdevs
+        description_en: Email the founder – that's me, David! – whenever you need help.
+        description: Envoyez un e-mail directement au fondateur - c'est moi, David! - si jamais vous avez besoin d'aide.
+        title: Support du fondateur
+      title: Embauchez plus facilement grâce à jsdevs
       unlock:
-        description: View hidden information, like the real names of developers and their portfolio links.
-        title: Unlock full profiles
+        description_en: View hidden information, like the real names of developers and their portfolio links.
+        description: Affichez les informations cachées, comme le nom réel des devs, et le lien vers leur portfolio.
+        title: Débloquez les profils complets
     plans:
       features:
-        notifications: Email updates of new candidates
-        onboarding: Concierge onboarding service
-        priority_support: Priority email and video call support
-        profiles: Highly targeted developer profiles
-        support: Email support
-        white_glove: Hand-selected candidates every month
+        profiles: Des profils de développeurs très ciblés
+        notifications: Notification par e-mail de l'arrivée de nouveaux candidats
+        onboarding: Découverte du service par visio
+        priority_support: Service client prioritaire, par visio et e-mail
+        support: Service client par e-mail
+        white_glove: Candidats choisis manuellement pour vous tous les mois
       full_time:
-        fees: "+ 10% first year salary"
-        help: Help on full-time fees
-        subtitle_html: Hire freelance, contract, and <span class="font-bold">full-time</span> developers.
-        title: Hire full-time employees
-      month: month
+        fees: "+ 10% de la première année de salaire"
+        help: A propos des les frais d'embauche en CDI
+        subtitle_html: Embauchez des devs freelances <span class="font-bold">temps plein</span>.
+        title: Embauchez en CDI
+      month: mois
       part_time:
-        fees: "+ $0 additional fees"
-        subtitle: Hire freelance or contract JavaScript developers.
-        title: Hire freelancers and contractors
+        fees: "+ 0€ de frais annexes"
+        subtitle: Embauchez des devs JavaScript indépendants
+        title: Embauchez des indépendants
       title: Pricing plans
     purchase_button:
       title: Get started today
@@ -564,12 +570,12 @@ en:
         '4':
           a_html: Email me, David, with any questions. You can reach me at <a href='mailto:contact@jsdevs.co'>contact@jsdevs.co</a>.
           q: Who can I contact for more specific questions?
-        title: Frequently asked questions
+        title: Foire aux questions
       feature:
         '1': Browse highly targeted profiles.
         '2': Support independent developers.
         '3': Skip job descriptions and formal postings.
-        '4': Talk directly to candidates.
+        '4': Parlez directement aux candidats.
         '5': Unlock private developer information.
         '6': Receive email updates of new candidates.
         '7': Cancel anytime with no obligations.
@@ -577,14 +583,14 @@ en:
         subtitle: Browse developer profiles who can start working ASAP or when you need help. Save time by reaching out to the perfect candidates.
         title: Hire at your own pace
       subtitle: Connect with independent, freelance JavaScript developers who are available for work now.
-      title_1: Hire JavaScript developers for
+      title_1: Embauchez des développeurs/ses JavaScript pour
       title_2: "99 € a month"
       title_og: Pricing
     v2:
-      description: Subscribe to jsdevs and directly connect with hundreds of JavaScript developers who are looking for freelance, contract, and full-time work.
-      title: Hire JavaScript developers
-      title_og: Pricing
-      turbo_native_title: Hire JavaScript developers
+      description: Abonnez-vous à jsdevs, et connectez vous directement à des centaines de développeurs qui cherchent des contrats freelance ou CDI.
+      title: Embauchez des devs JavaScript
+      title_og: Tarifs
+      turbo_native_title: Embauchez des développeurs JavaScript
   read_notifications:
     create:
       notice: All notifications marked as read.
@@ -606,11 +612,11 @@ en:
       interested_in_roles: Interested in roles
   roles:
     new:
-      hiring_developers: I'm hiring developers
-      hiring_developers_help_text: You're a business looking to hire a freelance, part-time, or full-time JavaScript developers.
-      looking_for_work: I'm looking for work
-      looking_for_work_help_text: You're a JavaScript developers looking for your next gig.
-      what_brings_you_here: What brings you to jsdevs?
+      hiring_developers: Je recrute
+      hiring_developers_help_text: Vous êtes un cabinet ou une entreprise qui recrute, vous cherchez à recrutez un freelance JavaScript, à temps plein ou temps partiel.
+      looking_for_work: Je cherche du travail
+      looking_for_work_help_text: Vous êtes un/une dev JavaScript, et vous chercher soit à devenir freelance, soit à trouver un nouveau contrat.
+      what_brings_you_here: Que recherchez-vous ?
   sessions:
     sign_in: Sign in
     sign_in_hero: Sign in to your account
@@ -623,7 +629,7 @@ en:
       copyright: All rights reserved.
       email: Email
       github: GitHub
-      language_name_of_locale: English
+      language_name_of_locale: French
       masilotti_com: Masilotti.com
       open_source: Open source
       open_startup: Open startup
