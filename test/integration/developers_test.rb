@@ -153,6 +153,18 @@ class DevelopersTest < ActionDispatch::IntegrationTest
     assert_redirected_to edit_developer_path(user.developer)
   end
 
+  test "successful user deletion" do
+    user = users(:developer)
+    before_user_count = User.count
+    sign_in user
+
+    delete user_registration_path
+    after_user_count = User.count
+    assert after_user_count == before_user_count - 1
+    assert_redirected_to root_path
+    assert flash[:notice] == "Goodbye!"
+  end
+
   test "successful profile creation" do
     sign_in users(:empty)
 
