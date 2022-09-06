@@ -5,9 +5,7 @@ export default class extends Controller {
   static targets = [ "devbio" ]
 
   connect() {
-    console.log("Hello, Stimulus!", this.element)
     let emptyDevBio = !this.devbioTarget.value?.length
-    console.log("Hello... emptyDevBio ? ", emptyDevBio)
     if (emptyDevBio) {
       this.devbioTarget.innerHTML = `      Hi there! I'm a [JOB_ROLE] with [X] years of professional experience based in [LOCATION]. Previously I've worked as a [JOB_ROLE] at [COMPANIES] and...
 
