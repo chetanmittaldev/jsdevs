@@ -7,5 +7,4 @@ class UsersController < Devise::RegistrationsController
     User.find(current_user_id).destroy
     redirect_to root_path, status: :see_other, notice: "Goodbye!"
   end
-
 end
