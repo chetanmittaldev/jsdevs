@@ -137,6 +137,11 @@ fr:
           weekly: Weekly
       notifications:
         title: Email notifications
+      close:
+        title: Clôturer le compte
+        subtitle: Suppression définitive
+        description: Ceci effacera toutes vos données et fermera votre compte. Attention, cette action ne peut pas être annulée.
+        action: Clôturer le compte
       personal:
         help: Information about you, the contact point for your business on jsdevs.
         title: Personal details
@@ -225,6 +230,11 @@ fr:
     edit:
       title: Your developer profile
     form:
+      close:
+        title: Clôturer le compte
+        subtitle: Suppression définitive
+        description: Ceci effacera toutes vos données et fermera votre compte. Attention, cette action ne peut pas être annulée.
+        action: Clôturer le compte
       creating: Creating...
       notifications:
         profile_reminder_notifications: Profile reminders

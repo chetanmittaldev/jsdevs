@@ -225,6 +225,11 @@ en:
     edit:
       title: Your developer profile
     form:
+      close:
+        title: Close account
+        subtitle: Danger zone
+        description: Will delete your account and all related data. This can not be undone.
+        action: Close the account
       creating: Creating...
       notifications:
         profile_reminder_notifications: Profile reminders
