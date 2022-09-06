@@ -225,6 +225,11 @@ fr:
     edit:
       title: Your developer profile
     form:
+      close:
+        title: Clôturer le compte
+        subtitle: Suppression définitive
+        description: Ceci effacera toutes vos données et fermera votre compte. Attention, cette action ne peut pas être annulée.
+        action: Clôturer le compte
       creating: Creating...
       notifications:
         profile_reminder_notifications: Profile reminders
@@ -352,7 +357,7 @@ fr:
       subtitle_3: Arrêtez de chercher, et attendez que les entreprises vous contactent en premier.
       title_1: Le job board inversé pour
       title_2: développeur·se·s JavaScript
-      title_og: Le site d'emploi inversé pour les développeurs JS
+      title_og: Le site d'emploi inversé pour les développeur·se·s
       turbo_native_title: jsdevs
   impersonating_banner_component:
     cta: Se déconnecter
@@ -511,7 +516,7 @@ fr:
     features:
       direct_communication:
         description: Oubliez l'annonce d'emploi à l'ancienne, et commencez à envoyer des messages aux candidats d'un simple clic.
-        title: Parlez directement aux développeurs
+        title: Parlez directement aux développeur·se·s
       independent_developers:
         description_en: Directly hire independent JavaScript developers instead of going through a firm or agency.
         description: Embauchez directement des devs JavaScript au lieu de passer par un intermédiaire ou une agence.
@@ -521,7 +526,7 @@ fr:
         description: Notifications par e-mail quotidienne ou hebdomadaire concernant l'arrivée de nouveaux profils sur la plateforme.
         title: Notifications d'arrivée de nouveaux candidats
       profiles:
-        description: Des centaines de développeurs JavaScript qui cherchent des contrats freelance ou CDI.
+        description: Des centaines de développeur·se·s JavaScript qui cherchent des contrats freelance ou CDI.
         title: Profils hautement ciblés
       subtitle_en: Message hundreds of JavaScript developers with a jsdevs subscription. Save time by reaching out to the perfect candidates directly.
       subtitle: Envoyez des messages à des centaines de candidat(e)s JavaScript grâce à un abonnement à jsdevs. Gagnez du temps en contactant le/la "candidat(e) parfait(e)" directement.
@@ -536,7 +541,7 @@ fr:
         title: Débloquez les profils complets
     plans:
       features:
-        profiles: Des profils de développeurs très ciblés
+        profiles: Des profils de développeur·se·s très ciblé·e·s
         notifications: Notification par e-mail de l'arrivée de nouveaux candidats
         onboarding: Découverte du service par visio
         priority_support: Service client prioritaire, par visio et e-mail
@@ -545,7 +550,7 @@ fr:
       full_time:
         fees: "+ 10% de la première année de salaire"
         help: A propos des les frais d'embauche en CDI
-        subtitle_html: Embauchez des devs freelances <span class="font-bold">temps plein</span>.
+        subtitle_html: Embauchez des devs <span class="font-bold">en CDI</span>.
         title: Embauchez en CDI
       month: mois
       part_time:
