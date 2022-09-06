@@ -356,7 +356,7 @@
           <p class="text-base font-medium text-gray-900"><%= t(".close.subtitle") %></p>
           <p class="text-gray-600 text-sm mt-1">
             <%= t(".close.description") %>
-            <%= link_to t(".close.action"), user_registration_path, data: { "turbo-method": :delete, turbo_confirm: "Are you sure to delete your account?", class: "text-gray-800 hover:text-gray-600 text-sm font-medium underline" } %>
+            <%= link_to t(".close.action"), user_registration_path, style: "text-decoration:underline;", data: { "turbo-method": :delete, turbo_confirm: "Are you sure to remove your account definetly?", class: "text-gray-800 hover:text-gray-600 text-sm font-medium" } %>
           </p>
         </div>
       </div>

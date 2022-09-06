@@ -228,7 +228,7 @@ en:
       close:
         title: Close account
         subtitle: Danger zone
-        description: Will delete your account and all related data. This can not be undone.
+        description: Will delete your account and remove all related data. This can not be undone.
         action: Close the account
       creating: Creating...
       notifications:
