@@ -2,9 +2,12 @@
 
 <section class="py-8 lg:py-24">
   <article class="px-4 mx-auto max-w-5xl lg:px-4">
-    <h1 class="mb-4 text-4xl font-extrabold leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+    <h1 class="mb-10 text-4xl font-extrabold leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
       <%== @article[:title] %>
     </h1>
+    <p class="mb-1 text-lg text-gray-600 dark:text-gray-400 lg:text-lg">
+      <%== @article[:publication_date] %>
+    </p>
     <p class="mb-10 text-lg text-gray-600 dark:text-gray-400 lg:text-lg">
       <%== @article[:description] %>
     </p>
@@ -15,6 +18,9 @@
   </article>
 </section>
 
+<a href="/" class="fixed bottom-0 bg-blue-600 text-white w-full text-center py-1">
+  We help developers to find the job they love ❤. See how →
+</a>
 
 <% content_for :custom_stylesheet do %>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css">
@@ -22,7 +28,7 @@
 <% content_for :custom_javascript do %>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
   <script>
-    document.addEventListener('DOMContentLoaded', (event) => {
+    document.addEventListener('turbo:load', (event) => {
       document.querySelectorAll('pre code').forEach((el) => {
         hljs.highlightElement(el);
       });
