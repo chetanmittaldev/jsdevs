@@ -2,6 +2,11 @@
 
 ## 2022
 
+### September
+
+* September 9 - translated to fr
+* September 8 - ready for blog
+
 ### August
 
 * August 24 - bug cleaning

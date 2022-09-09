@@ -2,20 +2,21 @@
 fr:
   about:
     show:
-      description: Bonjour, je suis David, développeur indépendant en JavaScript et Ruby depuis 5 ans.
+      caption_html: fondateur de <code class="text-gray-900 font-semibold">jsdevs</code>
+      description: Je suis David Boureau. J'ai créé jsdevs pour aider les développeurs·euses JavaScript à trouver du travail.
       readtime: 1 minute de lecture
       title: À propos
       title_og: À propos de jsdevs
   activerecord:
     attributes:
       business:
-        company: Nom de l'entreprise
+        company: Nom de la société
         contact_name: Votre nom
-        contact_role: Nom de l'offre d'emploi ou du role
+        contact_role: Votre titre ou poste
         name: Votre nom
       developer:
-        available_on: Disponible pour démarrer le
-        bio: Biographie
+        available_on: Disponible à partir du
+        bio: Bio
         email: E-mail
         github: Github
         hero: Hero
@@ -26,621 +27,613 @@ fr:
       location:
         country_code: Pays
       role_level:
-        c_level: Dirigeant
+        c_level: C-level
         junior: Junior
-        mid: Intermédiaire
-        principal: Lead dev
+        mid: Mid-level
+        principal: Principal / staff
         senior: Senior
       role_type:
-        full_time_contract: Freelance à temps plein
-        full_time_employment: CDI
-        part_time_contract: Freelance à temps partiel
+        full_time_contract: Contrat à plein temps
+        full_time_employment: Travail à plein temps
+        part_time_contract: Contrat à temps partiel
       user:
         email: E-mail
-        password: Password
-        password_confirmation: Confirmation du mot de passe
-        remember_me: Se souvenir de moi sur cet appareil
+        password: Mot de passe
+        password_confirmation: Confirmation de mot de passe
+        remember_me: Se souvenir de moi
     errors:
       models:
         location:
-          invalid_coordinates: n'a pas pu être trouvé
+          invalid_coordinates: introuvable
     models:
       business:
-        one: Business
-        other: Businesses
+        one: Société
+        other: Sociétés
       developer:
-        one: Developer
-        other: Developers
+        one: Développeur·euse
+        other: Développeurs·euses
       user:
-        one: User
-        other: Users
+        one: Utilisateur·trice
+        other: Utilisateurs·trices
   admin:
     businesses:
       invisiblizes:
         create:
-          created: Profile défini comme invisible.
+          created: Profil en mode invisible.
     conversations:
       blocks:
         conversation:
-          blocked: Bloquée
+          blocked: Bloqué
         empty_state:
-          title: conversations non bloquées
+          title: Pas de conversations bloquées
         index:
-          title: conversation bloquées
+          title: Conversations bloquées
       conversations:
-        business: Business
-        developer: Developer
-        email: Email
-        no_potential_email: No potential email
-        no_response: No response
-        potential_email: Potential email
-        replied: Replied
-        started: Started
-        view: View
+        business: Société
+        developer: Développeur·euse
+        email: E-mail
+        no_potential_email: Pas d'e-mail potentiel
+        no_response: Pas de réponse
+        potential_email: E-mail potentiel
+        replied: Répondu
+        started: Démarré
+        view: Voir
       index:
         title: Conversations
         title_html: "%{href}'s conversations"
       stats:
-        reply_rate: Reply rate
-        started: Started
+        reply_rate: Vitesse de réponse
+        started: Démarré
     developers:
       invisiblizes:
         create:
-          created: Profile set to invisible.
+          created: Profil en mode invisible.
     features:
       create:
-        created: Profile featured for one week.
+        created: Profil en vedette pour une semaine.
     impersonates:
       show:
-        cta: Impersonate
-        description: Sign in and act as a different person.
-        title: Impersonate a user
+        cta: Imitation
+        description: Se connecter en tant qu'un·e autre utilisateur·trice.
+        title: Imiter un·e utilisateur·trice
     transactions:
       create:
-        created: Transaction created
+        created: Transaction créée
       destroy:
-        destroyed: Transaction deleted
+        destroyed: Transaction supprimée
       update:
-        updated: Transaction updated
+        updated: Transaction mise à jour
   blocks:
     create:
-      notice: "%{other_recipient} a été bloqué(e)."
+      notice: "%{other_recipient} was blocked."
     new:
       block: Bloquer
       cancel: Annuler
-      message: Are you sure you want to flag this conversation and block the sender? This will hide the conversation and they won't be able to contact you again.
-      title: Block sender
+      message: Êtes-vous certain·e de vouloir signaler cette conversation et bloquer cette personne? Cela masquera la conversation, et cet·te utilisateur·trice ne pourra plus vous contacter.
+      title: Bloquer l'expéditeur
   businesses:
     admin_component:
-      invisiblize: Invisiblize
+      invisiblize: Mode Invisible
       title: Admin
     create:
-      created: Your business was added!
+      created: Votre société est ajoutée!
     edit:
-      title: Your business profile
+      title: Profil de votre société
     expired_subscription_component:
-      cta: Upgrade your account to message developers
-      title: Your subscription expired.
+      cta: Mettez votre compte à niveau pour contacter des développeurs·euses
+      title: Votre souscription a expiré.
     form:
-      avatar: Your company logo
+      avatar: Logo de votre société
       business:
-        help: Information about your business. Here's your chance to sell yourself to potential hires!
-        title: Business details
-      change_avatar: Upload
-      creating: Creating...
+        help: Informations sur votre société. L'opportunité de convaincre des recrues potentielles!
+        title: Données commerciales
+      change_avatar: Charger
+      creating: Création en cours...
       developer_notifications:
-        help_text: Receive daily or weekly email notifications when new developers add their profile to jsdevs.
-        legend: Developer notifications
+        help_text: Recevez des notifications quotidiennes ou hebdomadaires lorsque de nouveaux·elles développeurs·euses ajoutent leur profil sur jsdevs.
+        legend: Notifications développeurs·euses
         values:
-          daily: Daily
-          'no': Never
-          weekly: Weekly
+          daily: Quotidiennes
+          'no': Jamais
+          weekly: Hebdomadaires
       notifications:
-        title: Email notifications
+        title: Notifications par e-mail
       personal:
-        help: Information about you, the contact point for your business on jsdevs.
-        title: Personal details
-      save: Save
-      something_went_wrong: Something went wrong uploading your image, please try again.
-      updating: Updating...
-      your_business_profile: Your business profile
+        help: Informations sur votre personne, le point de contact de votre société sur jsdevs.
+        title: Informations personnelles
+      save: Sauvegarder
+      something_went_wrong: Une erreur est survenue lors du chargement de votre image, veuillez réessayer.
+      updating: Mise à jour...
+      your_business_profile: Profil de votre sociétéYour business profile
     hiring_fee_component:
-      body: 'Hi David, I hired %{developer} via jsdevs and would like to coordinate paying the fee. Their starting salary is: '
-      cta: Pay hiring fee
-      subject: I hired a developer via jsdevs
-      title: Have you hired %{developer}?
+      body: 'Bonjour David, nous avons engagé %{developer) sur jsdevs et je voudrais gérer le paiement des frais. Leur salaire de base sera de: '
+      cta: Payer les frais de recrutement
+      subject: Nous avons engagé un·e développeur·euse via jsdevs
+      title: Avez-vous engagé %{developer}?
     primary_action_component:
-      edit: Edit
+      edit: Modifier
     show:
       bio: Bio
     subscriptions_component:
-      expires_on: Expires on
-      plan: Plan
-      status: Status
-      title: Business subscription
+      expires_on: Expire le
+      plan: Souscription
+      status: Statut
+      title: Souscription de la société
     update:
-      updated: Your business was updated!
+      updated: Votre société a été mise à jour!
     upgrade_account_component:
-      cta: Upgrade your account
-      title: Requires an active business subscription.
+      cta: Mettre à niveau votre compte
+      title: Requiert une souscription active.
     upgrade_required_component:
       body:
-        expired: Your subscription has expired. Reactivate your account to continue messaging developers.
-        upgrade: With your current plan you can only message developers looking for part-time work. Upgrade your account to message this developer.
+        expired: Votre souscription a expiré. Réactivez votre compte pour continuer le contact avec les développeurs·euses.
+        upgrade: Avec votre souscription actuelle, vous pouvez uniquement contacter les développeurs recherchant du travail à temps partiel. Mettez votre compte à niveau pour contacter ce·tte développeur·euse.
       cta:
-        expired: Reactivate my account
-        upgrade: Upgrade my account
-      details: View pricing details
+        expired: Réactiver mon compte
+        upgrade: Mettre mon compte à niveau
+      details: Voir le détail des tarifs
       title:
-        expired: Subscription expired
-        upgrade: Upgrade required
+        expired: Souscription expirée
+        upgrade: Mise à jour requise
   cold_messages:
     new:
-      title: Start a conversation
-      with: with
+      title: Démarrer une conversation
+      with: avec
   conversations:
     empty_state:
-      body: Get started by finding a developer to message.
-      cta: Find a developer
-      title: No conversations
+      body: Commencez par rechercher un·e développeur·euse à contacter.
+      cta: Rechercher un·e développeur·euse
+      title: Aucune conversation
     index:
-      title: Your conversations
+      title: Vos conversations
     read_indicator_component:
-      read: Message read.
-      unread: Message unread.
+      read: Message lu.
+      unread: Message non lu.
     show:
-      flag: Flag this conversation
-      og_title: Conversation with %{with}
+      flag: Signaler cette conversation
+      og_title: Conversation avec %{with}
       title: Conversation
-      with: with
+      with: avec
   date:
     formats:
       month_year: "%B %Y"
   developer_mailer:
     first_message:
-      subject: Tips on responding to your first message on jsdevs
+      subject: Conseils sur votre première réponse sur jsdevs
   developers:
     admin_component:
-      copy: Copy
-      feature: Feature
-      invisiblize: Invisiblize
+      copy: Copier
+      feature: Fonction
+      invisiblize: Mode Invisible
       title: Admin
     availability_component:
-      in_future_html: Available in <time datetime="%{date}">%{date_in_words}</time>
-      now_html: Available now
-      unspecified_html: Currently unavailable
+      in_future_html: Disponible le<time datetime="%{date}">%{date_in_words}</time>
+      now_html: Disponible maintenant
+      unspecified_html: Actuellement indisponible
     card_component:
-      featured: Featured developer
+      featured: Développeur en vedette
     count_component:
       cta: Réinitialiser les filtres
-      title_html_en: Showing <span class='font-bold'>%{count}</span> of <span class='font-bold'>%{total}</span>+ developers.
-      title_html: Affichage de <span class='font-bold'>%{count}</span> parmis <span class='font-bold'>%{total}</span>+ développeur·se·s.
-      title_html_simple: Showing <span class='font-bold'>%{count}</span> developers.
+      title_html: Affichage de <span class='font-bold'>%{count}</span> sur <span class='font-bold'>%{total}</span>+ développeurs·euses.
+      title_html_simple: Affichage de <span class='font-bold'>%{count}</span> développeurs·euses.
     cover_image_component:
-      alt: Developer's cover image
+      alt: Image de couverture du·de la développeur·euse
     create:
-      created: Your profile was added!
+      created: Votre profil a été ajouté!
     details:
-      title: Details
+      title: Détails
     edit:
-      title: Your developer profile
+      title: Votre profil développeur·euse
     form:
       close:
-        title: Clôturer le compte
-        subtitle: Suppression définitive
-        description: Ceci effacera toutes vos données et fermera votre compte. Attention, cette action ne peut pas être annulée.
+        title: Clôture du compte
+        subtitle: Danger zone
+        description: Supprime votre compte et toutes les données associées. Cette action ne peut pas être annulée.
         action: Clôturer le compte
-      creating: Creating...
+      creating: Création en cours...
       notifications:
-        profile_reminder_notifications: Profile reminders
-        profile_reminder_notifications_help: Periodically remind me to update my developer profile.
-        title: Email notifications
+        profile_reminder_notifications: Rappels de profil
+        profile_reminder_notifications_help: Me rappeler périodiquement de mettre à jour mon profil.
+        title: Notifications par e-mail
       online_presence:
-        help_text: Where can people learn more about you and your work?
-        title: Online presence
+        help_text: Où peut-on trouver plus d'informations sur vous et sur votre travail?
+        title: Présence en ligne
       preferred_compensation:
-        description: From my experience as a freelancer, compensation should be discussed only after the details of a project or job are known.
-        subtitle: Preferred compensation removed from jsdevs
-        title: Preferred compensation
+        description: D'après mon expérience en tant que freelancer, les questions de compensation se posent après que les détails du projet soient confirmés.
+        subtitle: Compensation souhaitée, retirée de jsdevs
+        title: Compensation souhaitée
       profile:
         avatar: Avatar
-        avatar_error_text: Something went wrong uploading your image, please try again.
-        bio_help_text: Write a few sentences about yourself.
-        change: Upload
-        cover_image: Cover image
-        help_text: This information will be displayed publicly so be careful what you share.
-        hero_help_text: Summarize yourself as a developer in a few words.
-        location_help_text: Providing your location makes it easier to connect with local business.
-        name_help_text_html: Your name will <i>not</i> be displayed on your public profile.
-        title: Profile
-        upload_error_text: Something went wrong uploading your image, please try again.
-        upload_file: Upload a file
-        upload_help_text: PNG, JPG, GIF up to 10MB
+        avatar_error_text: Une erreur est survenue lors du chargement de votre image. Veuillez réessayer.
+        bio_help_text: Écrivez quelques phrase à votre sujet.
+        change: Charger
+        cover_image: Image de couverture
+        help_text: Ces informations seront publiques. Faites attention à ce que vous partagez.
+        hero_help_text: Résumez votre profil de développeur·euse en quelques mots.
+        location_help_text: Ajouter votre localisation facilite le contact avec des entreprises locales.
+        name_help_text_html: Votre nom ne sera <i>pas</i> affiché sur votre profil public.
+        title: Profil
+        upload_error_text: Une erreur est survenue lors du chargement de votre image. Veuillez réessayer.
+        upload_file: Charger un fichier
+        upload_help_text: PNG, JPG, GIF jusqu'à 10MB
       role_level:
-        help_text: Sélectionnez tous les niveaux d'expérience qui vous intéressent
-        title: Niveau de responsabilité
+        help_text: Sélectionnez tous les niveaux de poste que vous souhaitez remplir.
+        title: Niveau de poste
       role_type:
-        help_text: Select all roles that you would consider taking.
-        title: Role type
-      save: Save
+        help_text: Sélectionnez tous les rôles que vous souhaitez remplir.
+        title: Type de rôle
+      save: Sauvegarder
       search_status:
-        actively_looking_help_text: Your profile can get featured on the homepage.
-        invisible_help_text: Your profile is hidden and can only be seen by yourself.
-        not_interested_help_text: Your profile will not appear in search results.
-        open_help_text: Companies can still find you, but you won't appear on the homepage.
-        title: Search status
-      title: Your developer profile
-      updating: Updating...
+        actively_looking_help_text: Votre profil peut être mis en vedette sur la page d'accueil.
+        invisible_help_text: Votre profil est masqué, et ne peut-être consulté que par vous-même.
+        not_interested_help_text: Votre profil n'apparaîtra pas dans les recherches.
+        open_help_text: Les entreprises peuvent vous trouver, mais vous n'apparaîtrez pas sur la page d'accueil.
+        title: Statut de recherche
+      title: Votre profil développeur·euse
+      updating: Mise à jour...
       work_preferences:
-        help_text: What kind of work are you looking for next?
-        title: Work preferences
+        help_text: Quel type de travail recherchez-vous maintenant?
+        title: Préférences de recherche
     index:
       empty_state:
-        body: Try changing or clearing your filters.
-        title: No developers found
-      title: JavaScript developers
+        body: Essayez de changer ou de retirer vos filtres.
+        title: Aucun·e développeur·euse trouvé·e
+      title: Développeurs·euses JavaScript
     invisible_banner_component:
-      cta: Edit my profile
-      title: Your developer profile is invisible – only you can see it.
+      cta: Modifier mon profil
+      title: Votre profil développeur·euse est invisible - vous êtes le·la seul·e à pouvoir le consulter.
     meta:
-      description_en: "%{count}+ JavaScript developers looking for their next gig. Juniors to seniors and everyone in between, you'll find them all here."
-      description: "%{count}+ développeur·se·s JavaScript cherchent leur prochain contrat. Des juniors aux cadres en passant par les tous les niveaux, vous les trouverez tous ici."
+      description: "%{count}+ développeurs·euses JavaScript qui recherchent leur prochain projet. Des juniors aux seniors en passant par tous les niveaux, vous trouverez tous les profils ici."
       freelance: freelance
-      hire: Embauchez
-      in_country: in %{country}
-      ruby_on_rails_developers: des devs JavaScript
+      hire: Engager
+      in_country: %{country}
+      ruby_on_rails_developers: JavaScript developers
     new_field_component:
-      new: New!
+      new: Nouveau!
     new_fields_component:
-      cta: Complete my profile
-      title: New fields were added to developer profiles!
+      cta: Compléter mon profil
+      title: De nouveaux champs ont été ajoutés aux profils développeur·euse!
     open_graph_tags_component:
-      turbo_native_title: Developer profile
+      turbo_native_title: Profil développeur·euse
     profile_action_component:
       add_profile: Ajouter mon profil
-      edit_profile: Update my profile
+      edit_profile: Mettre à jour mon profil
     query_component:
       all_countries:
-        title: All locations
-      apply: Apply
-      clear: Clear
-      close_menu: Close menu
+        title: Toutes localisations
+      apply: Appliquer
+      clear: Effacer
+      close_menu: Fermer
       country:
         title: Localisation
-      filters: Filters
-      include_not_interested: Include les profils non intéressés pour l'instant.
+      filters: Filtres
+      include_not_interested: Inclure les développeurs·euses actuellement pas en recherche
       paywalled_search:
-        title: La recherche est reservée aux abonné·e·s
+        title: La recherche par texte requiert un compte payant
       role_level:
-        title: Rôle
-      search_query_label: Cherchez des profils
+        title: Niveau de poste
+      search_query_label: Rechercher des profils
       search_query_placeholder: Hotwire, React, Heroku, etc.
       timezone:
-        title: Timezone
-      title: Developer filters
+        title: Fuseau horaire
+      title: Filtres développeurs·euses
       work_preference:
-        title: Préférence 
+        title: Préférence de travail
     query_sort_button_component:
       sort:
         availability: Disponibilité
-        newest: Date d'inscription
-        title: Trier selon
+        newest: Les plus récents
+        title: Trier
     search_status:
-      actively_looking: Actively looking for work
-      not_interested: Not interested in work right now
-      open: Open, but not actively looking
+      actively_looking: En recherche active
+      not_interested: Pas en recherche actuellement
+      open: Ouvert aux propositions, mais pas en recherche active
     show:
       description: Description
-      edit: Edit
-      hire: Hire me
+      edit: Modifier
+      hire: Engagez-moi
       message: Message
     update:
-      updated: Your profile was updated!
+      updated: Votre profil a été mis à jour!
   dir: ltr
   errors:
-    business_blank: Fill out your business profile to message developers.
-    business_subscription_inactive: Sign up for a business subscription to message developers.
+    business_blank: Remplissez votre profil pour contacter les développeurs·euses.
+    business_subscription_inactive: Achetez une souscription entreprise pour contacter les développeurs·euses.
     messages:
-      attached: is not attached
-      content_type_invalid: image format not supported
-      max_file_size_invalid: image over %{size}
-    unauthorized: You don't have access to that.
+      attached: n'est pas jointe
+      content_type_invalid: format d'image non supporté
+      max_file_size_invalid: image au delà de %{size}
+    unauthorized: Vous n'avez pas accès à ça.
   home:
     show:
-      available_developers: Développeur·se·s disponible maintenant
-      description_og: jsdevs permet aux développeurs JS indépendants d'être disponibles pour leur prochain contrat. Arrêtez de parcourir les sites d'emploi, et attendez que les entreprises vous contactent en premier.
-      get_started: Commencer
+      available_developers: Développeurs·euses disponibles actuellement
+      description_og: jsdevs facilite la vie des développeurs·euses JS indépendant·e·s. Arrêtez d'éplucher les sites d'annonces et laissez les entreprises vous contacter directement.
+      get_started: Démarrer
       learn_more: En savoir plus
-      more: See more developers
+      more: Voir plus de développeurs·euses
       subtitle_1: jsdevs
-      subtitle_2: vous permet d'afficher votre disponibilité pour un prochain contrat.
-      subtitle_3: Arrêtez de chercher, et attendez que les entreprises vous contactent en premier.
-      title_1: Le job board inversé pour
-      title_2: développeur·se·s JavaScript
-      title_og: Le site d'emploi inversé pour les développeur·se·s
+      subtitle_2: aide les développeurs·euses JS a trouver leur prochain projet.
+      subtitle_3: Arrêtez d'éplucher les sites d'annonces et laissez les entreprises vous contacter directement.
+      title_1: Le site d'annonces inversé pour les
+      title_2: développeurs·euses JavaScript
+      title_og: Le site d'annonces inversé pour les développeurs·euses JavaScript
       turbo_native_title: jsdevs
   impersonating_banner_component:
-    cta: Se déconnecter
+    cta: Déconnexion
     title: Connecté en tant que %{email}
   messages:
     form:
-      help: Add your message
-      hiring_fee_agreement: I agree to pay jsdevs the 10% hiring fee if I hire this developer for a full-time role.
-      hiring_fee_cta: Questions?
-      sending: Sending...
-      submit: Send
+      help: Ajouter votre message
+      hiring_fee_agreement: J'accepte de payer à jsdevs les frais de recrutement de 10% si j'engage ce·tte développeur·euse pour un poste à plein temps.
+      hiring_fee_cta: Des questions?
+      sending: Envoi en cours...
+      submit: Envoyer
     message:
-      wrote: wrote
-      you: You
+      wrote: a écrit
+      you: Vous
   nav_bar:
     base_component:
       about: À propos
-      developers: Développeur·se·s
+      developers: Développeurs·euses
       home: Accueil
       pricing: Tarifs
     guest_component:
-      register: S'enregistrer
-      sign_in: Se connecter
+      register: S'inscrire
+      sign_in: Connexion
     user_component:
       admin: Admin
-      billing: Billing
-      blocked_conversations: Blocked conversations
+      billing: Facturation
+      blocked_conversations: Conversations bloquées
       conversations: Conversations
-      get_started: Get started
-      impersonate: Impersonate
+      get_started: Démarrer
+      impersonate: Imitation
       articles: Articles
-      my_business_profile: My business profile
-      my_conversations: My conversations
-      my_developer_profile: My developer profile
-      new_notifications: You have a new notification
-      open_user_menu: Open user menu
-      sign_out: Sign out
+      my_business_profile: Profil de ma société
+      my_conversations: Mes conversations
+      my_developer_profile: Mon profil développeur·euse
+      new_notifications: Vous avez une nouvelle notification
+      open_user_menu: Ouvrir le menu utilisateur·trice
+      sign_out: Déconnexion
       transactions: Transactions
-      view_conversations: View conversations
-      view_notifications: View notifications
+      view_conversations: Voir conversations
+      view_notifications: Voir notifications
   notifications:
     admin:
       new_business_notification:
-        email_subject: New business added
-        title: "%{business} added their business"
+        email_subject: Nouvelle société ajoutée
+        title: "%{business} ont ajouté leur société"
       new_conversation_notification:
-        email_subject: New conversation started
-        title: "%{name} (%{company}) started a conversation with %{developer}"
+        email_subject: Nouvelle conversation
+        title: "%{name} (%{company}) a lancé une conversation avec %{developer}"
       new_developer_notification:
-        email_subject: New developer profile added
-        title: "%{developer} added their developer profile"
+        email_subject: Nouveau profil
+        title: "%{developer} a ajouté son profil développeur·euse"
       potential_hire_notification:
-        email_subject: New potential hire
-        title: "%{developer} may have been hired"
+        email_subject: Nouveau recrutement potentiel
+        title: "%{developer} a peut-être été recruté"
     businesses:
       invisiblize_notification:
-        title: Your profile on jsdevs was flagged
+        title: Votre profil sur jsdevs a été signalé
     developers:
       invisiblize_notification:
-        title: Your profile on jsdevs was flagged
+        title: Votre profil sur jsdevs a été signalé
       profile_reminder_notification:
-        email_subject: Is your jsdevs profile up to date?
-        title: Is your developer profile up to date?
+        email_subject: Votre profil jsdevs est-il à jour?
+        title: Votre profil jsdevs est-il à jour?
       welcome_notification:
-        title: Welcome to jsdevs!
+        title: Bienvenue sur jsdevs!
     index:
-      cta: View history
+      cta: Consulter l'historique
       empty_state:
-        body: You have no unread notifications.
-        title: No new notifications
-      mark_all_as_read: Mark all as read
-      title: New notifications
+        body: Vous n'avez pas de notifications non lues.
+        title: Pas de nouvelles notifications
+      mark_all_as_read: Tout marquer comme "lu"
+      title: Nouvelles notifications
     new_message_notification:
-      email_subject: "%{sender} sent you a message on jsdevs"
-      title: "%{sender} sent you a message"
+      email_subject: "%{sender} vous a envoyé un message sur jsdevs"
+      title: "%{sender} vous a envoyé un message"
     show:
-      notice: Notification marked as read.
+      notice: Notification marquée comme "lue".
   open_startup:
     contributions:
       index:
-        amount: Amount
+        amount: Montant
         contributions: Contributions
         date: Date
-        description: jsdevs contributes 10% of profits to women-focused communities and 2% of revenue to CO₂ removal.
-        open_startup: Open startup
-        recipient: Recipient
-        title: jsdevs contributions
-        to_co2_removal: to CO₂ removal
-        to_communities: to communities
+        description: jsdevs contribue 10% de ses profits à des asssociations féministes, et 2% de ses revenus vers l'élimination du CO₂.
+        open_startup: Startup ouverte
+        recipient: Bénéficiaire
+        title: Contributions jsdevs
+        to_co2_removal: vers l'élimination du CO₂
+        to_communities: pour des associations
     dashboard:
       show:
         contributions: Contributions
         date: Date
-        description: jsdevs is an open startup with public metrics.
-        expenses: Expenses
-        mrr: MRR
-        profit: Profit
-        revenue: Revenue
-        title: Open startup
-        visitors: Visitors (last 30 days)
+        description: jsdevs est une startup ouverte avec informations publiques.
+        expenses: Dépenses
+        mrr: Revenus Récurrents Mensuels
+        profit: Profits
+        revenue: Revenus
+        title: Startup ouverte
+        visitors: Visiteurs (30 derniers jours)
     expenses:
       index:
-        amount: Amount
+        amount: Montant
         date: Date
-        description: All monetary transactions associated with jsdevs, like hosting, fees, and purchases.
-        expenses: Expenses
-        open_startup: Open startup
+        description: Toutes les transactions monétaires associées à jsdevs, comme l'hébergement, les frais et les achats.
+        expenses: Dépenses
+        open_startup: Startup ouverte
         source: Source
-        title: jsdevs expenses
+        title: Dépenses jsdevs
     revenue:
       index:
-        amount: Amount
+        amount: Montant
         date: Date
-        description: All revenue jsdevs has generated since launching in November, 2021.
-        open_startup: Open startup
-        revenue: Revenue
+        description: Tous les revenus générés par jsdevs depuis son lancement en Novembre 2021.
+        open_startup: Startup ouverte
+        revenue: Revenus
         source: Source
-        title: jsdevs revenue
+        title: Revenus jsdevs
   policies:
     privacy:
       show:
-        title: Privacy policy
+        title: Politique de confidentialité
     terms:
       show:
-        title: Terms and conditions
+        title: Termes et conditions
   pricing:
     banner:
-      title: You are subscribed to a legacy plan that is not listed on this page. Your price and features have not changed.
+      title: Vous avez souscrit a un ancienne souscription qui n'est pas listée sur cette page. Votre tarif et vos avantages n'ont pas changé.
     cta:
-      cta: Get started
-      subtitle: Find your next JavaScript developers today.
-      title: Ready to start hiring?
+      cta: Démarrer
+      subtitle: Trouvez vos nouveaux·elles développeurs·euses JavaScript dès aujourd'hui.
+      title: Prêts à embaucher?
     faq:
       annual:
-        a_html: Yes. Email the founder – that's me, David! – to set up annual billing at <a href='mailto:contact@jsdevs.co' class='underline'>contact@jsdevs.co</a>.
-        q: Can I pay annually or yearly?
+        a_html: Oui. Envoyez un e-mail au fondateur – c'est moi, David! – pour définir une facturation annuelle à to <a href='mailto:contact@jsdevs.co' class='underline'>contact@jsdevs.co</a>.
+        q: Pouvons-nous payer annuellement?
       cancellation:
-        a_html: Yes. You can cancel your subscription from the Billing link in the user drop-down. You will lose access to all paid features at the end of your billing period.
-        q: Can I cancel my subscription at any time?
+        a_html: Oui. Vous pouvez annuler votre souscription depuis le lien "Facturation" dans le menu déroulant. Vous perdrez les avantages de votre souscription à la fin de votre période de facturation.
+        q: Pouvons-nous annuler notre souscription à tout moment?
       developers:
-        a: No. jsdevs is free for developers.
-        q: Does jsdevs cost anything for developers?
+        a: Non. jsdevs est gratuit pour les développeurs·euses.
+        q: jsdevs est-il payant pour les développeurs·euses?
       features:
-        a: A business subscription allows you to reach out directly to developers on jsdevs. It also unhides information that is hidden from the public, like the real names of developers and their portfolio links.
-        q: So what does the fee get me?
+        a: Une souscription entreprise vous permet de contacter directement les développeurs·euses sur jsdevs. La souscription révèle également des informations non accessibles au public, comme les noms des développeurs·euses et les liens vers leurs portfolios.
+        q: À quoi servent les frais?
       fee:
-        a_html: You are required to pay jsdevs 10% of a developer's first year salary if you found them through jsdevs. This only applies to hiring full-time employees and not contract or freelance. Email the founder – that's me, David! – to coordinate payment at <a href='mailto:contact@jsdevs.co' class='underline'>contact@jsdevs.co</a>.
-        q: How does the 10% fee work for hiring a full-time developer?
+        a_html: jsdevs vous facturera 10% du salaire de la première année pour un·e développeur·euse trouvé via jsdevs. Ces frais s'appliquent uniquement pour une embauche à plein temps, et non pour les contrats temporaires ou freelance. Envoyez un mail au fondateur de jsdevs – c'est moi, David! – pour gérer le paiement à <a href='mailto:contact@jsdevs.co' class='underline'>contact@jsdevs.co</a>.
+        q: Comment fonctionnent les frais de 10% pour l'embauche d'un·e développeur·euse à plein temps?
       subscription:
-        a: No. The monthly/annual fee grants you business access to jsdevs. You have to externally pay the developers for the work they do.
-        q: Does the monthly/annual fee include the developer rate, too?
+        a: Non. Les frais mensuels/annuels vous donnent accès à jsdevs. Vous devrez payer en externe les développeurs·euses pour leur travail.
+        q: Est-ce que les frais mensuels/annuels incluent le salaire du·de la développeur·euse?
       support:
-        a_html: Email the founder – that's me, David! – with any questions. You can reach me at <a href='mailto:contact@jsdevs.co' class='underline'>contact@jsdevs.co</a>.
-        q: Who can I contact for more specific questions?
-      title: Frequently asked questions
+        a_html: Envoyez un e-mail au fondateur – c'est moi, David! – pour toutes vos questions. Vous pouvez me contacter à  <a href='mailto:contact@jsdevs.co' class='underline'>contact@jsdevs.co</a>.
+        q: À qui dois-je m'adresser pour des questions spécifiques?
+      title: Foire aux questions
     features:
       direct_communication:
-        description: Oubliez l'annonce d'emploi à l'ancienne, et commencez à envoyer des messages aux candidats d'un simple clic.
-        title: Parlez directement aux développeur·se·s
+        description: Plus besoin de passer par des annonces traditionnelles, contactez directement les candidat·e·s, en un clic.
+        title: Contactez directement les développeurs·euses
       independent_developers:
-        description_en: Directly hire independent JavaScript developers instead of going through a firm or agency.
-        description: Embauchez directement des devs JavaScript au lieu de passer par un intermédiaire ou une agence.
-        title: Soutenez l'indépendance des devs
+        description: Engagez directement des développeurs·euses JavaScript, au lieu d'avoir à passer par l'intermédiaire d'une agence.
+        title: Supportez les développeurs·euses indépendant·e·s
       notifications:
-        description_en: Daily or weekly email notifications of new developer profiles.
-        description: Notifications par e-mail quotidienne ou hebdomadaire concernant l'arrivée de nouveaux profils sur la plateforme.
-        title: Notifications d'arrivée de nouveaux candidats
+        description: Notifications quotidiennes ou hebdomadaires par mail pour les nouveaux profils développeurs·euses.
+        title: Notifications de nouveaux·elles candidat·e·s
       profiles:
-        description: Des centaines de développeur·se·s JavaScript qui cherchent des contrats freelance ou CDI.
+        description: Des centaines de développeurs·euses JavaScript à la recherche de travail freelance, à mi-temps et à plein temps.
         title: Profils hautement ciblés
-      subtitle_en: Message hundreds of JavaScript developers with a jsdevs subscription. Save time by reaching out to the perfect candidates directly.
-      subtitle: Envoyez des messages à des centaines de candidat(e)s JavaScript grâce à un abonnement à jsdevs. Gagnez du temps en contactant le/la "candidat(e) parfait(e)" directement.
+      subtitle: Contactez des centaines de développeurs·euses JavaScript avec une souscription jsdevs. Gagnez du temps en contactant les candidats·tes idéaux·les directement.
       support:
-        description_en: Email the founder – that's me, David! – whenever you need help.
-        description: Envoyez un e-mail directement au fondateur - c'est moi, David! - si jamais vous avez besoin d'aide.
-        title: Support du fondateur
-      title: Embauchez plus facilement grâce à jsdevs
+        description: Envoyez un e-mail au fondateur – c'est moi, David! – si vous avez besoin d'aide.
+        title: Support de la part du fondateur
+      title: Boostez votre recrutement avec jsdevs
       unlock:
-        description_en: View hidden information, like the real names of developers and their portfolio links.
-        description: Affichez les informations cachées, comme le nom réel des devs, et le lien vers leur portfolio.
+        description: Affichez des informations masquées, comme les noms des développeurs·euses et les liens vers leurs portfolios.
         title: Débloquez les profils complets
     plans:
       features:
-        profiles: Des profils de développeur·se·s très ciblé·e·s
-        notifications: Notification par e-mail de l'arrivée de nouveaux candidats
-        onboarding: Découverte du service par visio
-        priority_support: Service client prioritaire, par visio et e-mail
-        support: Service client par e-mail
-        white_glove: Candidats choisis manuellement pour vous tous les mois
+        notifications: Notifications de nouveaux·elles candidat·e·s
+        onboarding: Accompagnement VIP et aide au lancement
+        priority_support: Support prioritaire par e-mail et visio-conférence
+        profiles: Profils développeurs·euses hautement ciblés
+        support: Support par e-mail
+        white_glove: Candidat·e·s· triés sur le volets, sélection mensuelle
       full_time:
-        fees: "+ 10% de la première année de salaire"
-        help: A propos des les frais d'embauche en CDI
-        subtitle_html: Embauchez des devs <span class="font-bold">en CDI</span>.
-        title: Embauchez en CDI
+        fees: "+ 10% du salaire de la première année"
+        help: Aide sur les frais temps plein
+        subtitle_html: Engagez des développeurs·euses en freelance, à temps partiel ou <span class="font-bold">à temps plein</span>.
+        title: Engagez des employé·e·s à temps plein
       month: mois
       part_time:
-        fees: "+ 0€ de frais annexes"
-        subtitle: Embauchez des devs JavaScript indépendants
-        title: Embauchez des indépendants
-      title: Pricing plans
+        fees: "+ $0 frais additionnels"
+        subtitle: Embauchez des développeurs·euses JavaScript en freelance ou à temps partiel.
+        title: Embauchez des indépendant·e·s
+      title: Tarifs
     purchase_button:
-      title: Get started today
+      title: Commencez aujourd'hui
     v1:
-      cta: Get started today
+      cta: Commencez aujourd'hui
       faq:
         '1':
-          a: No. 99 € a month grants you business access to jsdevs. You have to externally pay the developers for the work they do.
-          q: Does 99 € a month include the developer rate, too?
+          a: Non. La souscription à 99€ par mois vous donne accès à jsdevs. Vous devrez payer en externe les développeurs·euses pour leur travail.
+          q: La souscription à 99 € par mois inclue-t-elle le salaire du·de la développeur·euse?
         '2':
-          a: A business subscription allows you to reach out directly to developers on jsdevs. It also unhides information that is hidden from the public, like the real names of developers and their portfolio links.
-          q: So what does 99 € a month get me?
+          a: Une souscription entreprise vous permet de contacter directement les développeurs·euses sur jsdevs. Elle vous permet également d'afficher des informations non accessibles au public, comme les noms des développeurs·euses et les liens vers leurs portfolios.
+          q: À quoi ai-je droit pour 99€ par mois?
         '3':
-          a: No. jsdevs is free for developers.
-          q: Does jsdevs cost anything for developers?
-        '4':
-          a_html: Email me, David, with any questions. You can reach me at <a href='mailto:contact@jsdevs.co'>contact@jsdevs.co</a>.
-          q: Who can I contact for more specific questions?
+          a: Non. jsdevs est gratuit pour les développeurs·euses.
+          q: jsdevs est-il payant pour les développeurs·euses?
+          a_html: Contactez-moi, David, par e-mail, avec toutes vos questions. Vous pouvez me contacter à <a href='mailto:contact@jsdevs.co'>contact@jsdevs.co</a>.
+          q: À qui dois-je m'adresser pour des questions spécifiques?
         title: Foire aux questions
       feature:
-        '1': Browse highly targeted profiles.
-        '2': Support independent developers.
-        '3': Skip job descriptions and formal postings.
-        '4': Parlez directement aux candidats.
-        '5': Unlock private developer information.
-        '6': Receive email updates of new candidates.
-        '7': Cancel anytime with no obligations.
-        '8': Support open source development.
-        subtitle: Browse developer profiles who can start working ASAP or when you need help. Save time by reaching out to the perfect candidates.
-        title: Hire at your own pace
-      subtitle: Connect with independent, freelance JavaScript developers who are available for work now.
-      title_1: Embauchez des développeurs/ses JavaScript pour
-      title_2: "99 € a month"
-      title_og: Pricing
-    v2:
-      description: Abonnez-vous à jsdevs, et connectez vous directement à des centaines de développeurs qui cherchent des contrats freelance ou CDI.
-      title: Embauchez des devs JavaScript
+        '1': Parcourez des profils ciblés.
+        '2': Soutenez les développeurs·euses indépendant·e·s.
+        '3': Pas besoin de descriptions ou d'annonces formelles.
+        '4': Dialoguez directement avec les candidat·e·s.
+        '5': Débloquez les informations des développeurs·euses.
+        '6': Recevez des notifications par e-mail pour les nouveaux·elles candidat·e·s.
+        '7': Annulez à tout moment, sans engagement.
+        '8': Soutenez le développement open source.
+        subtitle: Parcourez les profils des développeurs·euses qui peuvent démarrer dès maintenant ou quand vous aurez besoin de leurs services. Gagnez du temps en contactant directement le·la candidat·e idéal·e.
+        title: Embauchez à votre rythme
+      subtitle: Communiquez avec des développeurs·euses JavaScript indépendant·e·s qui sont disponibles pour travailler dès maintenant.
+      title_1: Engagez des développeurs·euses JavaScript pour
+      title_2: "99 € par mois"
       title_og: Tarifs
-      turbo_native_title: Embauchez des développeurs JavaScript
+    v2:
+      description: Souscrivez à jsdevs et contactez directement des cenatines de développeurs·euses JavaScript qui recherchent du travail freelance, à mi-temps ou à plein temps.
+      title: Engagez des développeurs·euses JavaScript
+      title_og: Tarifs
+      turbo_native_title: Engagez des développeurs·euses JavaScript
   read_notifications:
     create:
-      notice: All notifications marked as read.
+      notice: Toutes les notifications ont été marquées comme "lues".
     empty_state:
-      body: You have no read notifications.
-      title: No read notifications
+      body: Vous n'avez pas de notifications lues.
+      title: Pas de notifications lues
     index:
-      title: Read notifications
+      title: Notifications lues
   registrations:
-    create_account: create an account
-    register: Register
-    sign_up_hero: Create your account
-    sign_up_html: Or %{link}
+    create_account: créer un compte
+    register: S'inscrire
+    sign_up_hero: Créer votre compte
+    sign_up_html: Ou %{link}
   role_levels:
     component:
-      interested_in_roles: Interested in roles
+      interested_in_roles: Intéressé par des rôles
   role_types:
     component:
-      interested_in_roles: Interested in roles
+      interested_in_roles: Intéressé par des rôles
   roles:
     new:
-      hiring_developers: Je recrute
-      hiring_developers_help_text: Vous êtes un cabinet ou une entreprise qui recrute, vous cherchez à recrutez un freelance JavaScript, à temps plein ou temps partiel.
+      hiring_developers: Je recrute des développeurs·euses
+      hiring_developers_help_text: Vous êtes une entreprise qui cherche à engager un·e développeur·euse JavaScript en freelance, à temps plein ou partiel.
       looking_for_work: Je cherche du travail
-      looking_for_work_help_text: Vous êtes un/une dev JavaScript, et vous chercher soit à devenir freelance, soit à trouver un nouveau contrat.
-      what_brings_you_here: Que recherchez-vous ?
+      looking_for_work_help_text: Vous êtes un·e développeur·euse JavaScript qui cherche son prochain projet.
+      what_brings_you_here: Qu'est-ce qui vous amène sur jsdevs?
   sessions:
-    sign_in: Sign in
-    sign_in_hero: Sign in to your account
-    sign_in_link: sign in to your account
-    sign_in_link_html: Or %{link}
+    sign_in: Se connecter
+    sign_in_hero: Se connecter à votre compte
+    sign_in_link: Se connecter à votre compte
+    sign_in_link_html: Ou %{link}
   shared:
     footer:
-      about: About
+      about: À propos
       analytics: Analytics
-      copyright: All rights reserved.
-      email: Email
+      copyright: Tous droits réservés.
+      email: E-mail
       github: GitHub
-      language_name_of_locale: French
+      language_name_of_locale: Français
       masilotti_com: Masilotti.com
       open_source: Open source
-      open_startup: Open startup
-      privacy_policy: Privacy policy
+      open_startup: Startup ouverte
+      privacy_policy: Politique de confidentialité
       support: Support
-      terms_and_conditions: Terms and conditions
+      terms_and_conditions: Termes et conditions
       twitter: Twitter
   size:
     billion: B
@@ -649,8 +642,8 @@ fr:
     unit: ''
   users:
     paywalled_component:
-      description: Information that is only visible with a business subscription.
-      title: Private information
+      description: Information visible uniquement avec une souscription entreprise.
+      title: Information privée
   utc_offsets:
     component:
       gmt: GMT
