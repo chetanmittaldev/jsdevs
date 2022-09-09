@@ -352,11 +352,11 @@ fr:
       learn_more: En savoir plus
       more: Voir plus de développeurs·euses
       subtitle_1: jsdevs
-      subtitle_2: aide les développeurs·euses web a trouver leur prochain projet.
-      subtitle_3: Affichez vos disponibilités et préférences, et laissez les entreprises vous contacter directement.
+      subtitle_2: aide les développeurs·euses web à enfin trouver un projet qui leur plaît.
+      subtitle_3: Affichez vos préférences, puis laissez les entreprises vous contacter directement.
       title_1: Le job board inversé des
       title_2: développeurs·euses web
-      title_og: Le site d'annonces inversé pour les développeurs·euses JavaScript
+      title_og: Le site d'annonces inversé pour les développeurs·euses web
       turbo_native_title: jsdevs
   impersonating_banner_component:
     cta: Déconnexion
