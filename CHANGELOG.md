@@ -4,6 +4,7 @@
 
 ### September
 
+* September 10 - preferences
 * September 9 - translated to fr
 * September 8 - ready for blog
 
