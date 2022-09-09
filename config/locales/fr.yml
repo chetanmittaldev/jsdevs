@@ -207,7 +207,7 @@ fr:
       invisiblize: Mode Invisible
       title: Admin
     availability_component:
-      in_future_html: Disponible le<time datetime="%{date}">%{date_in_words}</time>
+      in_future_html: Disponible dans <time datetime="%{date}">%{date_in_words}</time>
       now_html: Disponible maintenant
       unspecified_html: Actuellement indisponible
     card_component:
