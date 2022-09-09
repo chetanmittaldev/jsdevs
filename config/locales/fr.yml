@@ -347,15 +347,15 @@ fr:
   home:
     show:
       available_developers: Développeurs·euses disponibles actuellement
-      description_og: jsdevs facilite la vie des développeurs·euses JS indépendant·e·s. Arrêtez d'éplucher les sites d'annonces et laissez les entreprises vous contacter directement.
+      description_og: jsdevs facilite la vie des développeurs·euses web. Affichez vos disponibilités et préférences, et laissez les entreprises vous contacter directement.
       get_started: Démarrer
       learn_more: En savoir plus
       more: Voir plus de développeurs·euses
       subtitle_1: jsdevs
-      subtitle_2: aide les développeurs·euses JS a trouver leur prochain projet.
-      subtitle_3: Arrêtez d'éplucher les sites d'annonces et laissez les entreprises vous contacter directement.
-      title_1: Le site d'annonces inversé pour les
-      title_2: développeurs·euses JavaScript
+      subtitle_2: aide les développeurs·euses web a trouver leur prochain projet.
+      subtitle_3: Affichez vos disponibilités et préférences, et laissez les entreprises vous contacter directement.
+      title_1: Le job board inversé des
+      title_2: développeurs·euses web
       title_og: Le site d'annonces inversé pour les développeurs·euses JavaScript
       turbo_native_title: jsdevs
   impersonating_banner_component:
