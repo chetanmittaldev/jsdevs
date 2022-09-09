@@ -3,3 +3,7 @@
     display: none;
   }
 }
+
+.prose :where(pre):not(:where([class~="not-prose"] *)) {
+  padding: 0;
+}
