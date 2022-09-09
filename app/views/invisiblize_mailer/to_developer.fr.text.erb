@@ -1,0 +1,7 @@
+Bonjour <%= @developer.first_name %>,
+
+Je suis David, le fondateur de jsdevs (<%= root_url %>). Votre profil développeur·euse (<%= notification_url(@notification.record) %>) a été signalé car il comporte trop peu d'informations, et ressemble à du spam.
+
+J'ai passé votre profil en mode invisible - vous êtes le·la seul·e à pouvoir le consulter. Vous pourrez le repasser en mode visible après avoir ajouté plus d'informations à votre profil.
+
+<%= render "shared/signature" %>

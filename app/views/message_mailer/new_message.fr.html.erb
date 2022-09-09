@@ -1,0 +1,7 @@
+<p><%= @sender %> vous a envoyé <%= link_to "un message", notification_url(@notification.record) %>:</p>
+
+<%== @body %>
+
+<% if Feature.enabled?(:reply_via_email, user: @recipient) %>
+  <p><small>Vous pouvez poursuivre cette conversation en répondant à cet e-mail.</small></p>
+<% end %>

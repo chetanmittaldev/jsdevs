@@ -1,0 +1,9 @@
+Bonjour <%= @developer.first_name %>,
+
+C'est David, le fondateur de jsdevs (<%= root_url %>). Il semble que votre profil développeur·euse n'a pas été mis à jour depuis un moment. Tout est encore correct?
+
+Si ce n'est pas le cas, vous pouvez mettre à jour votre profil (<%= notification_url(@notification.record) %>). Ou, si vous avez trouvé un poste et n'êtes plus en recherche, n'hésitez pas à me le faire savoir en répondant à cet e-mail!
+
+<%= render "shared/signature" %>
+Mettre à jour mes paramètres de notifications e-mail:
+  <%= edit_developer_url(@developer, anchor: "notifications") %>

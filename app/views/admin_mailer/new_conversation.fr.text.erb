@@ -1,0 +1,13 @@
+<%= @business.contact_name %> (<%= @business.company %>) a lancé une conversation avec <%= @developer.name %>:
+
+<%= truncate_message_body(@body) %>
+
+<%= "–" * 100 %>
+<% @subscriptions.each do |subscription| %>
+
+  Souscription: <%= subscription.name.humanize %>
+  Statut: <%= subscription.status.humanize %>
+  Rôle développeur: <%= @developer.role_type.humanize %>
+<% end %>
+
+<%= notification_url(@notification.record) %>

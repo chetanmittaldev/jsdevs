@@ -1,0 +1,9 @@
+<%= @sender %> vous a envoyé un message:
+
+<%= truncate_message_body(@body) %>
+
+<%= notification_url(@notification.record) %>
+
+<% if Feature.enabled?(:reply_via_email, user: @recipient) %>
+Vous pouvez poursuivre cette conversation en répondant à cet e-mail
+<% end %>

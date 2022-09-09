@@ -1,0 +1,8 @@
+<p><b><%= link_to @developer.name, "mailto:#{@developer.user.email}" %></b> a peut-être été embauché·e!</p>
+
+<ul>
+  <li><b>Conversations</b>: <%= @conversations %></li>
+  <li><b>Réponses</b>: <%= @replies %></li>
+</ul>
+
+<%= link_to "Voir conversations", notification_url(@notification.record) %>
