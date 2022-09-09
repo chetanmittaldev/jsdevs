@@ -32,10 +32,10 @@ fr:
     failure:
       already_authenticated: Vous êtes déjà connecté·e.
       inactive: Votre compte n'est pas encore actif.
-      invalid: %{authentication_keys} ou mot de passe invalide.
+      invalid: Un %{authentication_keys} ou mot de passe invalide.
       last_attempt: Vous avez droit à une tentative supplémentaire avant blocage du compte.
       locked: Votre compte est bloqué.
-      not_found_in_database: %{authentication_keys} ou mot de passe invalide..
+      not_found_in_database: Un %{authentication_keys} ou mot de passe invalide..
       timeout: Votre session a expiré. Reconnectez-vous pour continuer.
       unauthenticated: Vous devez vous connecter ou vous inscrire pour pouvoir continuer.
       unconfirmed: Vous devez confirmer votre adresse e-mail avant de pouvoir continuer.

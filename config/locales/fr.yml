@@ -286,7 +286,7 @@ fr:
       description: "%{count}+ développeurs·euses JavaScript qui recherchent leur prochain projet. Des juniors aux seniors en passant par tous les niveaux, vous trouverez tous les profils ici."
       freelance: freelance
       hire: Engager
-      in_country: %{country}
+      in_country: "%{country}"
       ruby_on_rails_developers: JavaScript developers
     new_field_component:
       new: Nouveau!
