@@ -10,7 +10,11 @@
   <%= tag.meta property: "og:image", content: image %>
 <% end %>
 
+<%= tag.meta property: "twitter:title", content: title %>
 <%= tag.meta property: "twitter:card", content: twitter_card %>
+<%= tag.meta property: "twitter:description", content: description %>
+<%= tag.meta property: "twitter:image", content: image %>
+
 <% if twitter.present? %>
   <%= tag.meta property: "twitter:site", content: twitter %>
 <% end %>
