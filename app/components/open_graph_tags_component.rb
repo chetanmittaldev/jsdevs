@@ -1,11 +1,13 @@
 class OpenGraphTagsComponent < ApplicationComponent
   attr_reader :turbo_native_title
 
-  def initialize(title: nil, turbo_native_title: nil, description: nil, image: nil)
+  def initialize(title: nil, turbo_native_title: nil, description: nil, image: nil, url: nil, atype: nil)
     @title = title
     @turbo_native_title = turbo_native_title
     @description = description
     @image = image
+    @url = url
+    @atype = atype
   end
 
   def title
@@ -24,8 +26,12 @@ class OpenGraphTagsComponent < ApplicationComponent
     @description || t("home.show.title_og")
   end
 
+  def atype
+    @atype || "website"
+  end
+
   def url
-    root_url
+    @url || root_url
   end
 
   def image
