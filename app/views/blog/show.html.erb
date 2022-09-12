@@ -27,6 +27,8 @@
 <% end %>
 <% content_for :custom_javascript do %>
   <script>
+    document.addEventListener('turbo:load', (event) => {
+
       const loadCDN = src =>
         new Promise((resolve, reject) => {
           if (document.querySelector(`head > script[src="${src}"]`) !== null) return resolve()
@@ -37,10 +39,6 @@
           script.onload = resolve
           script.onerror = reject
         })
-  </script>
-  <script>
-    document.addEventListener('turbo:load', (event) => {
-
 
       loadCDN("https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js").then(res => {
         document.querySelectorAll('pre code').forEach((el) => {
