@@ -4,6 +4,7 @@
 
 ### September
 
+* September 12 - og bugs correction for blog articles
 * September 9 - translated to fr
 * September 8 - ready for blog
 
