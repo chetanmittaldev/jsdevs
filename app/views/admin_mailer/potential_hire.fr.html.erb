@@ -5,4 +5,4 @@
   <li><b>Réponses</b>: <%= @replies %></li>
 </ul>
 
-<%= link_to "Voir conversations", notification_url(@notification.record) %>
+<%= link_to "Voir conversations", notification_url(@notification.record, locale: "fr") %>

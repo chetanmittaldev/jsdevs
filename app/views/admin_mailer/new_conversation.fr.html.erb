@@ -1,8 +1,8 @@
-<p><%= link_to "#{@business.contact_name} (#{@business.company})", business_url(@business) %> a lancé une conversation avec <%= link_to @developer.name, developer_url(@developer) %>:</p>
+<p><%= link_to "#{@business.contact_name} (#{@business.company})", business_url(@business, locale: "fr") %> a lancé une conversation avec <%= link_to @developer.name, developer_url(@developer) %>:</p>
 
 <%== html_truncate_message_body(@body) %>
 
-<%= link_to "Voir conversation", notification_url(@notification.record) %>
+<%= link_to "Voir conversation", notification_url(@notification.record, locale: "fr") %>
 
 <hr>
 
