@@ -27,15 +27,15 @@ fr:
       location:
         country_code: Pays
       role_level:
-        c_level: C-level
+        c_level: Cadre dirigeant
         junior: Junior
-        mid: Mid-level
-        principal: Principal / staff
+        mid: Intermédiaire
+        principal: Lead dev
         senior: Senior
       role_type:
-        full_time_contract: Contrat à plein temps
-        full_time_employment: Travail à plein temps
-        part_time_contract: Contrat à temps partiel
+        full_time_contract: Freelance à temps plein
+        full_time_employment: Contrat en CDI
+        part_time_contract: Freelance à temps partiel
       user:
         email: E-mail
         password: Mot de passe
@@ -260,8 +260,8 @@ fr:
         help_text: Sélectionnez tous les niveaux de poste que vous souhaitez remplir.
         title: Niveau de poste
       role_type:
-        help_text: Sélectionnez tous les rôles que vous souhaitez remplir.
-        title: Type de rôle
+        help_text: Sélectionnez tous les contrats qui vous intéressent.
+        title: Type de contrat
       save: Sauvegarder
       search_status:
         actively_looking_help_text: Votre profil peut être mis en vedette sur la page d'accueil.
@@ -390,7 +390,7 @@ fr:
       articles: Articles
       my_business_profile: Profil de ma société
       my_conversations: Mes conversations
-      my_developer_profile: Mon profil développeur·euse
+      my_developer_profile: Mon profil dev
       new_notifications: Vous avez une nouvelle notification
       open_user_menu: Ouvrir le menu utilisateur·trice
       sign_out: Déconnexion
