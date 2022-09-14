@@ -1,5 +1,5 @@
 <p>Bonjour <%= @business.name %>,</p>
-<p>Je suis David, le fondateur de <%= link_to "jsdevs", root_url %>. <%= link_to "Le profil de votre société", notification_url(@notification.record) %> a été signalé car il comporte trop peu d'informations, et ressemble à du spam.</p>
+<p>Je suis David, le fondateur de <%= link_to "jsdevs", root_url(locale: "fr") %>. <%= link_to "Le profil de votre société", notification_url(@notification.record, locale: "fr") %> a été signalé car il comporte trop peu d'informations, et ressemble à du spam.</p>
 <p>J'ai passé votre profil en mode invisible - vous êtes le·la seul·e à pouvoir le consulter. Faites-moi signe une fois votre profil complété, et je le rendrai à nouveau public.</p>
 <p>Des questions? Répondez à cet e-mail, je serai ravi de vous aider.</p>
 <%= render "shared/signature" %>
