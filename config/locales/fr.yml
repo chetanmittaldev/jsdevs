@@ -211,7 +211,7 @@ fr:
       now_html: Disponible maintenant
       unspecified_html: Actuellement indisponible
     card_component:
-      featured: Dev d'exception
+      featured: Top dev 
     count_component:
       cta: Réinitialiser les filtres
       title_html: Affichage de <span class='font-bold'>%{count}</span> sur <span class='font-bold'>%{total}</span>+ développeurs·euses.

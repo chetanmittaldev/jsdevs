@@ -13,7 +13,14 @@ class NotificationsController < ApplicationController
     notification.mark_as_read!
 
     if (url = notification.to_notification.url)
-      redirect_to url
+      p '- - - - - - - - - - - - - - url- - - - - - - - - - - - - - - -' 
+      p url
+      p ''
+      actual_locale = params[:locale] || 'en'
+      p '- - - - - - - - - - - - - - actual_locale- - - - - - - - - - - - - - - -' 
+      p actual_locale
+      p ''
+      redirect_to "#{url}?locale=#{actual_locale}" 
     else
       redirect_to notifications_path, notice: t(".notice")
     end

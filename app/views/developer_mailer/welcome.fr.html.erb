@@ -1,5 +1,5 @@
 <p>Bonjour <%= @developer.first_name %>,</p>
-<p>Je suis David, le fondateur de <%= link_to "jsdevs", notification_url(@notification.record) %>. Merci d'avoir ajouté votre profil!</p>
+<p>Je suis David, le fondateur de <%= link_to "jsdevs", notification_url(@notification.record, locale: 'fr') %>. Merci d'avoir ajouté votre profil!</p>
 <p>Voilà quelques conseils pour optimiser vos chances d'être contacté par un employeur:</p>
 <ol>
   <li>Remplissez votre profil autant que possible.</li>
