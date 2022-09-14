@@ -14,7 +14,7 @@ class NotificationsTest < ActionDispatch::IntegrationTest
     conversation = conversations(:one)
 
     get notification_path(notification)
-    assert_redirected_to conversation_path(conversation)
+    assert_redirected_to conversation_path(conversation) + "?locale=en"
   end
 
   test "you can view the new notifications page even if none exist" do
@@ -37,7 +37,7 @@ class NotificationsTest < ActionDispatch::IntegrationTest
     refute notification.reload.read?
     get notification_path(notification)
 
-    assert_redirected_to conversation_path(conversation)
+    assert_redirected_to conversation_path(conversation) + "?locale=en"
     assert notification.reload.read?
   end
 end
