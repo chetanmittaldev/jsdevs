@@ -27,15 +27,15 @@ fr:
       location:
         country_code: Pays
       role_level:
-        c_level: C-level
+        c_level: Cadre dirigeant
         junior: Junior
-        mid: Mid-level
-        principal: Principal / staff
+        mid: Intermédiaire
+        principal: Lead dev
         senior: Senior
       role_type:
-        full_time_contract: Contrat à plein temps
-        full_time_employment: Travail à plein temps
-        part_time_contract: Contrat à temps partiel
+        full_time_contract: Freelance à temps plein
+        full_time_employment: Contrat en CDI
+        part_time_contract: Freelance à temps partiel
       user:
         email: E-mail
         password: Mot de passe
@@ -211,7 +211,7 @@ fr:
       now_html: Disponible maintenant
       unspecified_html: Actuellement indisponible
     card_component:
-      featured: Développeur en vedette
+      featured: Top dev 
     count_component:
       cta: Réinitialiser les filtres
       title_html: Affichage de <span class='font-bold'>%{count}</span> sur <span class='font-bold'>%{total}</span>+ développeurs·euses.
@@ -260,8 +260,8 @@ fr:
         help_text: Sélectionnez tous les niveaux de poste que vous souhaitez remplir.
         title: Niveau de poste
       role_type:
-        help_text: Sélectionnez tous les rôles que vous souhaitez remplir.
-        title: Type de rôle
+        help_text: Sélectionnez tous les contrats qui vous intéressent.
+        title: Type de contrat
       save: Sauvegarder
       search_status:
         actively_looking_help_text: Votre profil peut être mis en vedette sur la page d'accueil.
@@ -287,7 +287,7 @@ fr:
       freelance: freelance
       hire: Engager
       in_country: "%{country}"
-      ruby_on_rails_developers: JavaScript developers
+      ruby_on_rails_developers: des développeurs·euses web
     new_field_component:
       new: Nouveau!
     new_fields_component:
@@ -390,7 +390,7 @@ fr:
       articles: Articles
       my_business_profile: Profil de ma société
       my_conversations: Mes conversations
-      my_developer_profile: Mon profil développeur·euse
+      my_developer_profile: Mon profil dev
       new_notifications: Vous avez une nouvelle notification
       open_user_menu: Ouvrir le menu utilisateur·trice
       sign_out: Déconnexion
@@ -487,8 +487,8 @@ fr:
       title: Vous avez souscrit a un ancienne souscription qui n'est pas listée sur cette page. Votre tarif et vos avantages n'ont pas changé.
     cta:
       cta: Démarrer
-      subtitle: Trouvez vos nouveaux·elles développeurs·euses JavaScript dès aujourd'hui.
-      title: Prêts à embaucher?
+      subtitle: Trouvez vos nouveaux·elles développeurs·euses web directement, dès aujourd'hui.
+      title: Prêt·e·s à recruter?
     faq:
       annual:
         a_html: Oui. Envoyez un e-mail au fondateur – c'est moi, David! – pour définir une facturation annuelle à to <a href='mailto:contact@jsdevs.co' class='underline'>contact@jsdevs.co</a>.
@@ -524,7 +524,7 @@ fr:
         title: Notifications de nouveaux·elles candidat·e·s
       profiles:
         description: Des centaines de développeurs·euses JavaScript à la recherche de travail freelance, à mi-temps et à plein temps.
-        title: Profils hautement ciblés
+        title: Profils qualifié·e·s
       subtitle: Contactez des centaines de développeurs·euses JavaScript avec une souscription jsdevs. Gagnez du temps en contactant les candidats·tes idéaux·les directement.
       support:
         description: Envoyez un e-mail au fondateur – c'est moi, David! – si vous avez besoin d'aide.
@@ -538,18 +538,18 @@ fr:
         notifications: Notifications de nouveaux·elles candidat·e·s
         onboarding: Accompagnement VIP et aide au lancement
         priority_support: Support prioritaire par e-mail et visio-conférence
-        profiles: Profils développeurs·euses hautement ciblés
+        profiles: Profils développeurs·euses qualifié·e·s
         support: Support par e-mail
         white_glove: Candidat·e·s· triés sur le volets, sélection mensuelle
       full_time:
         fees: "+ 10% du salaire de la première année"
         help: Aide sur les frais temps plein
-        subtitle_html: Engagez des développeurs·euses en freelance, à temps partiel ou <span class="font-bold">à temps plein</span>.
-        title: Engagez des employé·e·s à temps plein
+        subtitle_html: Engagez des développeurs·euses <span class="font-bold">en CDI</span>.
+        title: Engagez des employé·e·s en CDI
       month: mois
       part_time:
         fees: "+ $0 frais additionnels"
-        subtitle: Embauchez des développeurs·euses JavaScript en freelance ou à temps partiel.
+        subtitle: Embauchez des développeurs·euses JavaScript en freelance, temps plein ou temps partiel.
         title: Embauchez des indépendant·e·s
       title: Tarifs
     purchase_button:
@@ -585,8 +585,8 @@ fr:
       title_2: "99 € par mois"
       title_og: Tarifs
     v2:
-      description: Souscrivez à jsdevs et contactez directement des cenatines de développeurs·euses JavaScript qui recherchent du travail freelance, à mi-temps ou à plein temps.
-      title: Engagez des développeurs·euses JavaScript
+      description: Abonnez-vous à jsdevs, et contactez directement des centaines de développeurs·euses qui cherchent du travail, en CDI ou en freelance.
+      title: Engagez des développeurs·euses qualifié·e·s
       title_og: Tarifs
       turbo_native_title: Engagez des développeurs·euses JavaScript
   read_notifications:

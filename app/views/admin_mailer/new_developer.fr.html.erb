@@ -1,1 +1,1 @@
-<p><b><%= link_to @developer.name, "mailto:#{@developer.user.email}" %></b> a ajouté son <%= link_to "profil développeur·euse", notification_url(@notification.record) %>!</p>
+<p><b><%= link_to @developer.name, "mailto:#{@developer.user.email}" %></b> a ajouté son <%= link_to "profil développeur·euse", notification_url(@notification.record, locale: "fr") %>!</p>

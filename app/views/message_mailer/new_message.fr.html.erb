@@ -1,4 +1,4 @@
-<p><%= @sender %> vous a envoyé <%= link_to "un message", notification_url(@notification.record) %>:</p>
+<p><%= @sender %> vous a envoyé <%= link_to "un message", notification_url(@notification.record, locale: "fr") %>:</p>
 
 <%== @body %>
 

@@ -10,4 +10,4 @@
   Rôle développeur: <%= @developer.role_type.humanize %>
 <% end %>
 
-<%= notification_url(@notification.record) %>
+<%= notification_url(@notification.record, locale: "fr") %>

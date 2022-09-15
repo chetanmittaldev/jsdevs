@@ -11,11 +11,12 @@ class NotificationsController < ApplicationController
   def show
     notification = current_user.notifications.find(params[:id])
     notification.mark_as_read!
+    actual_locale = params[:locale] || "en"
 
     if (url = notification.to_notification.url)
-      redirect_to url
+      redirect_to "#{url}?locale=#{actual_locale}"
     else
-      redirect_to notifications_path, notice: t(".notice")
+      redirect_to notifications_path(locale: actual_locale), notice: t(".notice")
     end
   end
 end
