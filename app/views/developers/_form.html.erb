@@ -173,6 +173,20 @@
               </div>
             </fieldset>
 
+
+            <fieldset>
+              <%= form.fields_for :skills, include_id: false do |role_type| %>
+                <%= form.object.skills %>
+                <%= form.label "skills_frontend", 'Frontend skills', class: "h6 mb-3" %>
+                <%= form.collection_check_boxes :skills_frontend, Developer.skills_frontend, :first, :last, :input_html => { :class => '' } do |custom_check_box| %>
+                  <div>
+                    <%= custom_check_box.check_box({class: '', checked: false }) %>
+                    <%= custom_check_box.label({class:''}) %>
+                  </div>
+                <% end %>
+              <% end %>
+            </fieldset>
+
             <%= form.fields_for :role_type, include_id: false do |role_type| %>
               <fieldset>
                 <div>

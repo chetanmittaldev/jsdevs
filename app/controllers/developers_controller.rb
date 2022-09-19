@@ -30,6 +30,7 @@ class DevelopersController < ApplicationController
   end
 
   def update
+    fail
     @developer = Developer.find(params[:id])
     authorize @developer
 
@@ -58,12 +59,16 @@ class DevelopersController < ApplicationController
   end
 
   def developer_params
+    p '- - - - - - - - - - - - - - params- - - - - - - - - - - - - - - -' 
+    p params
+    p ''
     params.require(:developer).permit(
       :name,
       :available_on,
       :hero,
       :bio,
       :website,
+      :skills_frontend,
       :github,
       :twitter,
       :linkedin,
