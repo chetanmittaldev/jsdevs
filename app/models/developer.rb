@@ -106,18 +106,40 @@ class Developer < ApplicationRecord
     }
   end
 
+  def self.skills_languages
+    {
+      nextjs: 'JavaScript',
+      nuxtjs: 'TypeScript',
+      python: 'Python',
+      ruby: 'Ruby',
+      dotnet: 'C#',
+      java: 'Java',
+      dart: 'Dart',
+      golang: 'Golang',
+    }
+  end
+
+  # def self.skills_frontend
+  #   {
+  #     vuejs: 'VueJS',
+  #     reactjs: 'ReactJS',
+  #     angularjs: 'AngularJS',
+  #     emberjs: 'EmberJS',
+  #     hotwire: 'Hotwire',
+  #     tailwind: 'TailwindCSS',
+  #     scss: 'SCSS',
+  #   }
+  # end
+
   def self.skills_backend
     {
       nextjs: 'NextJS',
-      nuxtjs: 'Nuxt',
+      nuxt: 'Nuxt',
       nodejs: 'NodeJS',
       dotnet: '.Net',
-      java: 'Java',
-      ruby: 'Ruby',
-      dart: 'Dart',
-      golang: 'Golang',
-      python: 'Python',
-      dart: 'Dart',
+      spring: 'Spring',
+      rails: 'Rails',
+      php: 'PHP',
     }
   end
 

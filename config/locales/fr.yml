@@ -262,6 +262,11 @@ fr:
       role_type:
         help_text: Sélectionnez tous les contrats qui vous intéressent.
         title: Type de contrat
+      skills:
+        title: Compétences
+        intro: Quelle compétences avez-vous déjà dans les différentes technologies?
+        frontend_title: Frontend
+        frontend_help_text: Qu'avez-vous déjà utilisé côté Front?
       save: Sauvegarder
       search_status:
         actively_looking_help_text: Votre profil peut être mis en vedette sur la page d'accueil.

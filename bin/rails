@@ -1,4 +1,13 @@
 #!/usr/bin/env ruby
 APP_PATH = File.expand_path("../config/application", __dir__)
 require_relative "../config/boot"
+
+# Make a clean exit on Heroku while running a rails console.
+# Without this we'll get a "SignalException: SIGHUP" error in honeybadger.
+if ENV["DYNO"]
+  if ["c", "console"].include?(ARGV.first)
+    Signal.trap("SIGHUP") { exit 0 }
+  end
+end
+
 require "rails/commands"

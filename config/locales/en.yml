@@ -259,6 +259,12 @@ en:
       role_level:
         help_text: Select all the experience levels you would consider taking.
         title: Role level
+      skills:
+        title: Skills
+        intro: What experiences do you have with different technologies?
+        general_intro:
+        frontend: Frontend
+        frontend_help_text: Select all skills you already have
       role_type:
         help_text: Select all roles that you would consider taking.
         title: Role type

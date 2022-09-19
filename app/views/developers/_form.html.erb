@@ -120,6 +120,35 @@
     <div class="bg-white shadow mt-8 px-4 py-5 lg:rounded-lg sm:p-6">
       <div class="md:grid md:grid-cols-3 md:gap-6">
         <div class="md:col-span-1">
+          <h3 class="text-lg font-medium leading-6 text-gray-900"><%= t(".skills.title") %></h3>
+          <p class="mt-1 text-sm text-gray-500"><%= t(".skills.intro") %></p>
+        </div>
+        <fieldset>
+          <div>
+            <legend class="text-base font-medium text-gray-900 w-full">
+              <div class="flex">
+                <%= t(".skills.frontend_title") %>
+              </div>
+            </legend>
+            <p class="text-sm text-gray-500"><%= t(".skills.frontend_help_text") %></p>
+          </div>
+          <%= form.fields_for :skills, include_id: false do |role_type| %>
+            <%= form.object.skills %>
+            <%= form.label "skills_frontend",  t(".skills.frontend"), class: "h6 mb-3" %>
+            <%= form.collection_check_boxes :skills_frontend, Developer.skills_frontend, :first, :last, :input_html => { :class => '' } do |custom_check_box| %>
+              <div class="flex items-center">
+                <%= custom_check_box.check_box({class: 'focus:ring-gray-500 h-4 w-4 text-gray-600 border-gray-300 rounded', checked: false }) %>
+                <%= custom_check_box.label({class:'ml-3 block text-sm font-medium text-gray-700'}) %>
+              </div>
+            <% end %>
+          <% end %>
+        </fieldset>
+      </div>
+  </div>
+
+    <div class="bg-white shadow mt-8 px-4 py-5 lg:rounded-lg sm:p-6">
+      <div class="md:grid md:grid-cols-3 md:gap-6">
+        <div class="md:col-span-1">
           <h3 class="text-lg font-medium leading-6 text-gray-900"><%= t(".work_preferences.title") %></h3>
           <p class="mt-1 text-sm text-gray-500"><%= t(".work_preferences.help_text") %></p>
         </div>
@@ -171,20 +200,6 @@
                   </div>
                 </div>
               </div>
-            </fieldset>
-
-
-            <fieldset>
-              <%= form.fields_for :skills, include_id: false do |role_type| %>
-                <%= form.object.skills %>
-                <%= form.label "skills_frontend", 'Frontend skills', class: "h6 mb-3" %>
-                <%= form.collection_check_boxes :skills_frontend, Developer.skills_frontend, :first, :last, :input_html => { :class => '' } do |custom_check_box| %>
-                  <div>
-                    <%= custom_check_box.check_box({class: '', checked: false }) %>
-                    <%= custom_check_box.label({class:''}) %>
-                  </div>
-                <% end %>
-              <% end %>
             </fieldset>
 
             <%= form.fields_for :role_type, include_id: false do |role_type| %>
