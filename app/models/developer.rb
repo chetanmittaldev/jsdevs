@@ -98,15 +98,14 @@ class Developer < ApplicationRecord
       reactjs: 'ReactJS',
       angularjs: 'AngularJS',
       emberjs: 'EmberJS',
-      hotwire: 'Hotwire',
-      typescript: 'TypeScript',
-      javascript: 'JavaScript',
       tailwind: 'TailwindCSS',
-      scss: 'SCSS',
+      bootstrap: 'BootstrapCSS',
+      chakra: 'ChakraUI',
+      scss: 'SASS/SCSS',
     }
   end
 
-  def self.skills_languages
+  def self.skills_language
     {
       nextjs: 'JavaScript',
       nuxtjs: 'TypeScript',
@@ -133,6 +132,7 @@ class Developer < ApplicationRecord
 
   def self.skills_backend
     {
+      express: 'ExpressJS',
       nextjs: 'NextJS',
       nuxt: 'Nuxt',
       nodejs: 'NodeJS',
