@@ -30,7 +30,6 @@ class DevelopersController < ApplicationController
   end
 
   def update
-    fail
     @developer = Developer.find(params[:id])
     authorize @developer
 
@@ -59,16 +58,12 @@ class DevelopersController < ApplicationController
   end
 
   def developer_params
-    p '- - - - - - - - - - - - - - params- - - - - - - - - - - - - - - -' 
-    p params
-    p ''
-    params.require(:developer).permit(
+    returned_h = params.require(:developer).permit(
       :name,
       :available_on,
       :hero,
       :bio,
       :website,
-      :skills_frontend,
       :github,
       :twitter,
       :linkedin,
@@ -78,8 +73,14 @@ class DevelopersController < ApplicationController
       :search_query,
       :profile_reminder_notifications,
       location_attributes: [:city, :state, :country],
+      skills: {},
       role_type_attributes: RoleType::TYPES,
       role_level_attributes: RoleLevel::TYPES
-    )
+    ).to_h
+
+    returned_h["skills"]["skills_frontend"] = returned_h["skills"]["skills_frontend"].compact_blank
+    returned_h["skills"]["skills_backend"] = returned_h["skills"]["skills_backend"].compact_blank
+    returned_h["skills"]["skills_language"] = returned_h["skills"]["skills_language"].compact_blank
+    returned_h
   end
 end
