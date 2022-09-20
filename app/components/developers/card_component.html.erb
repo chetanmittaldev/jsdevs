@@ -24,29 +24,9 @@
       <div class="mt-2 text-sm sm:text-base text-gray-700 space-y-4">
         <p class="line-clamp-3 break-words"><%= strip_tags bio %></p>
       </div>
-      <ul class="my-4 space-y-2 -ml-2">
-        <% developer.skills["skills_frontend"].to_a.each do |skill| %>
-          <li class="inline-block md:text-sm">
-            <div class="block bg-gray-100 px-2 py-1 text-xs md:px-2 md:py-1 rounded-xl text-gray-700 hover:text-black hover:bg-blue-200">
-              <span class="text-sm font-medium"><%= Developer.skills_frontend[skill.to_sym] %></span>
-            </div>
-          </li>
-        <% end %>
-        <% developer.skills["skills_backend"].to_a.each do |skill| %>
-          <li class="inline-block md:text-sm">
-            <div class="block bg-gray-100 px-2 py-1 text-xs md:px-2 md:py-1 rounded-xl text-gray-700 hover:text-black hover:bg-blue-200">
-              <span class="text-sm font-medium"><%= Developer.skills_backend[skill.to_sym]  %></span>
-            </div>
-          </li>
-        <% end %>
-        <% developer.skills["skills_language"].to_a.each do |skill| %>
-          <li class="inline-block md:text-sm">
-            <div class="block bg-gray-100 px-2 py-1 text-xs md:px-2 md:py-1 rounded-xl text-gray-700 hover:text-black hover:bg-blue-200">
-              <span class="text-sm font-medium"><%= Developer.skills_language[skill.to_sym]  %></span>
-            </div>
-          </li>
-        <% end %>
-      </ul>
+      <div class="my-4 space-y-2 -ml-2">
+        <%= render Developers::SkillsComponent.new(frontend: developer.skills["skills_frontend"].to_a, backend: developer.skills["skills_backend"].to_a, language: developer.skills["skills_language"].to_a) %>
+      </div>
     </div>
   <% end %>
 <% end %>
