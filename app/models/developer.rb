@@ -118,18 +118,6 @@ class Developer < ApplicationRecord
     }
   end
 
-  # def self.skills_frontend
-  #   {
-  #     vuejs: 'VueJS',
-  #     reactjs: 'ReactJS',
-  #     angularjs: 'AngularJS',
-  #     emberjs: 'EmberJS',
-  #     hotwire: 'Hotwire',
-  #     tailwind: 'TailwindCSS',
-  #     scss: 'SCSS',
-  #   }
-  # end
-
   def self.skills_backend
     {
       express: 'ExpressJS',
@@ -140,15 +128,6 @@ class Developer < ApplicationRecord
       spring: 'Spring',
       rails: 'Rails',
       php: 'PHP',
-    }
-  end
-
-  def self.skills_devops
-    {
-      sysadmin: 'Sysadmin tools (Ansible, Docker, etc)',
-      unit_testing: 'Unit and automated testing',
-      ci_cd: 'CI/CD',
-      static_analytis: 'ESLint/Prettier or equivalent',
     }
   end
 

@@ -265,13 +265,10 @@ fr:
       skills:
         title: Compétences
         intro: Quelle compétences avez-vous déjà dans les différentes technologies?
-        frontend: Frontend
         frontend_title: Frontend
         frontend_help_text: Qu'avez-vous déjà utilisé côté Front?
-        backend: Backend
         backend_title: Backend
         backend_help_text: Qu'avez-vous déjà utilisé côté Back?
-        language: Languages
         language_title: Languages
         language_help_text: Quels languages connaissez vous déjà?
       save: Sauvegarder

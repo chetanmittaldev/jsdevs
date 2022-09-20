@@ -262,9 +262,12 @@ en:
       skills:
         title: Skills
         intro: What experiences do you have with different technologies?
-        frontend: Frontend
         frontend_title: Frontend
-        frontend_help_text: Select all skills you already have
+        frontend_help_text: Select all Frontend skills you already have
+        backend_title: Backend
+        backend_help_text: Select all Backend skills you already have
+        language_title: Languages
+        language_help_text: What do you have experience with?
       role_type:
         help_text: Select all roles that you would consider taking.
         title: Role type
