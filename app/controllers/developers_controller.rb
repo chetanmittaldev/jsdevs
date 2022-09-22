@@ -78,9 +78,15 @@ class DevelopersController < ApplicationController
       role_level_attributes: RoleLevel::TYPES
     ).to_h
 
-    returned_h["skills"]["skills_frontend"] = returned_h["skills"]["skills_frontend"].compact_blank
-    returned_h["skills"]["skills_backend"] = returned_h["skills"]["skills_backend"].compact_blank
-    returned_h["skills"]["skills_language"] = returned_h["skills"]["skills_language"].compact_blank
+    if returned_h["skills"] && returned_h["skills"]["skills_frontend"]
+      returned_h["skills"]["skills_frontend"] = returned_h["skills"]["skills_frontend"].compact_blank
+    end
+    if returned_h["skills"] && returned_h["skills"]["skills_backend"]
+      returned_h["skills"]["skills_backend"] = returned_h["skills"]["skills_backend"].compact_blank
+    end
+    if returned_h["skills"] && returned_h["skills"]["skills_language"]
+      returned_h["skills"]["skills_language"] = returned_h["skills"]["skills_language"].compact_blank
+    end
     returned_h
   end
 end
