@@ -262,9 +262,18 @@ fr:
       role_type:
         help_text: Sélectionnez tous les contrats qui vous intéressent.
         title: Type de contrat
+      skills:
+        title: Compétences
+        intro: Quelle compétences avez-vous déjà dans les différentes technologies?
+        frontend_title: Frontend
+        frontend_help_text: Qu'avez-vous déjà utilisé côté Front?
+        backend_title: Backend
+        backend_help_text: Qu'avez-vous déjà utilisé côté Back?
+        language_title: Languages
+        language_help_text: Quels languages connaissez vous déjà?
       save: Sauvegarder
       search_status:
-        actively_looking_help_text: Votre profil peut être mis en vedette sur la page d'accueil.
+        actively_looking_help_text: Votre profil peut être mis en avant sur la page d'accueil.
         invisible_help_text: Votre profil est masqué, et ne peut-être consulté que par vous-même.
         not_interested_help_text: Votre profil n'apparaîtra pas dans les recherches.
         open_help_text: Les entreprises peuvent vous trouver, mais vous n'apparaîtrez pas sur la page d'accueil.

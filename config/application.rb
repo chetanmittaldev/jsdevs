@@ -39,7 +39,8 @@ module Jsdevs
     config.i18n.load_path += Dir[Rails.root.join("config", "locales", "**", "*.{rb,yml}")]
 
     # Permitted locales available for the application
-    config.i18n.available_locales = [:en, :fr, :es]
+    config.i18n.available_locales = [:en, :fr]
+    config.i18n.available_locales = [:en, :fr, :es] if Rails.env.test?
 
     # Set default locale
     config.i18n.default_locale = :en

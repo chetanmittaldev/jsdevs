@@ -24,6 +24,9 @@
       <div class="mt-2 text-sm sm:text-base text-gray-700 space-y-4">
         <p class="line-clamp-3 break-words"><%= strip_tags bio %></p>
       </div>
+      <div class="my-4 space-y-2 -ml-2">
+        <%= render Developers::SkillsComponent.new(frontend: developer.skills["skills_frontend"].to_a, backend: developer.skills["skills_backend"].to_a, language: developer.skills["skills_language"].to_a) %>
+      </div>
     </div>
   <% end %>
 <% end %>

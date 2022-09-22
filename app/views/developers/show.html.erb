@@ -33,6 +33,10 @@
                 <%= render "details", developer: @developer %>
               </aside>
 
+              <div class="mt-6">
+                <%= render Developers::SkillsComponent.new(frontend: @developer.skills["skills_frontend"].to_a, backend: @developer.skills["skills_backend"].to_a, language: @developer.skills["skills_language"].to_a) %>
+              </div>
+
               <div class="py-3 lg:pt-6 lg:pb-0">
                 <h2 class="sr-only"><%= t(".description") %></h2>
                 <div class="prose max-w-prose">

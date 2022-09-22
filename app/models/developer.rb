@@ -91,4 +91,43 @@ class Developer < ApplicationRecord
   def feature!
     touch(:featured_at)
   end
+
+  def self.skills_frontend
+    {
+      vuejs: "VueJS",
+      reactjs: "ReactJS",
+      angularjs: "AngularJS",
+      emberjs: "EmberJS",
+      tailwind: "TailwindCSS",
+      bootstrap: "BootstrapCSS",
+      chakra: "ChakraUI",
+      scss: "SASS/SCSS"
+    }
+  end
+
+  def self.skills_language
+    {
+      nextjs: "JavaScript",
+      nuxtjs: "TypeScript",
+      python: "Python",
+      ruby: "Ruby",
+      dotnet: "C#",
+      java: "Java",
+      dart: "Dart",
+      golang: "Golang"
+    }
+  end
+
+  def self.skills_backend
+    {
+      express: "ExpressJS",
+      nextjs: "NextJS",
+      nuxt: "Nuxt",
+      nodejs: "NodeJS",
+      dotnet: ".Net",
+      spring: "Spring",
+      rails: "Rails",
+      php: "PHP"
+    }
+  end
 end

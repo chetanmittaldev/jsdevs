@@ -14,6 +14,7 @@ gem "sprockets-rails", "~> 3.4"
 gem "stimulus-rails", "~> 0.7"
 gem "turbo-rails", "~> 1.0"
 gem "view_component", "~> 2.53"
+gem "awesome_print"
 
 group :development, :test do
   gem "faker"
