@@ -42,7 +42,7 @@
                     </thead>
                     <tbody class="bg-white divide-y divide-gray-200 dark:bg-gray-800 dark:divide-gray-700">
                         
-                        <% @articles.order('created_at DESC').each do |article| %>
+                        <% @articles.order('publication_date DESC').each do |article| %>
                           <tr class="hover:bg-gray-100 dark:hover:bg-gray-700">
                             <td class="w-4 p-4">
                                 <div class="flex items-center">

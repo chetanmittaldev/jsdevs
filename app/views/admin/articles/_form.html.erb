@@ -68,6 +68,21 @@
     </div>
 
     <div class="form-group mb-1">
+      <% is_valid_author = triggered_validation && errors_h[:author].blank? && @article.author.present?  %>
+      <% is_invalid_author = !!errors_h[:author]  %>
+      <%= form.label "author-input", 'author', class: "mb-0 fw-600" %>
+      <small id="hint_id_author" class="form-text text-muted d-block my-0">
+        Optional, but recommended : the email of the author. Will appeared as anonymous if blank, or not filled.
+      </small>
+      <%= form.text_field 'author', 
+            value: @article.author, 
+            id: "author-input", 
+            class: "form-control #{"is-invalid" if errors_h[:author]} #{"is-valid" if is_valid_author}", aria: ({ invalid: is_invalid_author, describedby: "author_message" } if triggered_validation) %> 
+      <%= content_tag(:span, errors_h[:author][0], class: "invalid-feedback", id: "author_message") if is_invalid_author %>
+      <%= content_tag(:span, 'looks good !', class: "valid-feedback", id: "author_message") if is_valid_author  %>
+    </div>
+
+    <div class="form-group mb-1">
       <% is_valid_image_url = triggered_validation && errors_h[:image_url].blank? && @article.image_url.present?  %>
       <% is_invalid_image_url = !!errors_h[:image_url]  %>
       <%= form.label "image_url-input", 'Image URL', class: "mb-0 fw-600" %>

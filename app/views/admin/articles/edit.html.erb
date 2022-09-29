@@ -80,9 +80,31 @@
               <%= form.text_area 'description', 
                     value: @article.description, 
                     id: "description-input", 
-                    rows: 6,
+                    rows: 4,
                     placeholder: 'This article is about paragraphs and sentences. Let\'s see how to write them.',
                     class: regular_css %> 
+            </div>
+            <div class="mb-2">
+              <% is_valid_author = triggered_validation && errors_h[:author].blank? && @article.author.present?  %>
+              <% is_invalid_author = !!errors_h[:author]  %>
+              <div>
+                  <%= form.label "author-input", 'Author *', class: "inline text-sm font-medium text-gray-900 dark:text-white" %>
+                  <label id="hint_id_author" class="inline text-xs font-normal text-gray-500 dark:text-gray-400">
+                    Email of the author, if any
+                  </label>
+              </div>
+              <%= form.text_field 'author', 
+                    value: @article.author, 
+                    id: "author-input", 
+                    placeholder: 'Example : author@example.com',
+                    class: "#{is_invalid_author ? invalid_css : is_valid_author ?  valid_css  : regular_css}", aria: ({ invalid: is_invalid_author, describedby: "author_message" } if triggered_validation) %> 
+              <% if is_invalid_author %>
+                  <%= content_tag(:div, "<span class='font-medium'>Error: </span>#{errors_h[:author][0]}".html_safe, class: "text-sm text-red-600 dark:text-red-500", id: "author_message") %>
+              <% elsif is_valid_author %>
+                  <%= content_tag(:div, 'looks good!', class: "text-sm text-green-600 dark:text-green-500 font-medium", id: "author_message")  %>
+              <% else %>
+                  <%= content_tag(:div, "&nbsp;".html_safe, class: "text-sm font-medium", id: "author_message")  %>
+              <% end %>
             </div>
         </div>
 

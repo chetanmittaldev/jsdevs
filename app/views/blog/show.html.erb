@@ -6,7 +6,10 @@
       <%== @article[:title] %>
     </h1>
     <p class="mb-1 text-lg text-gray-600 dark:text-gray-400 lg:text-lg">
-      <%== @article[:publication_date] %>
+      <%== @article[:publication_date] %> 
+      <% if @article[:author].present? %>
+        - by <%= link_to @article[:author], developer_path(@article[:author].scan(/\d+/)), class: "underline text-blue-600 hover:text-blue-800 visited:text-purple-600"  %>
+      <% end %>
     </p>
     <p class="mb-10 text-lg text-gray-600 dark:text-gray-400 lg:text-lg">
       <%== @article[:description] %>

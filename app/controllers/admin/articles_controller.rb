@@ -57,7 +57,7 @@ module Admin
 
     # Only allow a list of trusted parameters through.
     def article_params
-      res = params.require(:article).permit(:shortname, :slug, :kontent, :title, :description, :image_url, :publication_date).to_h
+      res = params.require(:article).permit(:shortname, :slug, :kontent, :title, :description, :image_url, :publication_date, :author).to_h
       res[:publication_date] = Date.strptime(res[:publication_date], "%m/%d/%Y") if res[:publication_date].present?
       res
     end
