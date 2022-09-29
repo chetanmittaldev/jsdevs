@@ -492,113 +492,55 @@ en:
       show:
         title: Terms and conditions
   pricing:
-    banner:
-      title: You are subscribed to a legacy plan that is not listed on this page. Your price and features have not changed.
     cta:
-      cta: Get started
-      subtitle: Find your next JavaScript developers today.
+      cta: Get started today
+      subtitle: Find your next JavaScript developer today.
       title: Ready to start hiring?
     faq:
       annual:
-        a_html: Yes. Email the founder – that's me, David! – to set up annual billing at <a href='mailto:contact@jsdevs.co' class='underline'>contact@jsdevs.co</a>.
+        a_html: Yes. Email David to set up discounted annual billing at <a href='mailto:contact@jsdevs.co' class='underline'>contact@jsdevs.co</a>.
         q: Can I pay annually or yearly?
       cancellation:
         a_html: Yes. You can cancel your subscription from the Billing link in the user drop-down. You will lose access to all paid features at the end of your billing period.
         q: Can I cancel my subscription at any time?
       developers:
-        a: No. jsdevs is free for developers.
-        q: Does jsdevs cost anything for developers?
-      features:
-        a: A business subscription allows you to reach out directly to developers on jsdevs. It also unhides information that is hidden from the public, like the real names of developers and their portfolio links.
-        q: So what does the fee get me?
+        a: No. JsDevs is free for developers.
+        q: Does JsDevs cost anything for developers?
       fee:
-        a_html: You are required to pay jsdevs 10% of a developer's first year salary if you found them through jsdevs. This only applies to hiring full-time employees and not contract or freelance. Email the founder – that's me, David! – to coordinate payment at <a href='mailto:contact@jsdevs.co' class='underline'>contact@jsdevs.co</a>.
-        q: How does the 10% fee work for hiring a full-time developer?
-      subscription:
-        a: No. The monthly/annual fee grants you business access to jsdevs. You have to externally pay the developers for the work they do.
-        q: Does the monthly/annual fee include the developer rate, too?
+        a_html: You are required to pay a 10% hiring fee of a developer's first year salary if you find them through JsDevs. This only applies to hiring full-time employees and not contractors or freelancers. Email David to coordinate payment at <a href='mailto:contact@jsdevs.co' class='underline'>contact@jsdevs.co</a>.
+        q: How does the 10% hiring fee work?
       support:
         a_html: Email the founder – that's me, David! – with any questions. You can reach me at <a href='mailto:contact@jsdevs.co' class='underline'>contact@jsdevs.co</a>.
         q: Who can I contact for more specific questions?
       title: Frequently asked questions
-    features:
-      direct_communication:
-        description: Skip formal job postings and start messaging with candidates with one click.
-        title: Talk directly to developers
-      independent_developers:
-        description: Directly hire independent JavaScript developers instead of going through a firm or agency.
-        title: Support independent developers
-      notifications:
-        description: Daily or weekly email notifications of new developer profiles.
-        title: New candidate notifications
-      profiles:
-        description: Hundreds of JavaScript developers looking for freelance, contract, and full-time work.
-        title: Highly targeted profiles
-      subtitle: Message hundreds of JavaScript developers with a jsdevs subscription. Save time by reaching out to the perfect candidates directly.
-      support:
-        description: Email the founder – that's me, David! – whenever you need help.
-        title: Support from the founder
-      title: Level up your hiring with jsdevs
-      unlock:
-        description: View hidden information, like the real names of developers and their portfolio links.
-        title: Unlock full profiles
-    plans:
+    hero:
+      description: Directly connect with hundreds of JavaScript developers looking for their next job.
+      title: Hire JavaScript developers
+    plan:
+      description: Skip the formal job postings and middlemen – hire directly from a candidate pool of JavaScript developers, from juniors to C-level.
       features:
-        notifications: Email updates of new candidates
-        onboarding: Concierge onboarding service
-        priority_support: Priority email and video call support
-        profiles: Highly targeted developer profiles
-        support: Email support
-        white_glove: Hand-selected candidates every month
-      full_time:
-        fees: "+ 10% first year salary"
-        help: Help on full-time fees
-        subtitle_html: Hire freelance, contract, and <span class="font-bold">full-time</span> developers.
-        title: Hire full-time employees
-      month: month
-      part_time:
-        fees: "+ $0 additional fees"
-        subtitle: Hire freelance or contract JavaScript developers.
-        title: Hire freelancers and contractors
-      title: Pricing plans
+        email_updates: Email updates of new candidates
+        hand_selected_matches: Hand-selected matches every month
+        message: Message directly with developers
+        oss: Support independent developers and OSS
+        rails: Exclusively JavaScript developers
+        support: Email and video support from the founder
+        title: JsDevs exclusives
+      hiring_fee: "+ 10% first year salary"
+      per_month: "/month"
+      title_html: For your 1<sup>st</sup> hire and beyond
     purchase_button:
       title: Get started today
-    v1:
-      cta: Get started today
-      faq:
-        '1':
-          a: No. 99 € a month grants you business access to jsdevs. You have to externally pay the developers for the work they do.
-          q: Does 99 € a month include the developer rate, too?
-        '2':
-          a: A business subscription allows you to reach out directly to developers on jsdevs. It also unhides information that is hidden from the public, like the real names of developers and their portfolio links.
-          q: So what does 99 € a month get me?
-        '3':
-          a: No. jsdevs is free for developers.
-          q: Does jsdevs cost anything for developers?
-        '4':
-          a_html: Email me, David, with any questions. You can reach me at <a href='mailto:contact@jsdevs.co'>contact@jsdevs.co</a>.
-          q: Who can I contact for more specific questions?
-        title: Frequently asked questions
-      feature:
-        '1': Browse highly targeted profiles.
-        '2': Support independent developers.
-        '3': Skip job descriptions and formal postings.
-        '4': Talk directly to candidates.
-        '5': Unlock private developer information.
-        '6': Receive email updates of new candidates.
-        '7': Cancel anytime with no obligations.
-        '8': Support open source development.
-        subtitle: Browse developer profiles who can start working ASAP or when you need help. Save time by reaching out to the perfect candidates.
-        title: Hire at your own pace
-      subtitle: Connect with independent, freelance JavaScript developers who are available for work now.
-      title_1: Hire JavaScript developers for
-      title_2: "99 € a month"
+    show:
+      description: Subscribe to JsDevs and directly connect with hundreds of JavaScript developers who are looking for freelance, contract, and full-time work.
       title_og: Pricing
-    v2:
-      description: Subscribe to jsdevs and directly connect with hundreds of JavaScript developers who are looking for freelance, contract, and full-time work.
-      title: Hire JavaScript developers
-      title_og: Pricing
-      turbo_native_title: Hire JavaScript developers
+      turbo_native_title: Hire Rails developers
+    stats:
+      description: Organic, genuine conversations with higher response rates than LinkedIn or cold email.
+      new_devs: New devs a month
+      rails_developers: Rails developers
+      response_rate: Response rate
+      title: The Rails-only hiring platform
   read_notifications:
     create:
       notice: All notifications marked as read.

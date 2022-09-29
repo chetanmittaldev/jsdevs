@@ -10,6 +10,7 @@
     <div class="col-span-full mb-4 xl:mb-2">
       <h1 class="text-xl font-semibold text-gray-900 sm:text-2xl dark:text-white">Edit Article #<%= article.id %></h1>
       <%= link_to "See all articles", admin_articles_path, class: "underline" %>
+      <%= link_to "View article", blog_path(article.slug), class: "underline" %>
     </div>
   </div>
   <div class="px-4">
