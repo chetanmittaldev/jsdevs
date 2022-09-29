@@ -178,7 +178,7 @@
         initialEditType: 'markdown',
         initialValue: initValue,
         previewStyle: 'vertical',
-        height: '200px'
+        height: '600px'
       });
       kontent_editor.on('change', () => {
         document.getElementById('kontent-input').setAttribute('value', kontent_editor.getMarkdown().replace(/(?:\r\n|\r|\n)/g, '\\k'));

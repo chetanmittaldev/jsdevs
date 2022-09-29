@@ -538,9 +538,9 @@ en:
     stats:
       description: Organic, genuine conversations with higher response rates than LinkedIn or cold email.
       new_devs: New devs a month
-      rails_developers: Rails developers
+      rails_developers: JavaScript developers
       response_rate: Response rate
-      title: The Rails-only hiring platform
+      title: The JavaScript-only hiring platform
   read_notifications:
     create:
       notice: All notifications marked as read.
