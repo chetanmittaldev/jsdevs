@@ -12,4 +12,12 @@ class Article < ApplicationRecord
   def published?
     !publication_date.nil? && publication_date <= Date.today
   end
+
+  def next
+    self.class.where("id > ?", id).first
+  end
+
+  def previous
+    self.class.where("id < ?", id).last
+  end
 end

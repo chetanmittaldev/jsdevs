@@ -7,3 +7,10 @@
 .prose :where(pre):not(:where([class~="not-prose"] *)) {
   padding: 0;
 }
+
+.alogo {
+  fill: #d1d5db;
+  &:hover {
+    fill: white;
+  }
+}
