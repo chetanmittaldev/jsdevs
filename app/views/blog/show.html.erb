@@ -18,8 +18,41 @@
     <div class="prose prose-stone prose-img:rounded-xl prose-a:text-blue-600">
       <%== @article[:parsed_content] %>
     </div>
+
+    <div class="pt-6 prose">
+      <h2 class="h2">About</h2>    
+      <p>
+        <a href="jsdevs.co">jsdevs&co</a> was founded in September, 2022.
+      </p>
+      <p>
+        It allows Frontend and JavaScript developers to find the job they love, without agency or 3rd-party recruiters. Learn more in the <a href="/about">about</a> section.
+      </p>
+      <p>
+        The blog is opened :
+        <ul>
+          <li><a href="https://app.usefathom.com/share/rbjsrtot/jsdevs" target="_blank">Analytics</a> for this blog is opened, so that you see the trafic for the blog.</li>
+          <li>Any developer that subscribed to jsdevs can have free training to SEO and technical writing.</li>
+        </ul>
+      </p>
+    </div>
+    <div class="pt-6">
+      <% if @previous_article  %>
+        <div class="mt-3">
+          <strong>Previous article :</strong>
+          <%= link_to @previous_article[:title], @previous_article[:slug], class: "underline text-blue-600 hover:text-blue-800 visited:text-purple-600"  %>
+        </div>
+      <% end  %>
+      <% if @next_article  %>
+        <div class="mt-3">
+          <strong>Next article :</strong>
+          <%= link_to @next_article[:title], @next_article[:slug], class: "underline text-blue-600 hover:text-blue-800 visited:text-purple-600"  %>
+        </div>
+      <% end  %>      
+    </div>
+
   </article>
 </section>
+
 
 <a href="/" class="fixed bottom-0 bg-blue-600 text-white w-full text-center py-1">
   We help developers to find the job they love ❤. See how →

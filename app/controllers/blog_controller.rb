@@ -18,5 +18,15 @@ class BlogController < ApplicationController
         .split(" ").reverse.drop(1).reverse.join(" ") # "December 4th, 2007"
     end
     @article = article_h.except(:kontent)
+    @previous_article = _extract_another_article(article.previous)
+    @next_article = _extract_another_article(article.next)
+  end
+
+  def _extract_another_article(another)
+    res = nil
+    if (another)
+      res = another.attributes.deep_symbolize_keys.slice(:title, :slug)
+    end
+    res
   end
 end
