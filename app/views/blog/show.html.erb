@@ -36,10 +36,10 @@
       </p>
     </div>
     <div class="pt-6">
-      <% if @previous_article  %>
+      <% if @prev_article  %>
         <div class="mt-3">
           <strong>Previous article :</strong>
-          <%= link_to @previous_article[:title], @previous_article[:slug], class: "underline text-blue-600 hover:text-blue-800 visited:text-purple-600"  %>
+          <%= link_to @prev_article[:title], @prev_article[:slug], class: "underline text-blue-600 hover:text-blue-800 visited:text-purple-600"  %>
         </div>
       <% end  %>
       <% if @next_article  %>

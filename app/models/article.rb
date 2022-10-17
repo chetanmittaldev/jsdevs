@@ -13,11 +13,34 @@ class Article < ApplicationRecord
     !publication_date.nil? && publication_date <= Date.today
   end
 
-  def next
-    self.class.where("id > ?", id).first
+  def next_prev
+    next_article = nil
+    prev_article = nil
+
+    sorted_articles = Rails.cache.fetch("all_articles", expires_in: 2.hour) {
+      Article.published.pluck(:publication_date, :id, :title, :slug).sort_by { |ary| ary[0] }
+    }
+
+    current_index = sorted_articles.index { |x| x[1] == id }
+    next_index = current_index + 1
+    prev_index = current_index - 1
+    total_length = sorted_articles.size - 1
+
+    if next_index <= total_length
+      next_article = _rebuild_article(sorted_articles[next_index])
+    end
+
+    if prev_index >= 0
+      prev_article = _rebuild_article(sorted_articles[prev_index])
+    end
+
+    [next_article, prev_article]
   end
 
-  def previous
-    self.class.where("id < ?", id).last
+  def _rebuild_article(article_as_array)
+    res = {}
+    res[:title] = article_as_array[2]
+    res[:slug] = article_as_array[3]
+    res
   end
 end
