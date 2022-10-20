@@ -23,6 +23,9 @@ module Jsdevs
     # Don't generate system test files.
     config.generators.system_tests = nil
 
+    # Compress HTML output with gzip.
+    config.middleware.use Rack::Deflater
+
     # Load custom configuration.
     config.always_remember_me = true
     config.analytics = config_for(:analytics)
