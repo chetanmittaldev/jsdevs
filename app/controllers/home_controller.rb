@@ -4,6 +4,6 @@ class HomeController < ApplicationController
       .visible
       .includes(:role_type).with_attached_avatar
       .actively_looking.newest_first
-      .limit(10)
+      .limit(3)
   end
 end

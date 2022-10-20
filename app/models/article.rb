@@ -22,16 +22,19 @@ class Article < ApplicationRecord
     }
 
     current_index = sorted_articles.index { |x| x[1] == id }
-    next_index = current_index + 1
-    prev_index = current_index - 1
-    total_length = sorted_articles.size - 1
 
-    if next_index <= total_length
-      next_article = _rebuild_article(sorted_articles[next_index])
-    end
+    if current_index
+      next_index = current_index + 1
+      prev_index = current_index - 1
+      total_length = sorted_articles.size - 1
 
-    if prev_index >= 0
-      prev_article = _rebuild_article(sorted_articles[prev_index])
+      if next_index <= total_length
+        next_article = _rebuild_article(sorted_articles[next_index])
+      end
+
+      if prev_index >= 0
+        prev_article = _rebuild_article(sorted_articles[prev_index])
+      end
     end
 
     [next_article, prev_article]

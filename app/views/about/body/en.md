@@ -1,4 +1,4 @@
-## The story
+## Developer side
 
 I've been an independent developer for 5 years, but I should have started much earlier, at least tried.
 

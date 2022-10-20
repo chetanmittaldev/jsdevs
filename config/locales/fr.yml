@@ -144,7 +144,7 @@ fr:
       save: Sauvegarder
       something_went_wrong: Une erreur est survenue lors du chargement de votre image, veuillez réessayer.
       updating: Mise à jour...
-      your_business_profile: Profil de votre sociétéYour business profile
+      your_business_profile: Profil de votre société
     hiring_fee_component:
       body: 'Bonjour David, nous avons engagé %{developer) sur jsdevs et je voudrais gérer le paiement des frais. Leur salaire de base sera de: '
       cta: Payer les frais de recrutement
@@ -355,9 +355,11 @@ fr:
     unauthorized: Vous n'avez pas accès à ça.
   home:
     show:
-      available_developers: Développeurs·euses disponibles actuellement
+      available_developers: Développeurs·euses JS disponibles actuellement
       description_og: jsdevs facilite la vie des développeurs·euses web. Affichez vos disponibilités et préférences, et laissez les entreprises vous contacter directement.
-      get_started: Démarrer
+      get_started: Démarrer 
+      get_started_as_dev: Démarrer en tant que dev
+      get_started_as_hir: Démarrer un recrutement
       learn_more: En savoir plus
       more: Voir plus de développeurs·euses
       subtitle_1: jsdevs
@@ -367,6 +369,28 @@ fr:
       title_2: développeurs·euses web
       title_og: Le site d'annonces inversé pour les développeurs·euses web
       turbo_native_title: jsdevs
+      story:
+        title: L'histoire
+        p: David, je suis à la fois développeur JS, et fondateur solo de jsdevs. Mon but est de réduire la frustration, des 2 côtés du process de recrutement. Côté dev, nous devrions être content de démarrer un nouveau travail dans les conditions désirées au départ. Côté recrument, les embauches devraient pouvoir se faire en direct, sans dépenser beaucoup de temps ni d'argent. Vous pouvez en apprendre plus sur la page <a href="/about?locale=fr" class="underline">correspondante</a>. 
+      testimonials:
+        title: Quelques retours...
+        a: J'adore le design, il est convivial et je l'utiliserais certainement pour obtenir de nouveaux contrats.
+        b: L'expérience est plutôt plaisante, notamment parce que c'est assez simple et très rapide de remplir son profil, ce qui est un gros point positif par rapport à d'autres services de recrutement.
+        c: Il offre une exposition aux nouveaux indépendants et nous permet d'obtenir le travail que nous apprécions le plus
+      benefits:
+        title: Bénéfices pour les développeurs·euses
+        title_a: Gratuit pour vous
+        a: Unlike many other recruitment platforms, everything is free for developers. There's no hidden cost or commission, because all payments are on the recruitment side. Save a few bucks from the start.
+        a: Contrairement à beaucoup d'autres plateformes, tout est gratuit pour les développeurs·euses. Il n'y a pas de com', tous les paiements sont côté recrutement uniquement. Gardez la valeur ajoutée pour vous.
+        title_b: Moins d'intermédiaires
+        b: I'm also a JS developer, and I know how frustrating it is not to speak to the right people, right from the beginning. You will skip one or more interviews, and it will be easier to negotiate the conditions you want.
+        b: Je suis également dev JS, et sais à quel point c'est frustrant de ne pas parler aux bonnes personnes dès le début. Zappez un entretien ou deux, et négociez en direct les conditions de votre choix.
+        title_c: Apprenez en continu
+        c: Il y a un <a href="/blog" class="underline">blog</a> bihebdomadaire, où les devs intermédiaires/avancé·e·s peuvent s'entraîner. Vous pouvez même rejoindre l'équipe de rédaction. Vous recevrez une formation gratuite à la rédaction technique et au SEO.
+      recall:
+        title: Prêt à démarrer ?
+        p: Développez ce qui vous intéresse dès aujourd'hui
+
   impersonating_banner_component:
     cta: Déconnexion
     title: Connecté en tant que %{email}

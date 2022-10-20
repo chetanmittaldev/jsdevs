@@ -355,9 +355,11 @@ en:
     unauthorized: You don't have access to that.
   home:
     show:
-      available_developers: Developers available now
+      available_developers: JavaScript Developers available now
       description_og: jsdevs empowers independent JS developers available for their next gig. Stop scouring job boards and sit back as companies reach out to you first.
       get_started: Get started
+      get_started_as_dev: Start as dev
+      get_started_as_hir: Start to hire
       learn_more: Learn more
       more: See more developers
       subtitle_1: jsdevs&co
@@ -367,6 +369,25 @@ en:
       title_2: JavaScript developers
       title_og: The reverse job board for JavaScript developers
       turbo_native_title: jsdevs
+      story:
+        title: The story
+        p: David, I'm both JavaScript developer, and solo founder of jsdevs. My goal is to reduce frustation on both side of the recruitment process. The developer should be happy to start a new job, under the desired conditions. On the other side, the hiring team shouldn't spend tons of time or money to find the right developer profile. You can learn more in the <a href="/about" class="underline">about</a> section.
+      testimonials:
+        title: Some feedbacks
+        a: I love the design, it is user friendly and I would definitely use it for getting new gigs.
+        b: The experience is rather pleasant, in particular because it is quite simple and very quick to fill out your profile, which is a big positive point compared to other recruitment services.
+        c: It provides exposure to new freelancers and enables us to get the work we enjoy the most.
+      benefits:
+        title: Key benefits for devs
+        title_a: Zero fees
+        a: Unlike many other recruitment platforms, everything is free for developers. There's no hidden cost or commission, because all payments are on the recruitment side. Save a few bucks from the start.
+        title_b: Less intermediaries
+        b: I'm also a JS developer, and I know how frustrating it is not to speak to the right people, right from the beginning. You will skip one or more interviews, and it will be easier to negotiate the conditions you want.
+        title_c: Get continuous learning
+        c: There is a bi-weekly <a href="/blog" class="underline">blogging</a> for intermediate/advanced JavaScript developers, where you can improve your skills. You can even join the writing team. You will get free training about technical copywriting and SEO!
+      recall:
+        title: Ready to start?
+        p: Find you next developer job today
   impersonating_banner_component:
     cta: Sign out
     title: Signed in as %{email}

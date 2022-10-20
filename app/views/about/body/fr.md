@@ -1,4 +1,4 @@
-## L'histoire
+## Côté développeur·euse
 
 Voilà 5 ans que je suis développeur indépendant, mais j'aurai dû commencer bien avant, tout du moins essayer.
 
@@ -18,7 +18,7 @@ J'essaye de la rendre inclusive et accessible à toutes et tous.
 
 Si vous manquez cruellement de temps pour recruter et que vous ne voulez pas dépenser une fortune dans le recrutement, jsdevs est fait pour vous.
 
-Je fais tout mon possible pour que uniquement des profils qualifiés s'inscrivent sur la plateforme. 
+Je fais tout mon possible pour que seuls des profils qualifiés s'inscrivent sur la plateforme. 
 
 J'espère que vous y trouverez le profil que vous recherchez, sans intermédiaire ni agence.
 
