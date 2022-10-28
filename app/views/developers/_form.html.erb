@@ -131,9 +131,6 @@
             </div>
           </div>
         </div>
-
-
-
       </div>
   </div>
 
@@ -411,7 +408,7 @@
       loadCDN("https://cdnjs.cloudflare.com/ajax/libs/tom-select/2.2.2/js/tom-select.complete.js").then(res => {
 
           new TomSelect('#developer_zskills',{
-                  options: <%= ListSkills.new.list.to_json %>,
+                  options: <%= ListSkills.new.list.to_json.html_safe %>,
                   optgroups: [
                     {value: 'frontend', label: 'Frontend', label_scientific: ''},
                     {value: 'backend', label: 'Backend', label_scientific: ''},

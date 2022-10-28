@@ -263,8 +263,8 @@ fr:
         help_text: Sélectionnez tous les contrats qui vous intéressent.
         title: Type de contrat
       skills:
-        title: Compétences
-        intro: Quelle compétences avez-vous déjà dans les différentes technologies?
+        title: Compétences 🎨
+        intro: Quelle compétences avez-vous déjà dans les différentes technologies? Peut-être JavaScript ;) ?
         frontend_title: Frontend
         frontend_help_text: Qu'avez-vous déjà utilisé côté Front?
         backend_title: Backend

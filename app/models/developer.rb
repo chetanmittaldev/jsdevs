@@ -133,8 +133,7 @@ class Developer < ApplicationRecord
 
   def self.transfer
     Developer.all.each do |dev|
-      flattened_existing_skills = (dev.skills["skills_frontend"] || []).concat((dev.skills["skills_backend"] || [])).concat((dev.skills["skills_language"] || [])).join(",").to_s
-      dev.zskills = flattened_existing_skills
+      dev.zskills = dev.zskills.gsub("nuxtjs", "typescript")
       dev.save
     end
   end

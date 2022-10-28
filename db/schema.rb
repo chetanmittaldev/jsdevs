@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_07_12_221758) do
+ActiveRecord::Schema[7.0].define(version: 2022_07_12_221759) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -119,7 +119,6 @@ ActiveRecord::Schema[7.0].define(version: 2022_07_12_221758) do
     t.virtual "textsearchable_index_col", type: :tsvector, as: "to_tsvector('simple'::regconfig, (((COALESCE(hero, ''::character varying))::text || ' '::text) || COALESCE(bio, ''::text)))", stored: true
     t.datetime "featured_at"
     t.boolean "profile_reminder_notifications", default: true
-    t.json "skills", default: {}
     t.string "zskills", default: ""
     t.index ["textsearchable_index_col"], name: "textsearchable_index", using: :gin
     t.index ["user_id"], name: "index_developers_on_user_id"

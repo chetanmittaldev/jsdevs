@@ -260,8 +260,8 @@ en:
         help_text: Select all the experience levels you would consider taking.
         title: Role level
       skills:
-        title: Skills
-        intro: What experiences do you have with different technologies?
+        title: Skills 🎨
+        intro: List skills where you already feel comfortable enough. Maybe JavaScript ;) ?
         frontend_title: Frontend
         frontend_help_text: Select all Frontend skills you already have
         backend_title: Backend
