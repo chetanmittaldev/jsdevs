@@ -25,7 +25,7 @@
         <p class="line-clamp-3 break-words"><%= strip_tags bio %></p>
       </div>
       <div class="my-4 space-y-2 -ml-2">
-        <%= render Developers::SkillsComponent.new(frontend: developer.skills["skills_frontend"].to_a, backend: developer.skills["skills_backend"].to_a, language: developer.skills["skills_language"].to_a) %>
+        <%= render Developers::SkillsComponent.new(skills: ListSkills.new.call(@developer)) %>
       </div>
     </div>
   <% end %>

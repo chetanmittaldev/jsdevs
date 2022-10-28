@@ -34,7 +34,7 @@
               </aside>
 
               <div class="mt-6">
-                <%= render Developers::SkillsComponent.new(frontend: @developer.skills["skills_frontend"].to_a, backend: @developer.skills["skills_backend"].to_a, language: @developer.skills["skills_language"].to_a) %>
+                <%= render Developers::SkillsComponent.new(skills: ListSkills.new.call(@developer)) %>
               </div>
 
               <div class="py-3 lg:pt-6 lg:pb-0">

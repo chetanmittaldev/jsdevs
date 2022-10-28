@@ -1,22 +1,8 @@
 <ul>
-  <% frontend.each do |skill| %>
+  <% skills.each do |skill| %>
     <li class="inline-block md:text-sm">
       <div class="block bg-gray-100 px-2 py-1 text-xs md:px-2 md:py-1 rounded-xl text-gray-700 hover:text-black hover:bg-blue-200 mt-2">
-        <span class="text-sm font-medium"><%= Developer.skills_frontend[skill.to_sym] %></span>
-      </div>
-    </li>
-  <% end %>
-  <% backend.each do |skill| %>
-    <li class="inline-block md:text-sm">
-      <div class="block bg-gray-100 px-2 py-1 text-xs md:px-2 md:py-1 rounded-xl text-gray-700 hover:text-black hover:bg-blue-200 mt-2">
-        <span class="text-sm font-medium"><%= Developer.skills_backend[skill.to_sym]  %></span>
-      </div>
-    </li>
-  <% end %>
-  <% language.each do |skill| %>
-    <li class="inline-block md:text-sm">
-      <div class="block bg-gray-100 px-2 py-1 text-xs md:px-2 md:py-1 rounded-xl text-gray-700 hover:text-black hover:bg-blue-200 mt-2">
-        <span class="text-sm font-medium"><%= Developer.skills_language[skill.to_sym]  %></span>
+        <span class="text-sm font-medium"><%= skill %></span>
       </div>
     </li>
   <% end %>

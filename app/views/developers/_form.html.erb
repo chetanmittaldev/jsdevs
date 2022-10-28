@@ -126,60 +126,9 @@
         </div>
         <div class="w-2/3">
           <div class="flex flex-col md:flex-row">
-            <fieldset class="mt-6 md:ml-2 md:mt-0">
-              <div>
-                <legend class="text-base font-medium text-gray-900 w-full">
-                  <div class="flex">
-                    <%= t(".skills.frontend_title") %>
-                  </div>
-                </legend>
-                <p class="text-sm text-gray-500"><%= t(".skills.frontend_help_text") %></p>
-              </div>
-              <%= form.fields_for :skills, include_id: false do |skills| %>
-                <%= skills.collection_check_boxes :skills_frontend, Developer.skills_frontend, :first, :last, :input_html => { :class => '' } do |custom_check_box| %>
-                  <div class="flex items-center mt-4">
-                    <%= custom_check_box.check_box({class: 'focus:ring-gray-500 h-4 w-4 text-gray-600 border-gray-300 rounded cursor-pointer', checked: form.object.skills["skills_frontend"]&.size.to_i > 0 ? custom_check_box.value.to_s.in?(form.object.skills["skills_frontend"]) : false }) %>
-                    <%= custom_check_box.label({class:'ml-3 block text-sm font-medium text-gray-700 cursor-pointer'}) %>
-                  </div>
-                <% end %>
-              <% end %>
-            </fieldset>
-            <fieldset class="mt-6 md:ml-2 md:mt-0">
-              <div>
-                <legend class="text-base font-medium text-gray-900 w-full">
-                  <div class="flex">
-                    <%= t(".skills.backend_title") %>
-                  </div>
-                </legend>
-                <p class="text-sm text-gray-500"><%= t(".skills.backend_help_text") %></p>
-              </div>
-              <%= form.fields_for :skills, include_id: false do |skills| %>
-                <%= skills.collection_check_boxes :skills_backend, Developer.skills_backend, :first, :last, :input_html => { :class => '' } do |custom_check_box| %>
-                  <div class="flex items-center mt-4">
-                    <%= custom_check_box.check_box({class: 'focus:ring-gray-500 h-4 w-4 text-gray-600 border-gray-300 rounded cursor-pointer', checked: form.object.skills["skills_backend"]&.size.to_i > 0 ? custom_check_box.value.to_s.in?(form.object.skills["skills_backend"]) : false }) %>
-                    <%= custom_check_box.label({class:'ml-3 block text-sm font-medium text-gray-700 cursor-pointer'}) %>
-                  </div>
-                <% end %>
-              <% end %>
-            </fieldset>          
-            <fieldset class="mt-6 md:ml-2 md:mt-0">
-              <div>
-                <legend class="text-base font-medium text-gray-900 w-full">
-                  <div class="flex">
-                    <%= t(".skills.language_title") %>
-                  </div>
-                </legend>
-                <p class="text-sm text-gray-500"><%= t(".skills.language_help_text") %></p>
-              </div>
-              <%= form.fields_for :skills, include_id: false do |skills| %>
-                <%= skills.collection_check_boxes :skills_language, Developer.skills_language, :first, :last, :input_html => { :class => '' } do |custom_check_box| %>
-                  <div class="flex items-center mt-4">
-                    <%= custom_check_box.check_box({class: 'focus:ring-gray-500 h-4 w-4 text-gray-600 border-gray-300 rounded cursor-pointer', checked: form.object.skills["skills_language"]&.size.to_i > 0 ? custom_check_box.value.to_s.in?(form.object.skills["skills_language"]) : false }) %>
-                    <%= custom_check_box.label({class:'ml-3 block text-sm font-medium text-gray-700 cursor-pointer'}) %>
-                  </div>
-                <% end %>
-              <% end %>
-            </fieldset>
+            <div class="mt-1">
+              <%= form.text_field :zskills, autocomplete: "zskills", value: developer.zskills, class: field_classes(form, :zskills) %>
+            </div>
           </div>
         </div>
 
@@ -440,3 +389,46 @@
     </div>
   <% end %>
 </div>
+
+<% content_for :custom_stylesheet do %>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tom-select/2.2.2/css/tom-select.bootstrap5.min.css">
+<% end %>
+<% content_for :custom_javascript do %>
+  <script>
+    document.addEventListener('turbo:load', (event) => {
+
+      const loadCDN = src =>
+        new Promise((resolve, reject) => {
+          if (document.querySelector(`head > script[src="${src}"]`) !== null) return resolve()
+          const script = document.createElement("script")
+          script.src = src
+          script.async = true
+          document.head.appendChild(script)
+          script.onload = resolve
+          script.onerror = reject
+        })
+
+      loadCDN("https://cdnjs.cloudflare.com/ajax/libs/tom-select/2.2.2/js/tom-select.complete.js").then(res => {
+
+          new TomSelect('#developer_zskills',{
+                  options: <%= ListSkills.new.list.to_json %>,
+                  optgroups: [
+                    {value: 'frontend', label: 'Frontend', label_scientific: ''},
+                    {value: 'backend', label: 'Backend', label_scientific: ''},
+                    {value: 'languages', label: 'Languages', label_scientific: ''}
+                  ],
+                  optgroupField: 'class',
+                  labelField: 'name',
+                  searchField: ['name'],
+                  render: {
+                    optgroup_header: function(data, escape) {
+                      return '<div class="optgroup-header">' + escape(data.label) + ' <span class="scientific">' + escape(data.label_scientific) + '</span></div>';
+                    }
+                  }
+                });
+
+      }).catch(err => {})
+
+    });
+  </script>
+<% end %>

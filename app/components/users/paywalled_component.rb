@@ -9,7 +9,7 @@ module Users
     end
 
     def render_content?
-      customer? || owner?
+      customer? || owner? || @user&.admin?
     end
 
     def small?

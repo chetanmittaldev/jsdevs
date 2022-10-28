@@ -1,11 +1,9 @@
 module Developers
   class SkillsComponent < ApplicationComponent
-    attr_reader :frontend, :backend, :language
+    attr_reader :skills
 
-    def initialize(frontend:, backend:, language:)
-      @frontend = frontend
-      @backend = backend
-      @language = language
+    def initialize(skills:)
+      @skills = skills
     end
   end
 end
