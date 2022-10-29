@@ -7,7 +7,7 @@ module Admin
     end
 
     def rate_params
-      params.require(:rate).permit(:rate_a, :rate_b).to_h.transform_values{ |v| v.to_i }
+      params.require(:rate).permit(:rate_a, :rate_b).to_h.transform_values { |v| v.to_i }
     end
   end
 end
