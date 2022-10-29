@@ -19,3 +19,8 @@
     <%= t(".feature") %>
   <% end %>
 </span>
+<div>
+  <%= form_with url: admin_developer_rates_path(developer), method: :post do |form| %>
+    <%= submit_tag "Send rate", class: "inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-gray-600 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 cursor-pointer" %>
+  <% end %>
+</div>

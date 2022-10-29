@@ -66,6 +66,7 @@ Rails.application.routes.draw do
     resources :developers, only: [] do
       resources :conversations, only: :index, controller: :developer_conversations
       resources :features, only: :create
+      resources :rates, only: :create
       resources :invisiblizes, only: :create, module: :developers
     end
   end

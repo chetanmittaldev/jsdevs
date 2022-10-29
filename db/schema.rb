@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_07_12_221759) do
+ActiveRecord::Schema[7.0].define(version: 2022_07_12_221760) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -120,6 +120,23 @@ ActiveRecord::Schema[7.0].define(version: 2022_07_12_221759) do
     t.datetime "featured_at"
     t.boolean "profile_reminder_notifications", default: true
     t.string "zskills", default: ""
+    t.decimal "rate", precision: 5, scale: 2
+    t.integer "rate_a"
+    t.integer "rate_b"
+    t.integer "rate_c"
+    t.integer "rate_d"
+    t.integer "rate_e"
+    t.integer "rate_f"
+    t.integer "rate_g"
+    t.integer "rate_h"
+    t.integer "rate_i"
+    t.integer "rate_j"
+    t.integer "rate_k"
+    t.integer "rate_l"
+    t.integer "rate_m"
+    t.integer "rate_n"
+    t.integer "rate_o"
+    t.integer "rate_p"
     t.index ["textsearchable_index_col"], name: "textsearchable_index", using: :gin
     t.index ["user_id"], name: "index_developers_on_user_id"
   end
