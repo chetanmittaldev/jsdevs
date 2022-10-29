@@ -21,6 +21,19 @@
 </span>
 <div>
   <%= form_with url: admin_developer_rates_path(developer), method: :post do |form| %>
+    
+    <div class="flex">
+      <div>
+        <%= form.label ENV["APP_RATE_A"], class: "block text-sm font-medium text-gray-700" %>
+        <%= form.text_field :rate_a, type: "number", value: developer.rate_a, placeholder: ENV["APP_RATE_A"], class: "shadow-sm focus:ring-gray-500 focus:border-gray-500 block w-24 sm:text-sm border-gray-300 rounded-md" %>
+      </div>      
+      <div>
+        <%= form.label ENV["APP_RATE_B"], class: "block text-sm font-medium text-gray-700" %>
+        <%= form.text_field :rate_b, type: "number", value: developer.rate_b, placeholder: ENV["APP_RATE_B"], class: "shadow-sm focus:ring-gray-500 focus:border-gray-500 block w-24 ml-2 sm:text-sm border-gray-300 rounded-md" %>
+      </div>
+    </div>
+  
+
     <%= submit_tag "Send rate", class: "inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-gray-600 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 cursor-pointer" %>
   <% end %>
 </div>

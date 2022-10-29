@@ -137,6 +137,10 @@ GEM
     digest (3.1.0)
     domain_name (0.5.20190701)
       unf (>= 0.0.5, < 1.0.0)
+    dotenv (2.8.1)
+    dotenv-rails (2.8.1)
+      dotenv (= 2.8.1)
+      railties (>= 3.2)
     erb_lint (0.1.2)
       activesupport
       better_html (~> 1.0.7)
@@ -462,6 +466,7 @@ DEPENDENCIES
   cssbundling-rails (~> 1.0)
   devise (~> 4.8.1)
   devise-i18n (~> 1.10.1)
+  dotenv-rails
   erb_lint (~> 0.1.2)
   faker
   fathom_api (~> 0.1.2)
