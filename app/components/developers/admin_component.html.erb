@@ -20,7 +20,7 @@
   <% end %>
 </span>
 <div>
-  <%= form_with url: admin_developer_rates_path(developer), method: :post do |form| %>
+  <%= form_with url: admin_developer_rates_path(developer), scope: :rate, method: :post do |form| %>
     
     <div class="flex">
       <div>
