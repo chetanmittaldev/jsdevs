@@ -127,7 +127,7 @@
         <div class="w-2/3">
           <div class="flex flex-col md:flex-row">
             <div class="mt-1">
-              <%= form.text_field :zskills, autocomplete: "zskills", value: developer.zskills, class: field_classes(form, :zskills) %>
+              <%= form.text_field :zskills, autocomplete: "zskills", value: developer.zskills.present? ? developer.zskills : "javascript", placeholder: "Maybe another?", class: field_classes(form, :zskills) %>
             </div>
           </div>
         </div>
@@ -419,10 +419,16 @@
 
           new TomSelect('#developer_zskills',{
                   options: <%= ListSkills.new.list.to_json.html_safe %>,
+                  hidePlaceholder: false,
                   optgroups: [
                     {value: 'frontend', label: 'Frontend', label_scientific: ''},
                     {value: 'backend', label: 'Backend', label_scientific: ''},
-                    {value: 'languages', label: 'Languages', label_scientific: ''}
+                    {value: 'languages', label: 'Languages', label_scientific: ''},
+                    {value: 'methodology', label: 'Methodology', label_scientific: ''},
+                    {value: 'protocol', label: 'Protocol', label_scientific: ''},
+                    {value: 'database', label: 'Database', label_scientific: ''},
+                    {value: 'devops', label: 'Devops', label_scientific: ''},
+                    {value: 'quality', label: 'Quality', label_scientific: ''}
                   ],
                   optgroupField: 'class',
                   labelField: 'name',
