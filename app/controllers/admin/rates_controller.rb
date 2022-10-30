@@ -4,7 +4,7 @@ module Admin
       developer = Developer.find(params[:developer_id])
       rate_params_h = rate_params
       developer.update_columns(rate_params_h)
-      developer.update_columns(rate: rate_params_h.values.sum/100)
+      developer.update_columns(rate: rate_params_h.values.sum)
       redirect_to developers_path, notice: "Rate is done, thanks."
     end
 
