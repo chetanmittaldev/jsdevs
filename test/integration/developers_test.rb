@@ -48,14 +48,15 @@ class DevelopersTest < ActionDispatch::IntegrationTest
     assert_response :ok
   end
 
-  test "developers are sorted newest first" do
-    create_developer(hero: "Oldest")
-    create_developer(hero: "Newest")
+  test "developers are sorted highest rate first" do
+    create_developer(hero: "Medium", rate: 4)
+    create_developer(hero: "Top", rate: 12)
+    create_developer(hero: "Bottom", rate: 1)
 
     get developers_path
 
-    assert_select "button.font-medium[value=newest]"
-    assert response.body.index("Newest") < response.body.index("Oldest")
+    assert response.body.index("Top") < response.body.index("Medium")
+    assert response.body.index("Medium") < response.body.index("Bottom")
   end
 
   test "developers can be sorted by availability" do

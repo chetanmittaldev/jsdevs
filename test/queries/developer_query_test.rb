@@ -3,13 +3,13 @@ require "test_helper"
 class DeveloperQueryTest < ActiveSupport::TestCase
   include DevelopersHelper
 
-  test "sort is :availability and defaults to :newest" do
+  test "sort is :availability and defaults to :rate" do
     assert_equal DeveloperQuery.new(sort: "availability").sort, :availability
 
     assert_equal DeveloperQuery.new(sort: "newest").sort, :newest
-    assert_equal DeveloperQuery.new(sort: "bogus").sort, :newest
-    assert_equal DeveloperQuery.new(sort: "").sort, :newest
-    assert_equal DeveloperQuery.new.sort, :newest
+    assert_equal DeveloperQuery.new(sort: "bogus").sort, :rate
+    assert_equal DeveloperQuery.new(sort: "").sort, :rate
+    assert_equal DeveloperQuery.new.sort, :rate
   end
 
   test "default searching excludes developers not interested (or blank) search status" do
