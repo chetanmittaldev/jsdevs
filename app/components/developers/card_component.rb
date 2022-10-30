@@ -4,9 +4,10 @@ module Developers
 
     attr_reader :developer
 
-    def initialize(developer:, featured: false)
+    def initialize(developer:, featured: false, is_admin: false)
       @developer = developer
       @featured = featured
+      @is_admin = is_admin
     end
 
     def hero
@@ -19,6 +20,10 @@ module Developers
 
     def featured?
       !!@featured
+    end
+
+    def admin?
+      @is_admin
     end
   end
 end
