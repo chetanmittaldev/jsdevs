@@ -40,10 +40,10 @@ class DeveloperQuery
   def sort
     if @sort.to_s.downcase.to_sym == :availability 
       :availability 
-    elsif @sort.to_s.downcase.to_sym == :rate 
-      :rate
-    else
+    elsif @sort.to_s.downcase.to_sym == :newest 
       :newest
+    else
+      :rate
     end
   end
 
