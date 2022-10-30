@@ -332,6 +332,7 @@ fr:
       sort:
         availability: Disponibilité
         newest: Les plus récents
+        rate: Evaluation
         title: Trier
     search_status:
       actively_looking: En recherche active
