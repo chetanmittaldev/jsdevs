@@ -120,23 +120,23 @@ ActiveRecord::Schema[7.0].define(version: 2022_07_12_221760) do
     t.datetime "featured_at"
     t.boolean "profile_reminder_notifications", default: true
     t.string "zskills", default: ""
-    t.decimal "rate", precision: 5, scale: 2
-    t.integer "rate_a"
-    t.integer "rate_b"
-    t.integer "rate_c"
-    t.integer "rate_d"
-    t.integer "rate_e"
-    t.integer "rate_f"
-    t.integer "rate_g"
-    t.integer "rate_h"
-    t.integer "rate_i"
-    t.integer "rate_j"
-    t.integer "rate_k"
-    t.integer "rate_l"
-    t.integer "rate_m"
-    t.integer "rate_n"
-    t.integer "rate_o"
-    t.integer "rate_p"
+    t.decimal "rate", precision: 5, scale: 2, default: "0.0"
+    t.integer "rate_a", default: 0
+    t.integer "rate_b", default: 0
+    t.integer "rate_c", default: 0
+    t.integer "rate_d", default: 0
+    t.integer "rate_e", default: 0
+    t.integer "rate_f", default: 0
+    t.integer "rate_g", default: 0
+    t.integer "rate_h", default: 0
+    t.integer "rate_i", default: 0
+    t.integer "rate_j", default: 0
+    t.integer "rate_k", default: 0
+    t.integer "rate_l", default: 0
+    t.integer "rate_m", default: 0
+    t.integer "rate_n", default: 0
+    t.integer "rate_o", default: 0
+    t.integer "rate_p", default: 0
     t.index ["textsearchable_index_col"], name: "textsearchable_index", using: :gin
     t.index ["user_id"], name: "index_developers_on_user_id"
   end

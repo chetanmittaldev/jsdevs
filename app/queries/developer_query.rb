@@ -95,6 +95,8 @@ class DeveloperQuery
   def sort_records
     if sort == :availability
       @_records.merge!(Developer.available_first)
+    elsif sort == :rate
+      @_records.merge!(Developer.rate_first)
     else
       @_records.merge!(Developer.newest_first)
     end
