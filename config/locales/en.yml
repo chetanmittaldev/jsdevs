@@ -268,6 +268,10 @@ en:
         backend_help_text: Select all Backend skills you already have
         language_title: Languages
         language_help_text: What do you have experience with?
+      quality:
+        title: Software Quality 🧑‍🎨
+        intro: Optional field, will not be shown publicly. What does software quality means for you?
+        help_text: Write a few sentences about software quality.
       role_type:
         help_text: Select all roles that you would consider taking.
         title: Role type

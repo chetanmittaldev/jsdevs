@@ -132,7 +132,29 @@
           </div>
         </div>
       </div>
-  </div>
+    </div>
+
+    <div class="bg-white shadow px-4 py-5 lg:rounded-lg sm:p-6">
+      <div class="md:grid md:grid-cols-3 md:gap-6">
+        <div class="md:col-span-1">
+          <h2 class="text-lg font-medium leading-6 text-gray-900"><%= t(".quality.title") %></h2>
+          <p class="mt-1 text-sm text-gray-500"><%= t(".quality.intro") %></p>
+        </div>
+
+        <div class="mt-5 md:mt-0 md:col-span-2">
+          <div class="space-y-6">
+
+            <div class="sm:col-span-6" data-controller="bio">
+              <%= form.label :quality, class: "block text-sm font-medium text-gray-700" %>
+              <div class="mt-1">
+                <%= form.text_area :quality, rows: 3, class: field_classes(form, :bio), data: {bio_target: "devbio"} %>
+              </div>
+              <p class="mt-2 text-sm text-gray-500"><%= t(".quality.help_text") %></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="bg-white shadow mt-8 px-4 py-5 lg:rounded-lg sm:p-6">
       <div class="md:grid md:grid-cols-3 md:gap-6">

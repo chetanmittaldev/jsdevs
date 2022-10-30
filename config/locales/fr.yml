@@ -271,6 +271,10 @@ fr:
         backend_help_text: Qu'avez-vous déjà utilisé côté Back?
         language_title: Languages
         language_help_text: Quels languages connaissez vous déjà?
+      quality:
+        title: Qualité d'un software 🧑‍🎨
+        intro: Champ optionnel, qui ne sera pas affiché publiquement. Que signifie la qualité logicielle pour vous?
+        help_text: écrire quelques phrase sur la qualité logicielle.
       save: Sauvegarder
       search_status:
         actively_looking_help_text: Votre profil peut être mis en avant sur la page d'accueil.
