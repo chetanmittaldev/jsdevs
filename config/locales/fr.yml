@@ -239,9 +239,9 @@ fr:
         help_text: Où peut-on trouver plus d'informations sur vous et sur votre travail?
         title: Présence en ligne
       preferred_compensation:
-        description: D'après mon expérience en tant que freelancer, les questions de compensation se posent après que les détails du projet soient confirmés.
-        subtitle: Compensation souhaitée, retirée de jsdevs
         title: Compensation souhaitée
+        description: Votre taux horaire. Également optionnel, ne sera pas affiché sur votre profil.
+        help_text: Taux horaire, par exemple 50 veut dire 50€ par heure.
       profile:
         avatar: Avatar
         avatar_error_text: Une erreur est survenue lors du chargement de votre image. Veuillez réessayer.
@@ -264,17 +264,12 @@ fr:
         title: Type de contrat
       skills:
         title: Compétences 🎨
-        intro: Quelle compétences avez-vous déjà dans les différentes technologies? Peut-être JavaScript ;) ?
-        frontend_title: Frontend
-        frontend_help_text: Qu'avez-vous déjà utilisé côté Front?
-        backend_title: Backend
-        backend_help_text: Qu'avez-vous déjà utilisé côté Back?
-        language_title: Languages
-        language_help_text: Quels languages connaissez vous déjà?
+        intro: Quelle compétences avez-vous déjà dans les différentes technologies? JavaScript est listé par défaut ;) 
+        help_text: Quels technos connaissez vous déjà?
       quality:
         title: Qualité d'un software 🧑‍🎨
         intro: Champ optionnel, qui ne sera pas affiché publiquement. Que signifie la qualité logicielle pour vous?
-        help_text: écrire quelques phrase sur la qualité logicielle.
+        help_text: Écrire quelques phrase sur la qualité logicielle.
       save: Sauvegarder
       search_status:
         actively_looking_help_text: Votre profil peut être mis en avant sur la page d'accueil.
@@ -326,7 +321,7 @@ fr:
       role_level:
         title: Niveau de poste
       search_query_label: Rechercher des profils
-      search_query_placeholder: Hotwire, React, Heroku, etc.
+      search_query_placeholder: Vue, React, Heroku, etc.
       timezone:
         title: Fuseau horaire
       title: Filtres développeurs·euses

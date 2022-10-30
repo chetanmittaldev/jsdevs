@@ -239,9 +239,10 @@ en:
         help_text: Where can people learn more about you and your work?
         title: Online presence
       preferred_compensation:
-        description: From my experience as a freelancer, compensation should be discussed only after the details of a project or job are known.
-        subtitle: Preferred compensation removed from jsdevs
         title: Preferred compensation
+        subtitle: aaa
+        description: You approximate compensation rate, per hour. Also optional, and will not be shown publicly.
+        help_text: Hourly rate, for example 50 means 50$ per hour.
       profile:
         avatar: Avatar
         avatar_error_text: Something went wrong uploading your image, please try again.
@@ -261,13 +262,8 @@ en:
         title: Role level
       skills:
         title: Skills 🎨
-        intro: List skills where you already feel comfortable enough. Maybe JavaScript ;) ?
-        frontend_title: Frontend
-        frontend_help_text: Select all Frontend skills you already have
-        backend_title: Backend
-        backend_help_text: Select all Backend skills you already have
-        language_title: Languages
-        language_help_text: What do you have experience with?
+        intro: List skills where you already feel comfortable enough. We already added JavaScript for you ;)
+        help_text: List your skills.
       quality:
         title: Software Quality 🧑‍🎨
         intro: Optional field, will not be shown publicly. What does software quality means for you?
@@ -326,7 +322,7 @@ en:
       role_level:
         title: Role level
       search_query_label: Search profiles
-      search_query_placeholder: Hotwire, React, Heroku, etc.
+      search_query_placeholder: Vue, React, Heroku, etc.
       timezone:
         title: Timezone
       title: Developer filters

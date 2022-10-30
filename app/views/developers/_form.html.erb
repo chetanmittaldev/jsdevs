@@ -128,6 +128,7 @@
           <div class="flex flex-col md:flex-row">
             <div class="mt-1">
               <%= form.text_field :zskills, autocomplete: "zskills", value: developer.zskills.present? ? developer.zskills : "javascript", placeholder: "Maybe another?", class: field_classes(form, :zskills) %>
+              <p class="mt-2 text-sm text-gray-500"><%= t(".skills.help_text") %></p>
             </div>
           </div>
         </div>
@@ -147,9 +148,31 @@
             <div class="sm:col-span-6" data-controller="bio">
               <%= form.label :quality, class: "block text-sm font-medium text-gray-700" %>
               <div class="mt-1">
-                <%= form.text_area :quality, rows: 3, class: field_classes(form, :bio), data: {bio_target: "devbio"} %>
+                <%= form.text_area :quality, rows: 3, class: field_classes(form, :quality), data: {bio_target: "devbio"} %>
               </div>
               <p class="mt-2 text-sm text-gray-500"><%= t(".quality.help_text") %></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-8 bg-white shadow px-4 py-5 lg:rounded-lg sm:p-6">
+      <div class="md:grid md:grid-cols-3 md:gap-6">
+        <div class="md:col-span-1">
+          <h2 class="text-lg font-medium leading-6 text-gray-900"><%= t(".preferred_compensation.title") %></h2>
+          <p class="mt-1 text-sm text-gray-500"><%= t(".preferred_compensation.description") %></p>
+        </div>
+
+        <div class="mt-5 md:mt-0 md:col-span-2">
+          <div class="space-y-6">
+            <div class="sm:col-span-6" data-controller="bio">
+              <%= form.label :compensation, class: "block text-sm font-medium text-gray-700" %>
+              <div class="mt-1 flex">
+                <%= form.number_field :compensation, class: "w-32 " + field_classes(form, :compensation) %>
+                <div class="block text-sm font-medium text-gray-700 ml-2">$ / h</div>
+              </div>
+              <p class="mt-2 text-sm text-gray-500"><%= t(".preferred_compensation.help_text") %></p>
             </div>
           </div>
         </div>
@@ -292,21 +315,6 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="bg-white shadow mt-8 px-4 py-5 lg:rounded-lg sm:p-6">
-      <div class="md:grid md:grid-cols-3 md:gap-6">
-        <div class="md:col-span-1">
-          <h3 class="text-lg font-medium leading-6 text-gray-900"><%= t(".preferred_compensation.title") %></h3>
-        </div>
-
-        <div class="mt-5 md:mt-0 md:col-span-2">
-          <p class="text-base font-medium text-gray-900"><%= t(".preferred_compensation.subtitle") %></p>
-          <p class="text-gray-600 text-sm mt-1">
-            <%= t(".preferred_compensation.description") %>
-          </p>
         </div>
       </div>
     </div>
