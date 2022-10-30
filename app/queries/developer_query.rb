@@ -38,7 +38,13 @@ class DeveloperQuery
   end
 
   def sort
-    @sort.to_s.downcase.to_sym == :availability ? :availability : :newest
+    if @sort.to_s.downcase.to_sym == :availability
+      :availability
+    elsif @sort.to_s.downcase.to_sym == :newest
+      :newest
+    else
+      :rate
+    end
   end
 
   def countries
@@ -95,8 +101,10 @@ class DeveloperQuery
   def sort_records
     if sort == :availability
       @_records.merge!(Developer.available_first)
-    else
+    elsif sort == :newest
       @_records.merge!(Developer.newest_first)
+    else
+      @_records.merge!(Developer.rate_first)
     end
   end
 

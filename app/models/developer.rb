@@ -60,6 +60,7 @@ class Developer < ApplicationRecord
   scope :available_first, -> { where.not(available_on: nil).order(:available_on) }
   scope :featured, -> { where("featured_at >= ?", 1.week.ago).order(featured_at: :desc) }
   scope :newest_first, -> { order(created_at: :desc) }
+  scope :rate_first, -> { order(rate: :desc) }
   scope :profile_reminder_notifications, -> { where(profile_reminder_notifications: true) }
   scope :visible, -> { where.not(search_status: :invisible).or(where(search_status: nil)) }
 
@@ -90,51 +91,5 @@ class Developer < ApplicationRecord
 
   def feature!
     touch(:featured_at)
-  end
-
-  def self.skills_frontend
-    {
-      vuejs: "VueJS",
-      reactjs: "ReactJS",
-      angularjs: "AngularJS",
-      emberjs: "EmberJS",
-      tailwind: "TailwindCSS",
-      bootstrap: "BootstrapCSS",
-      chakra: "ChakraUI",
-      scss: "SASS/SCSS"
-    }
-  end
-
-  def self.skills_language
-    {
-      javascript: "JavaScript",
-      typescript: "TypeScript",
-      python: "Python",
-      ruby: "Ruby",
-      dotnet: "C#",
-      java: "Java",
-      dart: "Dart",
-      golang: "Golang"
-    }
-  end
-
-  def self.skills_backend
-    {
-      express: "ExpressJS",
-      nextjs: "NextJS",
-      nuxt: "Nuxt",
-      nodejs: "NodeJS",
-      dotnet: ".Net",
-      spring: "Spring",
-      rails: "Rails",
-      php: "PHP"
-    }
-  end
-
-  def self.transfer
-    Developer.all.each do |dev|
-      dev.zskills = dev.zskills.gsub("nuxtjs", "typescript")
-      dev.save
-    end
   end
 end

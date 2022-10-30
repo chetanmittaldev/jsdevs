@@ -127,12 +127,57 @@
         <div class="w-2/3">
           <div class="flex flex-col md:flex-row">
             <div class="mt-1">
-              <%= form.text_field :zskills, autocomplete: "zskills", value: developer.zskills, class: field_classes(form, :zskills) %>
+              <%= form.text_field :zskills, autocomplete: "zskills", value: developer.zskills.present? ? developer.zskills : "javascript", placeholder: "Maybe another?", class: field_classes(form, :zskills) %>
+              <p class="mt-2 text-sm text-gray-500"><%= t(".skills.help_text") %></p>
             </div>
           </div>
         </div>
       </div>
-  </div>
+    </div>
+
+    <div class="mt-8 bg-white shadow px-4 py-5 lg:rounded-lg sm:p-6">
+      <div class="md:grid md:grid-cols-3 md:gap-6">
+        <div class="md:col-span-1">
+          <h2 class="text-lg font-medium leading-6 text-gray-900"><%= t(".quality.title") %></h2>
+          <p class="mt-1 text-sm text-gray-500"><%= t(".quality.intro") %></p>
+        </div>
+
+        <div class="mt-5 md:mt-0 md:col-span-2">
+          <div class="space-y-6">
+
+            <div class="sm:col-span-6" data-controller="bio">
+              <%= form.label :quality, class: "block text-sm font-medium text-gray-700" %>
+              <div class="mt-1">
+                <%= form.text_area :quality, rows: 3, class: field_classes(form, :quality), data: {bio_target: "devbio"} %>
+              </div>
+              <p class="mt-2 text-sm text-gray-500"><%= t(".quality.help_text") %></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-8 bg-white shadow px-4 py-5 lg:rounded-lg sm:p-6">
+      <div class="md:grid md:grid-cols-3 md:gap-6">
+        <div class="md:col-span-1">
+          <h2 class="text-lg font-medium leading-6 text-gray-900"><%= t(".preferred_compensation.title") %></h2>
+          <p class="mt-1 text-sm text-gray-500"><%= t(".preferred_compensation.description") %></p>
+        </div>
+
+        <div class="mt-5 md:mt-0 md:col-span-2">
+          <div class="space-y-6">
+            <div class="sm:col-span-6" data-controller="bio">
+              <%= form.label :compensation, class: "block text-sm font-medium text-gray-700" %>
+              <div class="mt-1 flex items-center">
+                <%= form.number_field :compensation, class: "w-32 " + field_classes(form, :compensation) %>
+                <div class="block text-sm font-medium text-gray-700 ml-2">$ / h</div>
+              </div>
+              <p class="mt-2 text-sm text-gray-500"><%= t(".preferred_compensation.help_text") %></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="bg-white shadow mt-8 px-4 py-5 lg:rounded-lg sm:p-6">
       <div class="md:grid md:grid-cols-3 md:gap-6">
@@ -277,21 +322,6 @@
     <div class="bg-white shadow mt-8 px-4 py-5 lg:rounded-lg sm:p-6">
       <div class="md:grid md:grid-cols-3 md:gap-6">
         <div class="md:col-span-1">
-          <h3 class="text-lg font-medium leading-6 text-gray-900"><%= t(".preferred_compensation.title") %></h3>
-        </div>
-
-        <div class="mt-5 md:mt-0 md:col-span-2">
-          <p class="text-base font-medium text-gray-900"><%= t(".preferred_compensation.subtitle") %></p>
-          <p class="text-gray-600 text-sm mt-1">
-            <%= t(".preferred_compensation.description") %>
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="bg-white shadow mt-8 px-4 py-5 lg:rounded-lg sm:p-6">
-      <div class="md:grid md:grid-cols-3 md:gap-6">
-        <div class="md:col-span-1">
           <h3 class="text-lg font-medium leading-6 text-gray-900"><%= t(".online_presence.title") %></h3>
           <p class="mt-1 text-sm text-gray-500"><%= t(".online_presence.help_text") %></p>
         </div>
@@ -304,6 +334,16 @@
                   https://
                 </span>
                 <%= form.text_field :website, class: "flex-1 focus:ring-gray-500 focus:border-gray-500 block w-full min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300" %>
+              </div>
+            </div>
+
+            <div class="sm:col-span-3">
+              <%= form.label :stackoverflow, class: "block text-sm font-medium text-gray-700" %>
+              <div class="mt-1 flex rounded-md shadow-sm">
+                <span class="inline-flex items-center px-3 rounded-l-md border border-r-0 border-gray-300 bg-gray-50 text-gray-500 sm:text-sm">
+                  stackoverflow.com/users/
+                </span>
+                <%= form.text_field :stackoverflow, class: "flex-1 focus:ring-gray-500 focus:border-gray-500 block w-full min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300" %>
               </div>
             </div>
 
@@ -409,10 +449,16 @@
 
           new TomSelect('#developer_zskills',{
                   options: <%= ListSkills.new.list.to_json.html_safe %>,
+                  hidePlaceholder: false,
                   optgroups: [
                     {value: 'frontend', label: 'Frontend', label_scientific: ''},
                     {value: 'backend', label: 'Backend', label_scientific: ''},
-                    {value: 'languages', label: 'Languages', label_scientific: ''}
+                    {value: 'languages', label: 'Languages', label_scientific: ''},
+                    {value: 'methodology', label: 'Methodology', label_scientific: ''},
+                    {value: 'protocol', label: 'Protocol', label_scientific: ''},
+                    {value: 'database', label: 'Database', label_scientific: ''},
+                    {value: 'devops', label: 'Devops', label_scientific: ''},
+                    {value: 'quality', label: 'Quality', label_scientific: ''}
                   ],
                   optgroupField: 'class',
                   labelField: 'name',
@@ -425,6 +471,45 @@
                 });
 
       }).catch(err => {})
+
+
+
+      let isEmptyDevBio = document.getElementById("developer_bio").value.trim().length === 0
+
+      function randomInteger(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+      }
+
+      let text1 = `   Good evening! I'm a [JOB_ROLE] with [X] years of professional experience. Previously I've worked as a [JOB_ROLE], and...
+
+   I'm an expert at [SKILLS] and have significant experience using [TECHNOLOGIES]. I've worked on various web projects [IN MY SPARE TIME or PROFESSIONALLY]. For example I created a [SMART CONTRACT WHICH ...].
+
+   I'm currently looking for a [PART TIME / FULL TIME / FREELANCER] as a [JOB_ROLE]. If you're interested in working together, please contact me.
+        `
+
+      let text2 = `   Good morning! I'm a [JOB_ROLE] with [X] years of professional experience. Previously I've worked as a [JOB_ROLE], and...
+
+   I'm an expert at [SKILLS] and have significant experience using [TECHNOLOGIES]. I've worked on various web projects [IN MY SPARE TIME or PROFESSIONALLY]. For example I created a [SMART CONTRACT WHICH ...].
+
+   I'm currently looking for a [PART TIME / FULL TIME / FREELANCER] as a [JOB_ROLE]. If you're interested in working together, please contact me.
+        `
+
+      let text3 = `   Hi there! I'm a [JOB_ROLE] with [X] years of professional experience. Previously I've worked as a [JOB_ROLE_1], as well as [JOB_ROLE_2]
+
+   I'm comfortable with [SKILLS] and have significant experience using [TECHNOLOGIES]
+
+   At work, what I enjoy the most is...
+
+   On my spare time, I [CREATED/CONTRIBUTED TO] the following projects : ...
+
+   I'm looking for...
+        `
+
+      if (isEmptyDevBio) {
+        let randomInt = randomInteger(1, 3)
+        console.log("randomInt", randomInt);
+        document.getElementById("developer_bio").innerHTML = [text1, text2, text3][randomInteger(1, 3)]
+      }
 
     });
   </script>

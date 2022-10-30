@@ -19,3 +19,62 @@
     <%= t(".feature") %>
   <% end %>
 </span>
+<div>
+  <%= form_with url: admin_developer_rates_path(developer), scope: :rate, method: :post do |form| %>
+    
+    <div class="flex">
+      <div>
+        <%= form.label ENV["APP_RATE_A"], class: "block text-sm font-medium text-gray-700" %>
+        <%= form.text_field :rate_a, type: "number", value: developer.rate_a, placeholder: ENV["APP_RATE_A"], class: "shadow-sm focus:ring-gray-500 focus:border-gray-500 block w-24 sm:text-sm border-gray-300 rounded-md" %>
+      </div>      
+      <div>
+        <%= form.label ENV["APP_RATE_B"], class: "block text-sm font-medium text-gray-700" %>
+        <%= form.text_field :rate_b, type: "number", value: developer.rate_b, placeholder: ENV["APP_RATE_B"], class: "shadow-sm focus:ring-gray-500 focus:border-gray-500 block w-24 ml-2 sm:text-sm border-gray-300 rounded-md" %>
+      </div>
+      <div>
+        <%= form.label ENV["APP_RATE_C"], class: "block text-sm font-medium text-gray-700" %>
+        <%= form.text_field :rate_c, type: "number", value: developer.rate_c, placeholder: ENV["APP_RATE_C"], class: "shadow-sm focus:ring-gray-500 focus:border-gray-500 block w-24 ml-2 sm:text-sm border-gray-300 rounded-md" %>
+      </div>
+    </div>
+  
+    <div class="flex mt-2">
+      <div>
+        <%= form.label ENV["APP_RATE_D"], class: "block text-sm font-medium text-gray-700" %>
+        <%= form.text_field :rate_d, type: "number", value: developer.rate_d, placeholder: ENV["APP_RATE_D"], class: "shadow-sm focus:ring-gray-500 focus:border-gray-500 block w-24 ml-2 sm:text-sm border-gray-300 rounded-md" %>
+      </div>    
+      <div>
+        <%= form.label ENV["APP_RATE_E"], class: "block text-sm font-medium text-gray-700" %>
+        <%= form.text_field :rate_e, type: "number", value: developer.rate_e, placeholder: ENV["APP_RATE_E"], class: "shadow-sm focus:ring-gray-500 focus:border-gray-500 block w-24 ml-2 sm:text-sm border-gray-300 rounded-md" %>
+      </div>
+      <div>
+        <%= form.label ENV["APP_RATE_F"], class: "block text-sm font-medium text-gray-700" %>
+        <%= form.text_field :rate_f, type: "number", value: developer.rate_f, placeholder: ENV["APP_RATE_F"], class: "shadow-sm focus:ring-gray-500 focus:border-gray-500 block w-24 ml-2 sm:text-sm border-gray-300 rounded-md" %>
+      </div>
+    </div>
+  
+    <div class="flex mt-2">
+      <div>
+        <%= form.label ENV["APP_RATE_G"], class: "block text-sm font-medium text-gray-700" %>
+        <%= form.text_field :rate_g, type: "number", value: developer.rate_g, placeholder: ENV["APP_RATE_A"], class: "shadow-sm focus:ring-gray-500 focus:border-gray-500 block w-24 sm:text-sm border-gray-300 rounded-md" %>
+      </div>      
+      <div>
+        <%= form.label ENV["APP_RATE_H"], class: "block text-sm font-medium text-gray-700" %>
+        <%= form.text_field :rate_h, type: "number", value: developer.rate_h, placeholder: ENV["APP_RATE_B"], class: "shadow-sm focus:ring-gray-500 focus:border-gray-500 block w-24 ml-2 sm:text-sm border-gray-300 rounded-md" %>
+      </div>
+      <div>
+        <%= form.label ENV["APP_RATE_I"], class: "block text-sm font-medium text-gray-700" %>
+        <%= form.text_field :rate_i, type: "number", value: developer.rate_i, placeholder: ENV["APP_RATE_C"], class: "shadow-sm focus:ring-gray-500 focus:border-gray-500 block w-24 ml-2 sm:text-sm border-gray-300 rounded-md" %>
+      </div>
+    </div>
+  
+    <div class="flex mt-2">
+      <div>
+        <%= form.label ENV["APP_RATE_J"], class: "block text-sm font-medium text-gray-700" %>
+        <%= form.text_field :rate_j, type: "number", value: developer.rate_j, placeholder: ENV["APP_RATE_J"], class: "shadow-sm focus:ring-gray-500 focus:border-gray-500 block w-24 ml-2 sm:text-sm border-gray-300 rounded-md" %>
+      </div>    
+    </div>
+  
+
+    <%= submit_tag "Send rate", class: "mt-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-gray-600 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 cursor-pointer" %>
+  <% end %>
+</div>

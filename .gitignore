@@ -26,6 +26,9 @@ logfile
 # Active Storage local storage.
 /storage/
 
+# Ignore latest dump
+latest.dump
+
 # Ignore master key for decrypting credentials and more.
 /config/master.key
 
