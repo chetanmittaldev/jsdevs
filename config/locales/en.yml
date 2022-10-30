@@ -356,7 +356,7 @@ en:
     unauthorized: You don't have access to that.
   home:
     show:
-      available_developers: JavaScript Developers available now
+      available_developers: Some of the best developers...
       description_og: jsdevs empowers independent JS developers available for their next gig. Stop scouring job boards and sit back as companies reach out to you first.
       get_started: Get started
       get_started_as_dev: Start as dev
