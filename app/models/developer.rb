@@ -92,5 +92,4 @@ class Developer < ApplicationRecord
   def feature!
     touch(:featured_at)
   end
-
 end

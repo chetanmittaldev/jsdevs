@@ -38,9 +38,9 @@ class DeveloperQuery
   end
 
   def sort
-    if @sort.to_s.downcase.to_sym == :availability 
-      :availability 
-    elsif @sort.to_s.downcase.to_sym == :newest 
+    if @sort.to_s.downcase.to_sym == :availability
+      :availability
+    elsif @sort.to_s.downcase.to_sym == :newest
       :newest
     else
       :rate

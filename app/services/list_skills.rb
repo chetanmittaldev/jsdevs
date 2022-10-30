@@ -81,7 +81,7 @@ class ListSkills
       {class: "quality", value: "selenium", name: "Selenium"},
       {class: "quality", value: "playwright", name: "Playwright"},
       {class: "quality", value: "sonarqube", name: "SonarQube"},
-      {class: "quality", value: "sonarqube", name: "SonarQube"},
+      {class: "quality", value: "sonarqube", name: "SonarQube"}
     ]
   end
 end
