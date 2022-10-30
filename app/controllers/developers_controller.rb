@@ -73,6 +73,7 @@ class DevelopersController < ApplicationController
       :search_status,
       :zskills,
       :quality,
+      :compensation,
       :search_query,
       :profile_reminder_notifications,
       location_attributes: [:city, :state, :country],
